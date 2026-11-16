@@ -95,3 +95,28 @@ RAW-DIFF-v1.md/RAW-DIFF-v2.md and audit.json are written only in the new directo
 The audit flags disagreement or missingness relative to the fixed 11.7% wording.
 No automatic score is replaced by manual observations. A v3 response alone cannot
 isolate effects of scope versus intervention wording changes.
+
+## Fixed cross-model screens
+
+`screen.py` implements the authorized batch 1 followed by batch 2, importing the
+original V3 graph/scoring without changes. See SCREEN.md for frozen selection,
+reasoning, shared-budget and manual-inspection rules. Discovery is saved publicly
+before `freeze`; endpoints are chosen once from availability/settings/pricing.
+Each model has a separate artifact directory; each batch has one aggregate $1
+reservation ledger. Batch 2 requires batch 1 to finish and pass its audit.
+
+```sh
+python -m unittest discover -s tests -v
+python pilots/01-viability/harness/screen.py freeze --root DISCOVERY_ROOT
+python pilots/01-viability/harness/screen.py live --root DISCOVERY_ROOT --batch 1
+python pilots/01-viability/harness/screen_audit.py DISCOVERY_ROOT 1
+python pilots/01-viability/harness/screen.py live --root DISCOVERY_ROOT --batch 2
+python pilots/01-viability/harness/screen_audit.py DISCOVERY_ROOT 2
+```
+
+Use `dry-run` in place of `live` on a separate copied discovery directory for
+fixtures. Neither a batch nor a model directory can be reused or resumed.
+Keep manual_inspection.json and reports separate from primary derived.json and
+trials.csv; rerun only the offline audit after adding annotations. Unsupported
+configurations and unavailable IDs are retained as skips, with no substitution.
+The existing smoke-03 reference is read without rerunning GPT-4o mini.

@@ -1,0 +1,150 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 18,
+    "attempts_with_usage": 18,
+    "completion_tokens": 4684,
+    "list_price_estimate_subtotal_usd": "0.0140476",
+    "prompt_tokens": 7792,
+    "reported_cost_subtotal_usd": "0.0140476",
+    "unknown_cost_attempts": 0
+  },
+  "attempts": 18,
+  "candidate": "google/gemini-2.5-flash",
+  "config": {
+    "budget_usd": "1.00",
+    "case": {
+      "barcode": "0.024",
+      "defect_given_heat": "0.37",
+      "defect_given_no_heat": "0.03",
+      "id": "QA-01",
+      "inspection_given_defect": "0.83",
+      "inspection_given_no_defect": "0.02",
+      "modules": 100,
+      "prior": "0.117",
+      "target": "0.43"
+    },
+    "input_token_rate_ceiling_usd": "3.75E-7",
+    "max_attempts_per_call": 3,
+    "max_logical_calls": 18,
+    "max_tokens": 1200,
+    "minimum_attempt_reserve_usd": "0.01",
+    "model_family": "google/gemini-2.5-flash",
+    "output_token_rate_ceiling_usd": "0.000003125",
+    "preferred_version": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "scope": "QA-01 smoke only; one shared prefix; no replicates",
+    "scoring": {
+      "downstream_tolerance_modules": "3",
+      "near_zero_delta": "0.000001",
+      "unsupported_movement_threshold": "0.15",
+      "upstream_tolerance": "0.05"
+    },
+    "seed": 20261116,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "ended": "2026-11-16T02:17:23.731145+00:00",
+  "failure": null,
+  "logical_calls": 18,
+  "mode": "live",
+  "plan_sha256": "e15fdbcc8938543b237ae76cf47f2f5ba3cf3cf45c0696df4de3615ff459b39d",
+  "selection": {
+    "allowed_returned_models": [
+      "google/gemini-2.5-flash"
+    ],
+    "candidate": "google/gemini-2.5-flash",
+    "canonical_slug": "google/gemini-2.5-flash",
+    "endpoint": {
+      "context_length": 1048576,
+      "latency_last_30m": null,
+      "max_completion_tokens": 65535,
+      "max_prompt_tokens": null,
+      "model_id": "google/gemini-2.5-flash",
+      "model_name": "Google: Gemini 2.5 Flash",
+      "name": "Google AI Studio | google/gemini-2.5-flash",
+      "native_tools": {},
+      "pricing": {
+        "audio": "0.000001",
+        "completion": "0.0000025",
+        "discount": 0,
+        "image": "0.0000003",
+        "input_audio_cache": "0.0000001",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.0000000833333333333333",
+        "internal_reasoning": "0.0000025",
+        "prompt": "0.0000003",
+        "web_search": "0.014"
+      },
+      "provider_name": "Google AI Studio",
+      "quantization": "unknown",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "reasoning",
+        "include_reasoning",
+        "structured_outputs",
+        "response_format",
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "seed",
+        "tools",
+        "tool_choice",
+        "stop"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": false,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": true,
+        "none": true,
+        "required": true
+      },
+      "supports_voice_cloning": false,
+      "tag": "google-ai-studio",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 99.93055555555556,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "google-ai-studio",
+    "exclusions": [
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "google-ai-studio/flex"
+      },
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "google-ai-studio/priority"
+      }
+    ],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": {
+      "mandatory": false
+    },
+    "parameters": {
+      "max_tokens": 1200,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "0.000003125",
+      "prompt": "3.75E-7"
+    },
+    "provider_name": "Google AI Studio",
+    "reasoning_mode": "explicitly_disabled",
+    "request_model": "google/gemini-2.5-flash",
+    "selection_cost_score_usd": "0.0054000",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "started": "2026-11-16T02:16:53.386875+00:00",
+  "status": "incomplete"
+}

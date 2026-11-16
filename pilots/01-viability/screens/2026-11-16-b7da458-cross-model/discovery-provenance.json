@@ -1,0 +1,50 @@
+{
+  "public_discovery_only": true,
+  "entries": [
+    {
+      "file": "deepseek--deepseek-v4.1-flash-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.221809+00:00",
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints"
+    },
+    {
+      "file": "google--gemini-2.5-flash-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.367996+00:00",
+      "url": "https://openrouter.ai/api/v1/models/google/gemini-2.5-flash/endpoints"
+    },
+    {
+      "file": "google--gemma-4-26b-a4b-it-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.751879+00:00",
+      "url": "https://openrouter.ai/api/v1/models/google/gemma-4-26b-a4b-it/endpoints"
+    },
+    {
+      "file": "meta-llama--llama-3.1-8b-instruct-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.503192+00:00",
+      "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
+    },
+    {
+      "file": "meta-llama--llama-4-scout-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.091112+00:00",
+      "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-4-scout/endpoints"
+    },
+    {
+      "file": "models-raw.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:36.669072+00:00",
+      "url": "https://openrouter.ai/api/v1/models"
+    },
+    {
+      "file": "openai--gpt-4.1-mini-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:36.918294+00:00",
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-4.1-mini/endpoints"
+    },
+    {
+      "file": "qwen--qwen3.5-9b-endpoints.json",
+      "observed_file_mtime_utc": "2026-11-16T02:03:37.634701+00:00",
+      "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.5-9b/endpoints"
+    }
+  ],
+  "documentation_lookup": {
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "outcome": "HTTPError; no completion call or charge; model/endpoint reasoning metadata used"
+  },
+  "availability_note": "Catalog/endpoint advertisement is checked before inference; API-level unavailability is preserved separately."
+}

@@ -1,0 +1,134 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 18,
+    "attempts_with_usage": 18,
+    "completion_tokens": 3159,
+    "list_price_estimate_subtotal_usd": "0.00033168",
+    "prompt_tokens": 10266,
+    "reported_cost_subtotal_usd": "0.00033168",
+    "unknown_cost_attempts": 0
+  },
+  "attempts": 18,
+  "candidate": "meta-llama/llama-3.1-8b-instruct",
+  "config": {
+    "budget_usd": "1.00",
+    "case": {
+      "barcode": "0.024",
+      "defect_given_heat": "0.37",
+      "defect_given_no_heat": "0.03",
+      "id": "QA-01",
+      "inspection_given_defect": "0.83",
+      "inspection_given_no_defect": "0.02",
+      "modules": 100,
+      "prior": "0.117",
+      "target": "0.43"
+    },
+    "input_token_rate_ceiling_usd": "2.50E-8",
+    "max_attempts_per_call": 3,
+    "max_logical_calls": 18,
+    "max_tokens": 1200,
+    "minimum_attempt_reserve_usd": "0.01",
+    "model_family": "meta-llama/llama-3.1-8b-instruct",
+    "output_token_rate_ceiling_usd": "5.00E-8",
+    "preferred_version": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "DeepInfra",
+    "scope": "QA-01 smoke only; one shared prefix; no replicates",
+    "scoring": {
+      "downstream_tolerance_modules": "3",
+      "near_zero_delta": "0.000001",
+      "unsupported_movement_threshold": "0.15",
+      "upstream_tolerance": "0.05"
+    },
+    "seed": 20261116,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "ended": "2026-11-16T02:19:36.222073+00:00",
+  "failure": null,
+  "logical_calls": 18,
+  "mode": "live",
+  "plan_sha256": "e15fdbcc8938543b237ae76cf47f2f5ba3cf3cf45c0696df4de3615ff459b39d",
+  "selection": {
+    "allowed_returned_models": [
+      "meta-llama/llama-3.1-8b-instruct"
+    ],
+    "candidate": "meta-llama/llama-3.1-8b-instruct",
+    "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
+    "endpoint": {
+      "context_length": 131072,
+      "latency_last_30m": null,
+      "max_completion_tokens": 16384,
+      "max_prompt_tokens": null,
+      "model_id": "meta-llama/llama-3.1-8b-instruct",
+      "model_name": "Meta: Llama 3.1 8B Instruct",
+      "name": "DeepInfra | meta-llama/llama-3.1-8b-instruct",
+      "native_tools": {},
+      "pricing": {
+        "completion": "0.00000004",
+        "discount": 0,
+        "prompt": "0.00000002"
+      },
+      "provider_name": "DeepInfra",
+      "quantization": "fp8",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "seed",
+        "min_p",
+        "logit_bias",
+        "response_format"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": false,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": true,
+        "none": true,
+        "required": true
+      },
+      "supports_voice_cloning": false,
+      "tag": "deepinfra/fp8",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 100,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "deepinfra/fp8",
+    "exclusions": [
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "cloudflare/fp8"
+      }
+    ],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": null,
+    "parameters": {
+      "max_tokens": 1200,
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "5.00E-8",
+      "prompt": "2.50E-8"
+    },
+    "provider_name": "DeepInfra",
+    "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+    "request_model": "meta-llama/llama-3.1-8b-instruct",
+    "selection_cost_score_usd": "0.00020800",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "started": "2026-11-16T02:17:23.741566+00:00",
+  "status": "complete"
+}

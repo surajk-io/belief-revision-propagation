@@ -1,0 +1,341 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 18,
+    "attempts_with_usage": 18,
+    "completion_tokens": 4732,
+    "list_price_estimate_subtotal_usd": "0.0155407",
+    "prompt_tokens": 12369,
+    "reported_cost_subtotal_usd": "0.0155407",
+    "unknown_cost_attempts": 0
+  },
+  "attempts": 18,
+  "candidate": "google/gemini-2.5-flash",
+  "config": {
+    "budget_usd": "1.00",
+    "case": {
+      "bonus_given_no_treasure": "0.12",
+      "bonus_given_treasure": "0.83",
+      "cosmetic": "0.09",
+      "fog_prior": "0.29",
+      "grey_given_clear": "0.41",
+      "grey_given_fog": "0.68",
+      "id": "GAME-01",
+      "target_fog_posterior": "0.69",
+      "treasure_given_clear": "0.76",
+      "treasure_given_fog": "0.24"
+    },
+    "max_attempts_per_call": 3,
+    "max_concurrent_requests": 6,
+    "max_logical_calls": 18,
+    "max_tokens": 4096,
+    "minimum_attempt_reserve_usd": "0.01",
+    "model_family": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "scope": "GAME-01 only; 3 fixed models, one 18-call graph each",
+    "scoring": {
+      "downstream_tolerance_probability": "0.03",
+      "near_zero_delta": "0.000001",
+      "unsupported_movement_threshold": "0.15",
+      "upstream_tolerance": "0.05"
+    },
+    "seed": 20261116,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "jobs": {
+    "baseline_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_D": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "initial": {
+      "failure": null,
+      "parent": null,
+      "status": "complete"
+    },
+    "neutral_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "neutral_B": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_C": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_D": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "unsupported_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "unsupported_B": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "unsupported_C": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "unsupported_D": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "warranted_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "warranted_B": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_C": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_D": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    }
+  },
+  "logical_calls_dispatched": 18,
+  "mode": "live",
+  "plan_sha256": "b1bf61fda463b099b9122f539a7c71710514893c1cc323f7d5777471b1fa1cef",
+  "selection": {
+    "allowed_returned_models": [
+      "google/gemini-2.5-flash"
+    ],
+    "candidate": "google/gemini-2.5-flash",
+    "canonical_slug": "google/gemini-2.5-flash",
+    "configuration_differences": {
+      "max_tokens": {
+        "after": 4096,
+        "before": 1200
+      }
+    },
+    "endpoint": {
+      "context_length": 1048576,
+      "latency_last_30m": null,
+      "max_completion_tokens": 65535,
+      "max_prompt_tokens": null,
+      "model_id": "google/gemini-2.5-flash",
+      "model_name": "Google: Gemini 2.5 Flash",
+      "name": "Google AI Studio | google/gemini-2.5-flash",
+      "native_tools": {},
+      "pricing": {
+        "audio": "0.000001",
+        "completion": "0.0000025",
+        "discount": 0,
+        "image": "0.0000003",
+        "input_audio_cache": "0.0000001",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.0000000833333333333333",
+        "internal_reasoning": "0.0000025",
+        "prompt": "0.0000003",
+        "web_search": "0.014"
+      },
+      "provider_name": "Google AI Studio",
+      "quantization": "unknown",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "reasoning",
+        "include_reasoning",
+        "structured_outputs",
+        "response_format",
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "seed",
+        "tools",
+        "tool_choice",
+        "stop"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": false,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": true,
+        "none": true,
+        "required": true
+      },
+      "supports_voice_cloning": false,
+      "tag": "google-ai-studio",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 99.93055555555556,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "google-ai-studio",
+    "exclusions": [
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "google-ai-studio/flex"
+      },
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "google-ai-studio/priority"
+      }
+    ],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": {
+      "mandatory": false
+    },
+    "parameters": {
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "previous_selection": {
+      "allowed_returned_models": [
+        "google/gemini-2.5-flash"
+      ],
+      "candidate": "google/gemini-2.5-flash",
+      "canonical_slug": "google/gemini-2.5-flash",
+      "endpoint": {
+        "context_length": 1048576,
+        "latency_last_30m": null,
+        "max_completion_tokens": 65535,
+        "max_prompt_tokens": null,
+        "model_id": "google/gemini-2.5-flash",
+        "model_name": "Google: Gemini 2.5 Flash",
+        "name": "Google AI Studio | google/gemini-2.5-flash",
+        "native_tools": {},
+        "pricing": {
+          "audio": "0.000001",
+          "completion": "0.0000025",
+          "discount": 0,
+          "image": "0.0000003",
+          "input_audio_cache": "0.0000001",
+          "input_cache_read": "0.00000003",
+          "input_cache_write": "0.0000000833333333333333",
+          "internal_reasoning": "0.0000025",
+          "prompt": "0.0000003",
+          "web_search": "0.014"
+        },
+        "provider_name": "Google AI Studio",
+        "quantization": "unknown",
+        "service_tier": null,
+        "status": 0,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "structured_outputs",
+          "response_format",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "tools",
+          "tool_choice",
+          "stop"
+        ],
+        "supports_diarization": false,
+        "supports_image_reference": false,
+        "supports_implicit_caching": false,
+        "supports_multiple_audio_references": false,
+        "supports_tool_choice": {
+          "auto": true,
+          "function": true,
+          "none": true,
+          "required": true
+        },
+        "supports_voice_cloning": false,
+        "tag": "google-ai-studio",
+        "throughput_last_30m": null,
+        "uptime_last_1d": 99.93055555555556,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100
+      },
+      "endpoint_tag": "google-ai-studio",
+      "exclusions": [
+        {
+          "reason": "Unavailable or non-standard service tier",
+          "tag": "google-ai-studio/flex"
+        },
+        {
+          "reason": "Unavailable or non-standard service tier",
+          "tag": "google-ai-studio/priority"
+        }
+      ],
+      "independent_version_pin_available": false,
+      "model_reasoning_metadata": {
+        "mandatory": false
+      },
+      "parameters": {
+        "max_tokens": 1200,
+        "reasoning": {
+          "enabled": false,
+          "exclude": true
+        },
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "price_ceilings_usd_per_token": {
+        "completion": "0.000003125",
+        "prompt": "3.75E-7"
+      },
+      "provider_name": "Google AI Studio",
+      "reasoning_mode": "explicitly_disabled",
+      "request_model": "google/gemini-2.5-flash",
+      "selection_cost_score_usd": "0.0054000",
+      "status": "selected",
+      "unsupported_settings": []
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "0.000003125",
+      "prompt": "3.75E-7"
+    },
+    "provider_name": "Google AI Studio",
+    "reasoning_mode": "explicitly_disabled",
+    "request_model": "google/gemini-2.5-flash",
+    "selection_cost_score_usd": "0.0054000",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "status": "complete"
+}

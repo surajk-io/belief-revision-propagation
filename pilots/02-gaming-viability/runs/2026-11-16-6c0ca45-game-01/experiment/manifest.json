@@ -1,0 +1,1011 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 54,
+    "attempts_with_usage": 54,
+    "completion_tokens": 11822,
+    "list_price_estimate_subtotal_usd": "0.0281145",
+    "prompt_tokens": 36139,
+    "reported_cost_subtotal_usd": "0.0281145",
+    "unknown_cost_attempts": 0
+  },
+  "budget_halted": false,
+  "candidates": [
+    {
+      "accounting": {
+        "attempts_with_reported_cost": 18,
+        "attempts_with_usage": 18,
+        "completion_tokens": 3532,
+        "list_price_estimate_subtotal_usd": "0.0102888",
+        "prompt_tokens": 11594,
+        "reported_cost_subtotal_usd": "0.0102888",
+        "unknown_cost_attempts": 0
+      },
+      "attempts": 18,
+      "candidate": "openai/gpt-4.1-mini",
+      "config": {
+        "budget_usd": "1.00",
+        "case": {
+          "bonus_given_no_treasure": "0.12",
+          "bonus_given_treasure": "0.83",
+          "cosmetic": "0.09",
+          "fog_prior": "0.29",
+          "grey_given_clear": "0.41",
+          "grey_given_fog": "0.68",
+          "id": "GAME-01",
+          "target_fog_posterior": "0.69",
+          "treasure_given_clear": "0.76",
+          "treasure_given_fog": "0.24"
+        },
+        "max_attempts_per_call": 3,
+        "max_concurrent_requests": 6,
+        "max_logical_calls": 18,
+        "max_tokens": 4096,
+        "minimum_attempt_reserve_usd": "0.01",
+        "model_family": "openai/gpt-4.1-mini",
+        "provider": "OpenAI",
+        "scope": "GAME-01 only; 3 fixed models, one 18-call graph each",
+        "scoring": {
+          "downstream_tolerance_probability": "0.03",
+          "near_zero_delta": "0.000001",
+          "unsupported_movement_threshold": "0.15",
+          "upstream_tolerance": "0.05"
+        },
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "jobs": {
+        "baseline_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_D": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "initial": {
+          "failure": null,
+          "parent": null,
+          "status": "complete"
+        },
+        "neutral_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "neutral_B": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_C": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_D": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "unsupported_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "unsupported_B": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_C": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_D": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "warranted_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "warranted_B": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_C": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_D": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        }
+      },
+      "logical_calls_dispatched": 18,
+      "mode": "live",
+      "plan_sha256": "b1bf61fda463b099b9122f539a7c71710514893c1cc323f7d5777471b1fa1cef",
+      "selection": {
+        "allowed_returned_models": [
+          "openai/gpt-4.1-mini",
+          "openai/gpt-4.1-mini-2025-04-14"
+        ],
+        "candidate": "openai/gpt-4.1-mini",
+        "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
+        "configuration_differences": {
+          "max_tokens": {
+            "after": 4096,
+            "before": 1200
+          }
+        },
+        "endpoint": {
+          "context_length": 1047576,
+          "latency_last_30m": null,
+          "max_completion_tokens": 32768,
+          "max_prompt_tokens": null,
+          "model_id": "openai/gpt-4.1-mini",
+          "model_name": "OpenAI: GPT-4.1 Mini",
+          "name": "OpenAI | openai/gpt-4.1-mini-2025-04-14",
+          "native_tools": {
+            "openrouter:web_search": {
+              "type": "web_search"
+            }
+          },
+          "pricing": {
+            "completion": "0.0000016",
+            "discount": 0,
+            "input_cache_read": "0.0000001",
+            "prompt": "0.0000004",
+            "web_search": "0.01"
+          },
+          "provider_name": "OpenAI",
+          "quantization": "unknown",
+          "service_tier": null,
+          "status": 0,
+          "supported_parameters": [
+            "seed",
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "tools",
+            "tool_choice",
+            "temperature",
+            "top_p"
+          ],
+          "supports_diarization": false,
+          "supports_image_reference": false,
+          "supports_implicit_caching": true,
+          "supports_multiple_audio_references": false,
+          "supports_tool_choice": {
+            "auto": true,
+            "function": true,
+            "none": true,
+            "required": true
+          },
+          "supports_voice_cloning": false,
+          "tag": "openai",
+          "throughput_last_30m": null,
+          "uptime_last_1d": 100,
+          "uptime_last_30m": 100,
+          "uptime_last_5m": 100
+        },
+        "endpoint_tag": "openai",
+        "exclusions": [
+          {
+            "reason": "Required inference settings unsupported",
+            "tag": "azure"
+          },
+          {
+            "reason": "Required inference settings unsupported",
+            "tag": "azure/swedencentral"
+          }
+        ],
+        "independent_version_pin_available": false,
+        "model_reasoning_metadata": null,
+        "parameters": {
+          "max_tokens": 4096,
+          "seed": 20261116,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "previous_selection": {
+          "allowed_returned_models": [
+            "openai/gpt-4.1-mini",
+            "openai/gpt-4.1-mini-2025-04-14"
+          ],
+          "candidate": "openai/gpt-4.1-mini",
+          "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
+          "endpoint": {
+            "context_length": 1047576,
+            "latency_last_30m": null,
+            "max_completion_tokens": 32768,
+            "max_prompt_tokens": null,
+            "model_id": "openai/gpt-4.1-mini",
+            "model_name": "OpenAI: GPT-4.1 Mini",
+            "name": "OpenAI | openai/gpt-4.1-mini-2025-04-14",
+            "native_tools": {
+              "openrouter:web_search": {
+                "type": "web_search"
+              }
+            },
+            "pricing": {
+              "completion": "0.0000016",
+              "discount": 0,
+              "input_cache_read": "0.0000001",
+              "prompt": "0.0000004",
+              "web_search": "0.01"
+            },
+            "provider_name": "OpenAI",
+            "quantization": "unknown",
+            "service_tier": null,
+            "status": 0,
+            "supported_parameters": [
+              "seed",
+              "max_tokens",
+              "response_format",
+              "structured_outputs",
+              "tools",
+              "tool_choice",
+              "temperature",
+              "top_p"
+            ],
+            "supports_diarization": false,
+            "supports_image_reference": false,
+            "supports_implicit_caching": true,
+            "supports_multiple_audio_references": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "openai",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 100,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          },
+          "endpoint_tag": "openai",
+          "exclusions": [
+            {
+              "reason": "Required inference settings unsupported",
+              "tag": "azure"
+            },
+            {
+              "reason": "Required inference settings unsupported",
+              "tag": "azure/swedencentral"
+            }
+          ],
+          "independent_version_pin_available": false,
+          "model_reasoning_metadata": null,
+          "parameters": {
+            "max_tokens": 1200,
+            "seed": 20261116,
+            "temperature": 0,
+            "top_p": 1
+          },
+          "price_ceilings_usd_per_token": {
+            "completion": "0.000002000",
+            "prompt": "5.00E-7"
+          },
+          "provider_name": "OpenAI",
+          "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+          "request_model": "openai/gpt-4.1-mini",
+          "selection_cost_score_usd": "0.0051200",
+          "status": "selected",
+          "unsupported_settings": []
+        },
+        "price_ceilings_usd_per_token": {
+          "completion": "0.000002000",
+          "prompt": "5.00E-7"
+        },
+        "provider_name": "OpenAI",
+        "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+        "request_model": "openai/gpt-4.1-mini",
+        "selection_cost_score_usd": "0.0051200",
+        "status": "selected",
+        "unsupported_settings": []
+      },
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "attempts_with_reported_cost": 18,
+        "attempts_with_usage": 18,
+        "completion_tokens": 3558,
+        "list_price_estimate_subtotal_usd": "0.0022850",
+        "prompt_tokens": 12176,
+        "reported_cost_subtotal_usd": "0.0022850",
+        "unknown_cost_attempts": 0
+      },
+      "attempts": 18,
+      "candidate": "meta-llama/llama-4-scout",
+      "config": {
+        "budget_usd": "1.00",
+        "case": {
+          "bonus_given_no_treasure": "0.12",
+          "bonus_given_treasure": "0.83",
+          "cosmetic": "0.09",
+          "fog_prior": "0.29",
+          "grey_given_clear": "0.41",
+          "grey_given_fog": "0.68",
+          "id": "GAME-01",
+          "target_fog_posterior": "0.69",
+          "treasure_given_clear": "0.76",
+          "treasure_given_fog": "0.24"
+        },
+        "max_attempts_per_call": 3,
+        "max_concurrent_requests": 6,
+        "max_logical_calls": 18,
+        "max_tokens": 4096,
+        "minimum_attempt_reserve_usd": "0.01",
+        "model_family": "meta-llama/llama-4-scout",
+        "provider": "DeepInfra",
+        "scope": "GAME-01 only; 3 fixed models, one 18-call graph each",
+        "scoring": {
+          "downstream_tolerance_probability": "0.03",
+          "near_zero_delta": "0.000001",
+          "unsupported_movement_threshold": "0.15",
+          "upstream_tolerance": "0.05"
+        },
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "jobs": {
+        "baseline_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_D": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "initial": {
+          "failure": null,
+          "parent": null,
+          "status": "complete"
+        },
+        "neutral_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "neutral_B": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_C": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_D": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "unsupported_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "unsupported_B": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_C": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_D": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "warranted_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "warranted_B": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_C": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_D": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        }
+      },
+      "logical_calls_dispatched": 18,
+      "mode": "live",
+      "plan_sha256": "b1bf61fda463b099b9122f539a7c71710514893c1cc323f7d5777471b1fa1cef",
+      "selection": {
+        "allowed_returned_models": [
+          "meta-llama/llama-4-scout",
+          "meta-llama/llama-4-scout-17b-16e-instruct"
+        ],
+        "candidate": "meta-llama/llama-4-scout",
+        "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "configuration_differences": {
+          "max_tokens": {
+            "after": 4096,
+            "before": 1200
+          }
+        },
+        "endpoint": {
+          "context_length": 327680,
+          "latency_last_30m": null,
+          "max_completion_tokens": 16384,
+          "max_prompt_tokens": null,
+          "model_id": "meta-llama/llama-4-scout",
+          "model_name": "Meta: Llama 4 Scout",
+          "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+          "native_tools": {},
+          "pricing": {
+            "completion": "0.0000003",
+            "discount": 0,
+            "prompt": "0.0000001"
+          },
+          "provider_name": "DeepInfra",
+          "quantization": "fp8",
+          "service_tier": null,
+          "status": 0,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
+            "structured_outputs"
+          ],
+          "supports_diarization": false,
+          "supports_image_reference": false,
+          "supports_implicit_caching": false,
+          "supports_multiple_audio_references": false,
+          "supports_tool_choice": {
+            "auto": true,
+            "function": false,
+            "none": true,
+            "required": false
+          },
+          "supports_voice_cloning": false,
+          "tag": "deepinfra/fp8",
+          "throughput_last_30m": null,
+          "uptime_last_1d": 100,
+          "uptime_last_30m": 100,
+          "uptime_last_5m": 100
+        },
+        "endpoint_tag": "deepinfra/fp8",
+        "exclusions": [
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "deepinfra/fp8/flex"
+          },
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "deepinfra/fp8/priority"
+          }
+        ],
+        "independent_version_pin_available": false,
+        "model_reasoning_metadata": null,
+        "parameters": {
+          "max_tokens": 4096,
+          "seed": 20261116,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "previous_selection": {
+          "allowed_returned_models": [
+            "meta-llama/llama-4-scout",
+            "meta-llama/llama-4-scout-17b-16e-instruct"
+          ],
+          "candidate": "meta-llama/llama-4-scout",
+          "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+          "endpoint": {
+            "context_length": 327680,
+            "latency_last_30m": null,
+            "max_completion_tokens": 16384,
+            "max_prompt_tokens": null,
+            "model_id": "meta-llama/llama-4-scout",
+            "model_name": "Meta: Llama 4 Scout",
+            "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+            "native_tools": {},
+            "pricing": {
+              "completion": "0.0000003",
+              "discount": 0,
+              "prompt": "0.0000001"
+            },
+            "provider_name": "DeepInfra",
+            "quantization": "fp8",
+            "service_tier": null,
+            "status": 0,
+            "supported_parameters": [
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "repetition_penalty",
+              "top_k",
+              "seed",
+              "min_p",
+              "logit_bias",
+              "structured_outputs"
+            ],
+            "supports_diarization": false,
+            "supports_image_reference": false,
+            "supports_implicit_caching": false,
+            "supports_multiple_audio_references": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": false,
+              "none": true,
+              "required": false
+            },
+            "supports_voice_cloning": false,
+            "tag": "deepinfra/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 100,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          },
+          "endpoint_tag": "deepinfra/fp8",
+          "exclusions": [
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "deepinfra/fp8/flex"
+            },
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "deepinfra/fp8/priority"
+            }
+          ],
+          "independent_version_pin_available": false,
+          "model_reasoning_metadata": null,
+          "parameters": {
+            "max_tokens": 1200,
+            "seed": 20261116,
+            "temperature": 0,
+            "top_p": 1
+          },
+          "price_ceilings_usd_per_token": {
+            "completion": "3.75E-7",
+            "prompt": "1.25E-7"
+          },
+          "provider_name": "DeepInfra",
+          "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+          "request_model": "meta-llama/llama-4-scout",
+          "selection_cost_score_usd": "0.0011600",
+          "status": "selected",
+          "unsupported_settings": []
+        },
+        "price_ceilings_usd_per_token": {
+          "completion": "3.75E-7",
+          "prompt": "1.25E-7"
+        },
+        "provider_name": "DeepInfra",
+        "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+        "request_model": "meta-llama/llama-4-scout",
+        "selection_cost_score_usd": "0.0011600",
+        "status": "selected",
+        "unsupported_settings": []
+      },
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "attempts_with_reported_cost": 18,
+        "attempts_with_usage": 18,
+        "completion_tokens": 4732,
+        "list_price_estimate_subtotal_usd": "0.0155407",
+        "prompt_tokens": 12369,
+        "reported_cost_subtotal_usd": "0.0155407",
+        "unknown_cost_attempts": 0
+      },
+      "attempts": 18,
+      "candidate": "google/gemini-2.5-flash",
+      "config": {
+        "budget_usd": "1.00",
+        "case": {
+          "bonus_given_no_treasure": "0.12",
+          "bonus_given_treasure": "0.83",
+          "cosmetic": "0.09",
+          "fog_prior": "0.29",
+          "grey_given_clear": "0.41",
+          "grey_given_fog": "0.68",
+          "id": "GAME-01",
+          "target_fog_posterior": "0.69",
+          "treasure_given_clear": "0.76",
+          "treasure_given_fog": "0.24"
+        },
+        "max_attempts_per_call": 3,
+        "max_concurrent_requests": 6,
+        "max_logical_calls": 18,
+        "max_tokens": 4096,
+        "minimum_attempt_reserve_usd": "0.01",
+        "model_family": "google/gemini-2.5-flash",
+        "provider": "Google AI Studio",
+        "scope": "GAME-01 only; 3 fixed models, one 18-call graph each",
+        "scoring": {
+          "downstream_tolerance_probability": "0.03",
+          "near_zero_delta": "0.000001",
+          "unsupported_movement_threshold": "0.15",
+          "upstream_tolerance": "0.05"
+        },
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "jobs": {
+        "baseline_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "baseline_D": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_B": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "control_C": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "initial": {
+          "failure": null,
+          "parent": null,
+          "status": "complete"
+        },
+        "neutral_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "neutral_B": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_C": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "neutral_D": {
+          "failure": null,
+          "parent": "neutral_A",
+          "status": "complete"
+        },
+        "unsupported_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "unsupported_B": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_C": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "unsupported_D": {
+          "failure": null,
+          "parent": "unsupported_A",
+          "status": "complete"
+        },
+        "warranted_A": {
+          "failure": null,
+          "parent": "initial",
+          "status": "complete"
+        },
+        "warranted_B": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_C": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        },
+        "warranted_D": {
+          "failure": null,
+          "parent": "warranted_A",
+          "status": "complete"
+        }
+      },
+      "logical_calls_dispatched": 18,
+      "mode": "live",
+      "plan_sha256": "b1bf61fda463b099b9122f539a7c71710514893c1cc323f7d5777471b1fa1cef",
+      "selection": {
+        "allowed_returned_models": [
+          "google/gemini-2.5-flash"
+        ],
+        "candidate": "google/gemini-2.5-flash",
+        "canonical_slug": "google/gemini-2.5-flash",
+        "configuration_differences": {
+          "max_tokens": {
+            "after": 4096,
+            "before": 1200
+          }
+        },
+        "endpoint": {
+          "context_length": 1048576,
+          "latency_last_30m": null,
+          "max_completion_tokens": 65535,
+          "max_prompt_tokens": null,
+          "model_id": "google/gemini-2.5-flash",
+          "model_name": "Google: Gemini 2.5 Flash",
+          "name": "Google AI Studio | google/gemini-2.5-flash",
+          "native_tools": {},
+          "pricing": {
+            "audio": "0.000001",
+            "completion": "0.0000025",
+            "discount": 0,
+            "image": "0.0000003",
+            "input_audio_cache": "0.0000001",
+            "input_cache_read": "0.00000003",
+            "input_cache_write": "0.0000000833333333333333",
+            "internal_reasoning": "0.0000025",
+            "prompt": "0.0000003",
+            "web_search": "0.014"
+          },
+          "provider_name": "Google AI Studio",
+          "quantization": "unknown",
+          "service_tier": null,
+          "status": 0,
+          "supported_parameters": [
+            "reasoning",
+            "include_reasoning",
+            "structured_outputs",
+            "response_format",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "seed",
+            "tools",
+            "tool_choice",
+            "stop"
+          ],
+          "supports_diarization": false,
+          "supports_image_reference": false,
+          "supports_implicit_caching": false,
+          "supports_multiple_audio_references": false,
+          "supports_tool_choice": {
+            "auto": true,
+            "function": true,
+            "none": true,
+            "required": true
+          },
+          "supports_voice_cloning": false,
+          "tag": "google-ai-studio",
+          "throughput_last_30m": null,
+          "uptime_last_1d": 99.93055555555556,
+          "uptime_last_30m": 100,
+          "uptime_last_5m": 100
+        },
+        "endpoint_tag": "google-ai-studio",
+        "exclusions": [
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "google-ai-studio/flex"
+          },
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "google-ai-studio/priority"
+          }
+        ],
+        "independent_version_pin_available": false,
+        "model_reasoning_metadata": {
+          "mandatory": false
+        },
+        "parameters": {
+          "max_tokens": 4096,
+          "reasoning": {
+            "enabled": false,
+            "exclude": true
+          },
+          "seed": 20261116,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "previous_selection": {
+          "allowed_returned_models": [
+            "google/gemini-2.5-flash"
+          ],
+          "candidate": "google/gemini-2.5-flash",
+          "canonical_slug": "google/gemini-2.5-flash",
+          "endpoint": {
+            "context_length": 1048576,
+            "latency_last_30m": null,
+            "max_completion_tokens": 65535,
+            "max_prompt_tokens": null,
+            "model_id": "google/gemini-2.5-flash",
+            "model_name": "Google: Gemini 2.5 Flash",
+            "name": "Google AI Studio | google/gemini-2.5-flash",
+            "native_tools": {},
+            "pricing": {
+              "audio": "0.000001",
+              "completion": "0.0000025",
+              "discount": 0,
+              "image": "0.0000003",
+              "input_audio_cache": "0.0000001",
+              "input_cache_read": "0.00000003",
+              "input_cache_write": "0.0000000833333333333333",
+              "internal_reasoning": "0.0000025",
+              "prompt": "0.0000003",
+              "web_search": "0.014"
+            },
+            "provider_name": "Google AI Studio",
+            "quantization": "unknown",
+            "service_tier": null,
+            "status": 0,
+            "supported_parameters": [
+              "reasoning",
+              "include_reasoning",
+              "structured_outputs",
+              "response_format",
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "seed",
+              "tools",
+              "tool_choice",
+              "stop"
+            ],
+            "supports_diarization": false,
+            "supports_image_reference": false,
+            "supports_implicit_caching": false,
+            "supports_multiple_audio_references": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": true,
+              "none": true,
+              "required": true
+            },
+            "supports_voice_cloning": false,
+            "tag": "google-ai-studio",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 99.93055555555556,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          },
+          "endpoint_tag": "google-ai-studio",
+          "exclusions": [
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "google-ai-studio/flex"
+            },
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "google-ai-studio/priority"
+            }
+          ],
+          "independent_version_pin_available": false,
+          "model_reasoning_metadata": {
+            "mandatory": false
+          },
+          "parameters": {
+            "max_tokens": 1200,
+            "reasoning": {
+              "enabled": false,
+              "exclude": true
+            },
+            "seed": 20261116,
+            "temperature": 0,
+            "top_p": 1
+          },
+          "price_ceilings_usd_per_token": {
+            "completion": "0.000003125",
+            "prompt": "3.75E-7"
+          },
+          "provider_name": "Google AI Studio",
+          "reasoning_mode": "explicitly_disabled",
+          "request_model": "google/gemini-2.5-flash",
+          "selection_cost_score_usd": "0.0054000",
+          "status": "selected",
+          "unsupported_settings": []
+        },
+        "price_ceilings_usd_per_token": {
+          "completion": "0.000003125",
+          "prompt": "3.75E-7"
+        },
+        "provider_name": "Google AI Studio",
+        "reasoning_mode": "explicitly_disabled",
+        "request_model": "google/gemini-2.5-flash",
+        "selection_cost_score_usd": "0.0054000",
+        "status": "selected",
+        "unsupported_settings": []
+      },
+      "status": "complete"
+    }
+  ],
+  "concurrency_limit": 6,
+  "conservative_settled_upper_usd": "0.035143125",
+  "ended": "2026-11-16T03:21:54.523365+00:00",
+  "logical_calls_dispatched": 54,
+  "maximum_in_flight": 6,
+  "maximum_logical_calls": 54,
+  "mode": "live",
+  "peak_spent_plus_outstanding_usd": "0.184506500",
+  "physical_attempts": 54,
+  "plan_sha256": "b1bf61fda463b099b9122f539a7c71710514893c1cc323f7d5777471b1fa1cef",
+  "recorded_attempts": 54,
+  "reservations": 54,
+  "started": "2026-11-16T03:21:34.277890+00:00",
+  "status": "finished"
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "GAME-01 only; 3 fixed models, one 18-call graph each",
+  "max_logical_calls": 18,
+  "max_attempts_per_call": 3,
+  "max_concurrent_requests": 6,
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 20261116,
+  "max_tokens": 4096,
+  "budget_usd": "1.00",
+  "minimum_attempt_reserve_usd": "0.01",
+  "case": {
+    "id": "GAME-01",
+    "fog_prior": "0.29",
+    "grey_given_fog": "0.68",
+    "grey_given_clear": "0.41",
+    "treasure_given_fog": "0.24",
+    "treasure_given_clear": "0.76",
+    "bonus_given_treasure": "0.83",
+    "bonus_given_no_treasure": "0.12",
+    "cosmetic": "0.09",
+    "target_fog_posterior": "0.69"
+  },
+  "scoring": {
+    "upstream_tolerance": "0.05",
+    "downstream_tolerance_probability": "0.03",
+    "unsupported_movement_threshold": "0.15",
+    "near_zero_delta": "0.000001"
+  }
+}

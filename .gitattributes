@@ -7,3 +7,7 @@ pilots/01-viability/runs/*/RAW-DIFF*.md -whitespace
 # Model-screen transcripts are verbatim; CSV writers use standard CRLF.
 pilots/01-viability/screens/**/RESPONSES.md -whitespace
 pilots/01-viability/screens/**/trials.csv whitespace=cr-at-eol
+
+# Gaming transcripts preserve model whitespace; CSV uses standard CRLF.
+pilots/02-gaming-viability/runs/**/RESPONSES.md -whitespace
+pilots/02-gaming-viability/runs/**/trials.csv whitespace=cr-at-eol

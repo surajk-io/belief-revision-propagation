@@ -48,3 +48,27 @@ Dry-run responses are synthetic fixtures labelled as such and have no reported
 usage or costs. No scientific observations may be inferred from them. Failed or
 incomplete live runs are retained. The harness does not interpret internal state
 or compute significance, equivalence or causal effects.
+
+## Reviewed v2 smoke repeat
+
+The separately authorized repeat uses PROMPTS-v2.md. The original executable,
+scoring rules, configuration, tests and run artifacts remain unchanged.
+`repeat.py` imports the original inference/scoring code and refuses changes to
+any non-system prompt, model, provider or request parameter. See REPEAT.md for
+the scope and separate manual-inspection protocol.
+
+```sh
+python -m unittest discover -s tests -v
+python pilots/01-viability/harness/repeat.py dry-run --output /tmp/qa01-v2-dry-unique
+python pilots/01-viability/harness/compare.py /tmp/qa01-v2-dry-unique
+# One newly authorized live invocation; key supplied securely in the environment.
+python pilots/01-viability/harness/repeat.py live --output pilots/01-viability/runs/DATE-COMMIT-smoke-02
+python pilots/01-viability/harness/compare.py pilots/01-viability/runs/DATE-COMMIT-smoke-02
+```
+
+`compare.py` audits both runs without writing to smoke-01, checks saved history
+isolation, configuration identity, frozen source and original artifact hashes,
+then writes paired `comparison.json`, literal `RAW-DIFF.md` and `audit.json` in
+the new directory. Run it again after adding manual notes/report to inventory
+those artifacts. Primary automatic metrics remain in derived.json/trials.csv;
+manual interpretations belong in manual_inspection.json and REPORT.md.

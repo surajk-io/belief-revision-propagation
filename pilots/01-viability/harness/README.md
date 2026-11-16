@@ -72,3 +72,26 @@ then writes paired `comparison.json`, literal `RAW-DIFF.md` and `audit.json` in
 the new directory. Run it again after adding manual notes/report to inventory
 those artifacts. Primary automatic metrics remain in derived.json/trials.csv;
 manual interpretations belong in manual_inspection.json and REPORT.md.
+
+## Reviewed v3 smoke repeat
+
+V3 changes the system scope instruction and all three intervention messages.
+`repeat_v3.py` checks the exact reviewed changes and imports the unchanged model,
+request, branching, budget and scoring code. It preserves inventories of both
+previous runs; `compare_v3.py` replays both earlier audits without writing there.
+See V3.md for the frozen manual endorsement, leakage and mathematics protocol.
+
+```sh
+python -m unittest discover -s tests -v
+python pilots/01-viability/harness/repeat_v3.py dry-run --output /tmp/qa01-v3-dry-unique
+python pilots/01-viability/harness/compare_v3.py /tmp/qa01-v3-dry-unique
+# One authorized live invocation, key supplied through the environment.
+python pilots/01-viability/harness/repeat_v3.py live --output pilots/01-viability/runs/DATE-COMMIT-smoke-03
+python pilots/01-viability/harness/compare_v3.py pilots/01-viability/runs/DATE-COMMIT-smoke-03
+```
+
+V3 comparison.json pairs all 18 responses against each earlier run; literal
+RAW-DIFF-v1.md/RAW-DIFF-v2.md and audit.json are written only in the new directory.
+The audit flags disagreement or missingness relative to the fixed 11.7% wording.
+No automatic score is replaced by manual observations. A v3 response alone cannot
+isolate effects of scope versus intervention wording changes.

@@ -2,4 +2,4 @@
 pilots/01-viability/runs/*/RESPONSES.md -whitespace
 pilots/01-viability/runs/*/trials.csv whitespace=cr-at-eol
 # Literal paired response diffs also retain source whitespace.
-pilots/01-viability/runs/*/RAW-DIFF.md -whitespace
+pilots/01-viability/runs/*/RAW-DIFF*.md -whitespace

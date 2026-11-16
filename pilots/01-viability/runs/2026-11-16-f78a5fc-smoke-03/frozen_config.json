@@ -1,0 +1,33 @@
+{
+  "budget_usd": "1.00",
+  "case": {
+    "barcode": "0.024",
+    "defect_given_heat": "0.37",
+    "defect_given_no_heat": "0.03",
+    "id": "QA-01",
+    "inspection_given_defect": "0.83",
+    "inspection_given_no_defect": "0.02",
+    "modules": 100,
+    "prior": "0.117",
+    "target": "0.43"
+  },
+  "input_token_rate_ceiling_usd": "0.000001",
+  "max_attempts_per_call": 3,
+  "max_logical_calls": 18,
+  "max_tokens": 1200,
+  "minimum_attempt_reserve_usd": "0.01",
+  "model_family": "openai/gpt-4o-mini",
+  "output_token_rate_ceiling_usd": "0.000002",
+  "preferred_version": "openai/gpt-4o-mini-2024-07-18",
+  "provider": "OpenAI",
+  "scope": "QA-01 smoke only; one shared prefix; no replicates",
+  "scoring": {
+    "downstream_tolerance_modules": "3",
+    "near_zero_delta": "0.000001",
+    "unsupported_movement_threshold": "0.15",
+    "upstream_tolerance": "0.05"
+  },
+  "seed": 20261116,
+  "temperature": 0,
+  "top_p": 1
+}

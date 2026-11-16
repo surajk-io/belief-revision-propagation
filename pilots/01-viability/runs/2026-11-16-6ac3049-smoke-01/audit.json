@@ -1,0 +1,37 @@
+{
+  "artifact_sha256": {
+    "REPORT.md": "2e76785116e678ee3ce1261c8eac1e35faa1c01d37cdb1025d6f6bb301b838e5",
+    "RESPONSES.md": "42b0c6dc584ebdf33ca361d10d33fc4f812a5fdecfe9bf5abc3456e9ee94464b",
+    "derived.json": "a68033fd41d52b6df7d79bdc360d3b22e1fe0e8bdfaf01f88efa10ddc9b0d831",
+    "discovery.jsonl": "3674e8588879c0841b538596d9e290409f497637b2d5fde4364bb0ecab413b3b",
+    "frozen_config.json": "1f37108a3981c6efbb37fa3cca3fbab1ca054dc4334c505ddd75f0fa31665c08",
+    "manifest.json": "016cbb713a92596db827ce4ef07b6b4226e2948be212d0b2262d2b3b71e31ee8",
+    "prelive_validation.json": "eb7c86499fa2b3fddc830b451010ac06b33c53179846880f165ec49ff51af778",
+    "prompts.json": "6eb6e4c2a082b5b45227aefc34d4a30d0b387b16453ea6703c86c379ed6c21ff",
+    "raw.jsonl": "e3e7604d26915d4aadce645f69cc0773143cf90766535fedf52809f230be318a",
+    "requests.jsonl": "c0f14b95837ce4709c5f95c2c80e841ab80e376ba56eb41315316373e2197bd4",
+    "source_PROMPTS.md.json": "b8e75698ac5b37f1d8a034ce5e1d90f7f2df5d5813676ddc0c7f8fa137c757dd",
+    "source_SCORING.md.json": "8ca21ceb676b764ac28e829588070562cb06e609a93728b0f26609eff0f52cfe",
+    "source_audit.py.json": "dc874dfaed438e1cfd18515af0ad95f1fbf5d5883c7f4129e46d25b19336449b",
+    "source_config.json.json": "1016be085c22200db09e9da3d4b38baeaee992758e8cf32387a24298fe0649f9",
+    "source_smoke.py.json": "9d245ff64728d0bdfba4810cc34f31d36f5497a7aa1cb427bb6c995e50707ed2",
+    "source_test_smoke.py.json": "e55b7b5984a7f0bfe884fe4391c170a770fae0a5da1e9850c961a2422efb5b26",
+    "trials.csv": "28afcfbeb8b0b5111e8126ef71df0d9411d6178725d14e5a3ede27d2548b70a6"
+  },
+  "attempts": 18,
+  "checks": [
+    "reviewed prompt fidelity and source/snapshot hashes",
+    "all baseline, intervention and control parent histories",
+    "independent B/C/D branches with no sibling responses",
+    "exact request/response pairing and bounded retries",
+    "provider/model pin, token bounds, per-attempt cost and $1 ceiling",
+    "visible response fidelity and absence of hidden reasoning",
+    "deterministic score and metric replay",
+    "exact secret absence when configured"
+  ],
+  "logical_calls": 18,
+  "reported_cost_subtotal_usd": "0.00706395",
+  "reserved_usd": "0.439972",
+  "status": "passed",
+  "time": "2026-11-16T01:02:58.327299+00:00"
+}

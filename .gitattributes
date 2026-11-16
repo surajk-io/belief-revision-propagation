@@ -1,0 +1,3 @@
+# Preserve verbatim model transcript whitespace and standard CSV CRLF records.
+pilots/01-viability/runs/*/RESPONSES.md -whitespace
+pilots/01-viability/runs/*/trials.csv whitespace=cr-at-eol

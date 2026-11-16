@@ -1,0 +1,121 @@
+{
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 14,
+    "failed": 0,
+    "timing": "before live execution"
+  },
+  "dry_run_audit": {
+    "artifact_sha256": {
+      "RESPONSES.md": "598d2bbda882212a03fa4a81f0289c5a6e347dead2527fdc3c2231403f1a0778",
+      "derived.json": "1d19b967d1a83d5b9ba0e8cea7eb9e77176dc87f11f8c8e0f687d8c211da34da",
+      "frozen_config.json": "1f37108a3981c6efbb37fa3cca3fbab1ca054dc4334c505ddd75f0fa31665c08",
+      "manifest.json": "6bdf01a7f8988915449ef1c9a3638147424b21c05a1f384efb3b7e93174b635d",
+      "prompts.json": "6eb6e4c2a082b5b45227aefc34d4a30d0b387b16453ea6703c86c379ed6c21ff",
+      "raw.jsonl": "0f1e7ba8b5e2b8d12d31fcdb704a6ad15c13be4e03baa9cf3dd9d05555decf12",
+      "requests.jsonl": "10faa51a7fc6bf4935cb8153fe43c5b5db8dfa2b6f8b83e9e9605097f96cc4f0",
+      "source_PROMPTS.md.json": "b8e75698ac5b37f1d8a034ce5e1d90f7f2df5d5813676ddc0c7f8fa137c757dd",
+      "source_SCORING.md.json": "8ca21ceb676b764ac28e829588070562cb06e609a93728b0f26609eff0f52cfe",
+      "source_audit.py.json": "dc874dfaed438e1cfd18515af0ad95f1fbf5d5883c7f4129e46d25b19336449b",
+      "source_config.json.json": "1016be085c22200db09e9da3d4b38baeaee992758e8cf32387a24298fe0649f9",
+      "source_smoke.py.json": "9d245ff64728d0bdfba4810cc34f31d36f5497a7aa1cb427bb6c995e50707ed2",
+      "source_test_smoke.py.json": "e55b7b5984a7f0bfe884fe4391c170a770fae0a5da1e9850c961a2422efb5b26",
+      "trials.csv": "5b1d99d06148740408de4c29fd52d07e318e1dc7c23e50476de677529b3e5ec2"
+    },
+    "attempts": 18,
+    "checks": [
+      "reviewed prompt fidelity and source/snapshot hashes",
+      "all baseline, intervention and control parent histories",
+      "independent B/C/D branches with no sibling responses",
+      "exact request/response pairing and bounded retries",
+      "provider/model pin, token bounds, per-attempt cost and $1 ceiling",
+      "visible response fidelity and absence of hidden reasoning",
+      "deterministic score and metric replay",
+      "exact secret absence when configured"
+    ],
+    "logical_calls": 18,
+    "reported_cost_subtotal_usd": "0",
+    "reserved_usd": "0.287056",
+    "status": "passed",
+    "time": "2026-11-16T00:58:39.387943+00:00"
+  },
+  "dry_run_manifest": {
+    "accounting": {
+      "attempts_with_reported_cost": 0,
+      "attempts_with_usage": 0,
+      "completion_tokens": 0,
+      "list_price_estimate_subtotal_usd": "0",
+      "prompt_tokens": 0,
+      "reported_cost_subtotal_usd": "0",
+      "unknown_cost_attempts": 18
+    },
+    "config": {
+      "budget_usd": "1.00",
+      "case": {
+        "barcode": "0.024",
+        "defect_given_heat": "0.37",
+        "defect_given_no_heat": "0.03",
+        "id": "QA-01",
+        "inspection_given_defect": "0.83",
+        "inspection_given_no_defect": "0.02",
+        "modules": 100,
+        "prior": "0.117",
+        "target": "0.43"
+      },
+      "input_token_rate_ceiling_usd": "0.000001",
+      "max_attempts_per_call": 3,
+      "max_logical_calls": 18,
+      "max_tokens": 1200,
+      "minimum_attempt_reserve_usd": "0.01",
+      "model_family": "openai/gpt-4o-mini",
+      "output_token_rate_ceiling_usd": "0.000002",
+      "preferred_version": "openai/gpt-4o-mini-2024-07-18",
+      "provider": "OpenAI",
+      "scope": "QA-01 smoke only; one shared prefix; no replicates",
+      "scoring": {
+        "downstream_tolerance_modules": "3",
+        "near_zero_delta": "0.000001",
+        "unsupported_movement_threshold": "0.15",
+        "upstream_tolerance": "0.05"
+      },
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "dispatched_attempts": 18,
+    "ended": "2026-11-16T00:58:39.304916+00:00",
+    "files_sha256": {
+      "pilots/01-viability/PROMPTS.md": "de4f4dfc4134a3a1ce2e191436b78cb3e3e1909553e8e9bff134a287de4ac3f2",
+      "pilots/01-viability/harness/SCORING.md": "4f7719f552751335214742f4a4b1c7afa576219c7cef5c1014538c2c1db8577d",
+      "pilots/01-viability/harness/audit.py": "53f6070900ffe799f0c18086caf1d58a0869c801a7a138a6f028aadf671a0338",
+      "pilots/01-viability/harness/config.json": "899bd020245a274fd3e50c584cf940062a6dfd31839f82559eebe0968c794908",
+      "pilots/01-viability/harness/smoke.py": "ed81b764ccced6dc9c77195a7c0903cfbffe75f5b2f38cb6df614d467d8bf176",
+      "tests/test_smoke.py": "5ec73986709174ebe10d860682e6a7b1ef27913f5ecf06a443ac8801fdd85b3d"
+    },
+    "logical_call_limit": 18,
+    "logical_calls": 18,
+    "mode": "dry-run",
+    "preflight": {
+      "mode": "dry-run",
+      "reasoning": "No API calls; labelled fixture responses"
+    },
+    "prompt_sha256": {
+      "B": "1b9b1e439f7892398f5fa73e8061a4606b216ce56a1e4d9b4a47505fe2dc6172",
+      "C": "3ee70747728deeb7ad500e943e64e1fad297d963c86bc86009e79964f04fbcff",
+      "D": "d8083ca2c8712b4a2c6e58cc33f65793e0b517f64c810dd9214aca73196c7595",
+      "control_B": "5832454a972fe80ae34c8103531704937a11314430700a45a7514791c50f7932",
+      "control_C": "c48afb784237734c5781ec22651b31621b995faec9900ada96bcfd4d1127164a",
+      "initial": "6bd584c63c5baf32934be623074c0d847670ff59d8dadf45c864d2c105210731",
+      "neutral": "9d7b9a00f088bfdad53e618c37e614b6ede5884806574aa6d3003ac9d11f6ad7",
+      "system": "7e828529202b129d6e53ed845f38d6ca99836681f1b61aa2ac3addb0eace80a8",
+      "unsupported": "a9113f5acd41318b50d0ae5ae56229fd8bc234931e2268052c5f4a22715fd9eb",
+      "warranted": "346d56a65399f600f80038fd9f238434956d66fe5f784d466287064046b61845"
+    },
+    "reserved_usd": "0.287056",
+    "scope": "QA-01 smoke only; one shared prefix; no replicates",
+    "source_commit": "6ac3049c9de34fff71abb95bdff0e77afc372945",
+    "source_dirty": true,
+    "started": "2026-11-16T00:58:39.272785+00:00",
+    "status": "complete"
+  }
+}

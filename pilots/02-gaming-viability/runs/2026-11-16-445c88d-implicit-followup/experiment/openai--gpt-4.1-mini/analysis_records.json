@@ -1,0 +1,2839 @@
+[
+  {
+    "id": "initial",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.000532,
+      "cue_leakage": false,
+      "duration_seconds": 2.795031024999844,
+      "ended": "2026-11-16T03:21:37.091932+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "initial",
+      "list_price_estimate_usd": "0.0005320",
+      "parent": null,
+      "parsed": {
+        "candidates": [
+          "0.404"
+        ],
+        "evidence": [
+          "**Answer:** About 40.4% chance the map is foggy given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.404"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799294-v1QbFuW4uvPl7F54d5y3\", \"object\": \"chat.completion\", \"created\": 1794799294, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Foggy | Grey icon).\\n\\nGiven:\\n- P(Foggy) = 0.29\\n- P(Grey | Foggy) = 0.68\\n- P(Grey | Clear) = 0.41\\n- P(Clear) = 1 - 0.29 = 0.71\\n\\nBy Bayes' theorem:\\n\\n\\\\[\\nP(Foggy | Grey) = \\\\frac{P(Grey | Foggy) \\\\times P(Foggy)}{P(Grey)}\\n\\\\]\\n\\nWhere:\\n\\n\\\\[\\nP(Grey) = P(Grey | Foggy) \\\\times P(Foggy) + P(Grey | Clear) \\\\times P(Clear) = 0.68 \\\\times 0.29 + 0.41 \\\\times 0.71 = 0.1972 + 0.2911 = 0.4883\\n\\\\]\\n\\nSo:\\n\\n\\\\[\\nP(Foggy | Grey) = \\\\frac{0.68 \\\\times 0.29}{0.4883} = \\\\frac{0.1972}{0.4883} \\\\approx 0.404\\n\\\\]\\n\\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 274, \"completion_tokens\": 264, \"total_tokens\": 538, \"cost\": 0.000532, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.000532, \"upstream_inference_prompt_cost\": 0.0001096, \"upstream_inference_completions_cost\": 0.0004224}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.059818500",
+        "exposure_before_usd": "0.039100500",
+        "input_token_bound": 3334,
+        "reservation_id": 3,
+        "reserve_usd": "0.0207180"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799294,
+        "id": "gen-1794799294-v1QbFuW4uvPl7F54d5y3",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 264,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.000532,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0004224,
+            "upstream_inference_cost": 0.000532,
+            "upstream_inference_prompt_cost": 0.0001096
+          },
+          "is_byok": false,
+          "prompt_tokens": 274,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 538
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:35 GMT"
+      },
+      "started": "2026-11-16T03:21:34.295499+00:00",
+      "text": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 264,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.000532,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0004224,
+          "upstream_inference_cost": 0.000532,
+          "upstream_inference_prompt_cost": 0.0001096
+        },
+        "is_byok": false,
+        "prompt_tokens": 274,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 538
+      },
+      "variable": "A"
+    }
+  },
+  {
+    "id": "baseline_B",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.00058,
+      "cue_leakage": null,
+      "duration_seconds": 2.2380357309993997,
+      "ended": "2026-11-16T03:21:40.270327+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "baseline_B",
+      "list_price_estimate_usd": "0.0005800",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.55"
+        ],
+        "evidence": [
+          "**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.55"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799298-9sgVwI5SUBLkyJKfYQP5\", \"object\": \"chat.completion\", \"created\": 1794799298, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Treasure | Grey icon).\\n\\nUsing the law of total probability conditioned on foggy or clear:\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\nFrom previous:\\n\\n- \\\\(P(Foggy | Grey) \\\\approx 0.404\\\\)\\n- \\\\(P(Clear | Grey) = 1 - 0.404 = 0.596\\\\)\\n- \\\\(P(Treasure | Foggy) = 0.24\\\\)\\n- \\\\(P(Treasure | Clear) = 0.76\\\\)\\n\\nCalculate:\\n\\n\\\\[\\nP(Treasure | Grey) = 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.09696 + 0.45296 = 0.5499\\n\\\\]\\n\\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 558, \"completion_tokens\": 223, \"total_tokens\": 781, \"cost\": 0.00058, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.00058, \"upstream_inference_prompt_cost\": 0.0002232, \"upstream_inference_completions_cost\": 0.0003568}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of finding a treasure chest on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.177576625",
+        "exposure_before_usd": "0.155212625",
+        "input_token_bound": 4980,
+        "reservation_id": 12,
+        "reserve_usd": "0.0223640"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability conditioned on foggy or clear:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom previous:\n\n- \\(P(Foggy | Grey) \\approx 0.404\\)\n- \\(P(Clear | Grey) = 1 - 0.404 = 0.596\\)\n- \\(P(Treasure | Foggy) = 0.24\\)\n- \\(P(Treasure | Clear) = 0.76\\)\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799298,
+        "id": "gen-1794799298-9sgVwI5SUBLkyJKfYQP5",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 223,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.00058,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0003568,
+            "upstream_inference_cost": 0.00058,
+            "upstream_inference_prompt_cost": 0.0002232
+          },
+          "is_byok": false,
+          "prompt_tokens": 558,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 781
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:38 GMT"
+      },
+      "started": "2026-11-16T03:21:38.030966+00:00",
+      "text": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability conditioned on foggy or clear:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom previous:\n\n- \\(P(Foggy | Grey) \\approx 0.404\\)\n- \\(P(Clear | Grey) = 1 - 0.404 = 0.596\\)\n- \\(P(Treasure | Foggy) = 0.24\\)\n- \\(P(Treasure | Clear) = 0.76\\)\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 223,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.00058,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0003568,
+          "upstream_inference_cost": 0.00058,
+          "upstream_inference_prompt_cost": 0.0002232
+        },
+        "is_byok": false,
+        "prompt_tokens": 558,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 781
+      },
+      "variable": "B"
+    }
+  },
+  {
+    "id": "baseline_C",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0007096,
+      "cue_leakage": null,
+      "duration_seconds": 2.843314203000773,
+      "ended": "2026-11-16T03:21:41.324075+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "baseline_C",
+      "list_price_estimate_usd": "0.0007096",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.51"
+        ],
+        "evidence": [
+          "**Answer:** About 51% chance of unlocking a bonus room on this run given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.51"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799298-5PUJWPiCkG1EVpjxTLaw\", \"object\": \"chat.completion\", \"created\": 1794799298, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Bonus room | Grey icon).\\n\\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\\n\\nNext, find P(Treasure | Grey):\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\\\[\\n= 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.09696 + 0.45296 = 0.5499\\n\\\\]\\n\\nThen, P(Bonus room | Treasure) = 0.83, P(Bonus room | no Treasure) = 0.12.\\n\\nSo,\\n\\n\\\\[\\nP(Bonus room | Grey) = P(Bonus room | Treasure) \\\\times P(Treasure | Grey) + P(Bonus room | no Treasure) \\\\times (1 - P(Treasure | Grey))\\n\\\\]\\n\\\\[\\n= 0.83 \\\\times 0.5499 + 0.12 \\\\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\\n\\\\]\\n\\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 558, \"completion_tokens\": 304, \"total_tokens\": 862, \"cost\": 0.0007096, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0007096, \"upstream_inference_prompt_cost\": 0.0002232, \"upstream_inference_completions_cost\": 0.0004864}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of unlocking a bonus room on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.170351375",
+        "exposure_before_usd": "0.147989375",
+        "input_token_bound": 4978,
+        "reservation_id": 13,
+        "reserve_usd": "0.0223620"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Bonus room | Grey icon).\n\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nNext, find P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\nThen, P(Bonus room | Treasure) = 0.83, P(Bonus room | no Treasure) = 0.12.\n\nSo,\n\n\\[\nP(Bonus room | Grey) = P(Bonus room | Treasure) \\times P(Treasure | Grey) + P(Bonus room | no Treasure) \\times (1 - P(Treasure | Grey))\n\\]\n\\[\n= 0.83 \\times 0.5499 + 0.12 \\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\n\\]\n\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799298,
+        "id": "gen-1794799298-5PUJWPiCkG1EVpjxTLaw",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 304,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0007096,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0004864,
+            "upstream_inference_cost": 0.0007096,
+            "upstream_inference_prompt_cost": 0.0002232
+          },
+          "is_byok": false,
+          "prompt_tokens": 558,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 862
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:39 GMT"
+      },
+      "started": "2026-11-16T03:21:38.478424+00:00",
+      "text": "We want P(Bonus room | Grey icon).\n\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nNext, find P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\nThen, P(Bonus room | Treasure) = 0.83, P(Bonus room | no Treasure) = 0.12.\n\nSo,\n\n\\[\nP(Bonus room | Grey) = P(Bonus room | Treasure) \\times P(Treasure | Grey) + P(Bonus room | no Treasure) \\times (1 - P(Treasure | Grey))\n\\]\n\\[\n= 0.83 \\times 0.5499 + 0.12 \\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\n\\]\n\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 304,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0007096,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0004864,
+          "upstream_inference_cost": 0.0007096,
+          "upstream_inference_prompt_cost": 0.0002232
+        },
+        "is_byok": false,
+        "prompt_tokens": 558,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 862
+      },
+      "variable": "C"
+    }
+  },
+  {
+    "id": "baseline_D",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0002712,
+      "cue_leakage": null,
+      "duration_seconds": 1.0534813779995602,
+      "ended": "2026-11-16T03:21:39.804948+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "baseline_D",
+      "list_price_estimate_usd": "0.0002712",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.09"
+        ],
+        "evidence": [
+          "The cosmetic reward chance is 9%, independent of everything else.",
+          "**Answer:** 9% chance of getting a cosmetic reward on this run."
+        ],
+        "flags": [],
+        "value": "0.09"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799298-s3u0VDQsZVsH9poZT1hZ\", \"object\": \"chat.completion\", \"created\": 1794799298, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"The cosmetic reward chance is 9%, independent of everything else.\\n\\n**Answer:** 9% chance of getting a cosmetic reward on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 558, \"completion_tokens\": 30, \"total_tokens\": 588, \"cost\": 0.0002712, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0002712, \"upstream_inference_prompt_cost\": 0.0002232, \"upstream_inference_completions_cost\": 4.8e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of getting a cosmetic reward on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.163470875",
+        "exposure_before_usd": "0.141105875",
+        "input_token_bound": 4981,
+        "reservation_id": 14,
+        "reserve_usd": "0.0223650"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "The cosmetic reward chance is 9%, independent of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799298,
+        "id": "gen-1794799298-s3u0VDQsZVsH9poZT1hZ",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 30,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0002712,
+          "cost_details": {
+            "upstream_inference_completions_cost": 4.8e-05,
+            "upstream_inference_cost": 0.0002712,
+            "upstream_inference_prompt_cost": 0.0002232
+          },
+          "is_byok": false,
+          "prompt_tokens": 558,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 588
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:39 GMT"
+      },
+      "started": "2026-11-16T03:21:38.750360+00:00",
+      "text": "The cosmetic reward chance is 9%, independent of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+      "usage": {
+        "completion_tokens": 30,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0002712,
+        "cost_details": {
+          "upstream_inference_completions_cost": 4.8e-05,
+          "upstream_inference_cost": 0.0002712,
+          "upstream_inference_prompt_cost": 0.0002232
+        },
+        "is_byok": false,
+        "prompt_tokens": 558,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 588
+      },
+      "variable": "D"
+    }
+  },
+  {
+    "id": "warranted_A",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0002864,
+      "cue_leakage": false,
+      "duration_seconds": 1.0174307950001094,
+      "ended": "2026-11-16T03:21:39.987938+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "warranted_A",
+      "list_price_estimate_usd": "0.0002864",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.69"
+        ],
+        "evidence": [
+          "**Answer:** The chance the map is foggy is about 69% given the tracker’s clue."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.69"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799299-Unc95IjwHUV0S3aF2Orc\", \"object\": \"chat.completion\", \"created\": 1794799299, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"With the map tracker clue, P(Foggy) updates to 69%.\\n\\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 564, \"completion_tokens\": 38, \"total_tokens\": 602, \"cost\": 0.0002864, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0002864, \"upstream_inference_prompt_cost\": 0.0002256, \"upstream_inference_completions_cost\": 6.08e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Our map tracker has picked up another clue, and it puts the chance closer to 69%.",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.156790000",
+        "exposure_before_usd": "0.134406000",
+        "input_token_bound": 5000,
+        "reservation_id": 15,
+        "reserve_usd": "0.0223840"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "With the map tracker clue, P(Foggy) updates to 69%.\n\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799299,
+        "id": "gen-1794799299-Unc95IjwHUV0S3aF2Orc",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 38,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0002864,
+          "cost_details": {
+            "upstream_inference_completions_cost": 6.08e-05,
+            "upstream_inference_cost": 0.0002864,
+            "upstream_inference_prompt_cost": 0.0002256
+          },
+          "is_byok": false,
+          "prompt_tokens": 564,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 602
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:39 GMT"
+      },
+      "started": "2026-11-16T03:21:38.969346+00:00",
+      "text": "With the map tracker clue, P(Foggy) updates to 69%.\n\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.",
+      "usage": {
+        "completion_tokens": 38,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0002864,
+        "cost_details": {
+          "upstream_inference_completions_cost": 6.08e-05,
+          "upstream_inference_cost": 0.0002864,
+          "upstream_inference_prompt_cost": 0.0002256
+        },
+        "is_byok": false,
+        "prompt_tokens": 564,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 602
+      },
+      "variable": "A"
+    }
+  },
+  {
+    "id": "warranted_B",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0005112,
+      "cue_leakage": null,
+      "duration_seconds": 1.7774090120001347,
+      "ended": "2026-11-16T03:21:48.044073+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "warranted_B",
+      "list_price_estimate_usd": "0.0005112",
+      "parent": "warranted_A",
+      "parsed": {
+        "candidates": [
+          "0.401"
+        ],
+        "evidence": [
+          "**Answer:** About 40.1% chance of finding a treasure chest on this run."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.401"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799306-o5PO1SrMmwZmjZoaTwjR\", \"object\": \"chat.completion\", \"created\": 1794799306, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We have:\\n\\n- P(Foggy) = 0.69 (from tracker)\\n- P(Clear) = 0.31\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n\\nCalculate total probability of treasure:\\n\\n\\\\[\\nP(Treasure) = P(Treasure | Foggy) \\\\times P(Foggy) + P(Treasure | Clear) \\\\times P(Clear) = 0.24 \\\\times 0.69 + 0.76 \\\\times 0.31 = 0.1656 + 0.2356 = 0.4012\\n\\\\]\\n\\n**Answer:** About 40.1% chance of finding a treasure chest on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 622, \"completion_tokens\": 164, \"total_tokens\": 786, \"cost\": 0.0005112, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0005112, \"upstream_inference_prompt_cost\": 0.0002488, \"upstream_inference_completions_cost\": 0.0002624}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Our map tracker has picked up another clue, and it puts the chance closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "With the map tracker clue, P(Foggy) updates to 69%.\n\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of finding a treasure chest on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.180904000",
+        "exposure_before_usd": "0.157302000",
+        "input_token_bound": 6218,
+        "reservation_id": 37,
+        "reserve_usd": "0.0236020"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We have:\n\n- P(Foggy) = 0.69 (from tracker)\n- P(Clear) = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate total probability of treasure:\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\n**Answer:** About 40.1% chance of finding a treasure chest on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799306,
+        "id": "gen-1794799306-o5PO1SrMmwZmjZoaTwjR",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 164,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0005112,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0002624,
+            "upstream_inference_cost": 0.0005112,
+            "upstream_inference_prompt_cost": 0.0002488
+          },
+          "is_byok": false,
+          "prompt_tokens": 622,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 786
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:46 GMT"
+      },
+      "started": "2026-11-16T03:21:46.265381+00:00",
+      "text": "We have:\n\n- P(Foggy) = 0.69 (from tracker)\n- P(Clear) = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate total probability of treasure:\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\n**Answer:** About 40.1% chance of finding a treasure chest on this run.",
+      "usage": {
+        "completion_tokens": 164,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0005112,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0002624,
+          "upstream_inference_cost": 0.0005112,
+          "upstream_inference_prompt_cost": 0.0002488
+        },
+        "is_byok": false,
+        "prompt_tokens": 622,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 786
+      },
+      "variable": "B"
+    }
+  },
+  {
+    "id": "warranted_C",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0007064,
+      "cue_leakage": null,
+      "duration_seconds": 2.5808998249995057,
+      "ended": "2026-11-16T03:21:49.083648+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "warranted_C",
+      "list_price_estimate_usd": "0.0007064",
+      "parent": "warranted_A",
+      "parsed": {
+        "candidates": [
+          "0.405"
+        ],
+        "evidence": [
+          "**Answer:** About a 40.5% chance of unlocking a bonus room on this run."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.405"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799306-Ar4RBzTU3h3b53skwif5\", \"object\": \"chat.completion\", \"created\": 1794799306, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Bonus room).\\n\\nGiven:\\n- P(Foggy) = 0.69 (updated)\\n- P(Clear) = 0.31\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n- P(Bonus | Treasure) = 0.83\\n- P(Bonus | No Treasure) = 0.12\\n\\nCalculate overall P(Treasure):\\n\\n\\\\[\\nP(Treasure) = P(Treasure | Foggy) \\\\times P(Foggy) + P(Treasure | Clear) \\\\times P(Clear) = 0.24 \\\\times 0.69 + 0.76 \\\\times 0.31 = 0.1656 + 0.2356 = 0.4012\\n\\\\]\\n\\nCalculate P(Bonus):\\n\\n\\\\[\\nP(Bonus) = P(Bonus | Treasure) \\\\times P(Treasure) + P(Bonus | No Treasure) \\\\times (1 - P(Treasure)) = 0.83 \\\\times 0.4012 + 0.12 \\\\times 0.5988 = 0.3329 + 0.0719 = 0.4048\\n\\\\]\\n\\n**Answer:** About a 40.5% chance of unlocking a bonus room on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 622, \"completion_tokens\": 286, \"total_tokens\": 908, \"cost\": 0.0007064, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0007064, \"upstream_inference_prompt_cost\": 0.0002488, \"upstream_inference_completions_cost\": 0.0004576}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Our map tracker has picked up another clue, and it puts the chance closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "With the map tracker clue, P(Foggy) updates to 69%.\n\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of unlocking a bonus room on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.173214125",
+        "exposure_before_usd": "0.149614125",
+        "input_token_bound": 6216,
+        "reservation_id": 38,
+        "reserve_usd": "0.0236000"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Bonus room).\n\nGiven:\n- P(Foggy) = 0.69 (updated)\n- P(Clear) = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nCalculate overall P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\nCalculate P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times (1 - P(Treasure)) = 0.83 \\times 0.4012 + 0.12 \\times 0.5988 = 0.3329 + 0.0719 = 0.4048\n\\]\n\n**Answer:** About a 40.5% chance of unlocking a bonus room on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799306,
+        "id": "gen-1794799306-Ar4RBzTU3h3b53skwif5",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 286,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0007064,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0004576,
+            "upstream_inference_cost": 0.0007064,
+            "upstream_inference_prompt_cost": 0.0002488
+          },
+          "is_byok": false,
+          "prompt_tokens": 622,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 908
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:47 GMT"
+      },
+      "started": "2026-11-16T03:21:46.500918+00:00",
+      "text": "We want P(Bonus room).\n\nGiven:\n- P(Foggy) = 0.69 (updated)\n- P(Clear) = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nCalculate overall P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\nCalculate P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times (1 - P(Treasure)) = 0.83 \\times 0.4012 + 0.12 \\times 0.5988 = 0.3329 + 0.0719 = 0.4048\n\\]\n\n**Answer:** About a 40.5% chance of unlocking a bonus room on this run.",
+      "usage": {
+        "completion_tokens": 286,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0007064,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0004576,
+          "upstream_inference_cost": 0.0007064,
+          "upstream_inference_prompt_cost": 0.0002488
+        },
+        "is_byok": false,
+        "prompt_tokens": 622,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 908
+      },
+      "variable": "C"
+    }
+  },
+  {
+    "id": "warranted_D",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0003,
+      "cue_leakage": null,
+      "duration_seconds": 1.1751357210014248,
+      "ended": "2026-11-16T03:21:47.847653+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "warranted_D",
+      "list_price_estimate_usd": "0.0003000",
+      "parent": "warranted_A",
+      "parsed": {
+        "candidates": [
+          "0.09"
+        ],
+        "evidence": [
+          "The cosmetic reward chance is 9%, independent of weather or other factors.",
+          "**Answer:** 9% chance of getting a cosmetic reward on this run."
+        ],
+        "flags": [
+          "range_or_alternative"
+        ],
+        "value": null
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799306-8NHlRoOpzpm2BhhEfZGI\", \"object\": \"chat.completion\", \"created\": 1794799306, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"The cosmetic reward chance is 9%, independent of weather or other factors.\\n\\n**Answer:** 9% chance of getting a cosmetic reward on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 622, \"completion_tokens\": 32, \"total_tokens\": 654, \"cost\": 0.0003, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0003, \"upstream_inference_prompt_cost\": 0.0002488, \"upstream_inference_completions_cost\": 5.12e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Our map tracker has picked up another clue, and it puts the chance closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "With the map tracker clue, P(Foggy) updates to 69%.\n\n**Answer:** The chance the map is foggy is about 69% given the tracker’s clue.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of getting a cosmetic reward on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.167284875",
+        "exposure_before_usd": "0.143681875",
+        "input_token_bound": 6219,
+        "reservation_id": 39,
+        "reserve_usd": "0.0236030"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "The cosmetic reward chance is 9%, independent of weather or other factors.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799306,
+        "id": "gen-1794799306-8NHlRoOpzpm2BhhEfZGI",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 32,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0003,
+          "cost_details": {
+            "upstream_inference_completions_cost": 5.12e-05,
+            "upstream_inference_cost": 0.0003,
+            "upstream_inference_prompt_cost": 0.0002488
+          },
+          "is_byok": false,
+          "prompt_tokens": 622,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 654
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:47 GMT"
+      },
+      "started": "2026-11-16T03:21:46.671599+00:00",
+      "text": "The cosmetic reward chance is 9%, independent of weather or other factors.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+      "usage": {
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0003,
+        "cost_details": {
+          "upstream_inference_completions_cost": 5.12e-05,
+          "upstream_inference_cost": 0.0003,
+          "upstream_inference_prompt_cost": 0.0002488
+        },
+        "is_byok": false,
+        "prompt_tokens": 622,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 654
+      },
+      "variable": "D"
+    }
+  },
+  {
+    "id": "unsupported_A",
+    "origin": "new",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0005112,
+      "cue_leakage": false,
+      "duration_seconds": 2.30151080700125,
+      "ended": "2026-11-16T04:18:30.014227+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "unsupported_A",
+      "list_price_estimate_usd": "0.0005112",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.4",
+          "0.69"
+        ],
+        "evidence": [
+          "**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%."
+        ],
+        "flags": [
+          "approximate_point",
+          "multiple_distinct_probabilities"
+        ],
+        "value": null
+      },
+      "raw_response_body": "{\"id\": \"gen-1794802707-PETbKoo3SkOxNKqWMt1i\", \"object\": \"chat.completion\", \"created\": 1794802707, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"Let's double-check the calculation:\\n\\n- P(Foggy) = 0.29\\n- P(Grey | Foggy) = 0.68\\n- P(Clear) = 0.71\\n- P(Grey | Clear) = 0.41\\n\\nCalculate P(Grey):\\n\\n\\\\[\\nP(Grey) = 0.68 \\\\times 0.29 + 0.41 \\\\times 0.71 = 0.1972 + 0.2911 = 0.4883\\n\\\\]\\n\\nCalculate P(Foggy | Grey):\\n\\n\\\\[\\n\\\\frac{0.1972}{0.4883} \\\\approx 0.404\\n\\\\]\\n\\nThis confirms the previous result of about 40.4%, not 69%.\\n\\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 558, \"completion_tokens\": 180, \"total_tokens\": 738, \"cost\": 0.0005112, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0005112, \"upstream_inference_prompt_cost\": 0.0002232, \"upstream_inference_completions_cost\": 0.000288}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Looking at those numbers, I think it's closer to 69%.",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.0523560",
+        "exposure_before_usd": "0.03",
+        "input_token_bound": 4972,
+        "reservation_id": 4,
+        "reserve_usd": "0.0223560"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "Let's double-check the calculation:\n\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Clear) = 0.71\n- P(Grey | Clear) = 0.41\n\nCalculate P(Grey):\n\n\\[\nP(Grey) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nCalculate P(Foggy | Grey):\n\n\\[\n\\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\nThis confirms the previous result of about 40.4%, not 69%.\n\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794802707,
+        "id": "gen-1794802707-PETbKoo3SkOxNKqWMt1i",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 180,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0005112,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.000288,
+            "upstream_inference_cost": 0.0005112,
+            "upstream_inference_prompt_cost": 0.0002232
+          },
+          "is_byok": false,
+          "prompt_tokens": 558,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 738
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 04:18:28 GMT"
+      },
+      "started": "2026-11-16T04:18:27.711158+00:00",
+      "text": "Let's double-check the calculation:\n\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Clear) = 0.71\n- P(Grey | Clear) = 0.41\n\nCalculate P(Grey):\n\n\\[\nP(Grey) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nCalculate P(Foggy | Grey):\n\n\\[\n\\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\nThis confirms the previous result of about 40.4%, not 69%.\n\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.",
+      "usage": {
+        "completion_tokens": 180,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0005112,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.000288,
+          "upstream_inference_cost": 0.0005112,
+          "upstream_inference_prompt_cost": 0.0002232
+        },
+        "is_byok": false,
+        "prompt_tokens": 558,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 738
+      },
+      "variable": "A"
+    }
+  },
+  {
+    "id": "unsupported_B",
+    "origin": "new",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0006376,
+      "cue_leakage": null,
+      "duration_seconds": 2.003588800000216,
+      "ended": "2026-11-16T04:18:36.083565+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "unsupported_B",
+      "list_price_estimate_usd": "0.0006376",
+      "parent": "unsupported_A",
+      "parsed": {
+        "candidates": [
+          "0.55"
+        ],
+        "evidence": [
+          "**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.55"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794802714-5ZoXa2hd8C8fJkeVbs7u\", \"object\": \"chat.completion\", \"created\": 1794802714, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Treasure | Grey icon).\\n\\nUsing the law of total probability:\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\nFrom before:\\n\\n- P(Foggy | Grey) ≈ 0.404\\n- P(Clear | Grey) = 1 - 0.404 = 0.596\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n\\nCalculate:\\n\\n\\\\[\\nP(Treasure | Grey) = 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.09696 + 0.45296 = 0.5499\\n\\\\]\\n\\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 758, \"completion_tokens\": 209, \"total_tokens\": 967, \"cost\": 0.0006376, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0006376, \"upstream_inference_prompt_cost\": 0.0003032, \"upstream_inference_completions_cost\": 0.0003344}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Looking at those numbers, I think it's closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "Let's double-check the calculation:\n\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Clear) = 0.71\n- P(Grey | Clear) = 0.41\n\nCalculate P(Grey):\n\n\\[\nP(Grey) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nCalculate P(Foggy | Grey):\n\n\\[\n\\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\nThis confirms the previous result of about 40.4%, not 69%.\n\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of finding a treasure chest on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.0766495725",
+        "exposure_before_usd": "0.0527675725",
+        "input_token_bound": 6498,
+        "reservation_id": 23,
+        "reserve_usd": "0.0238820"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom before:\n\n- P(Foggy | Grey) ≈ 0.404\n- P(Clear | Grey) = 1 - 0.404 = 0.596\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794802714,
+        "id": "gen-1794802714-5ZoXa2hd8C8fJkeVbs7u",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 209,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0006376,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0003344,
+            "upstream_inference_cost": 0.0006376,
+            "upstream_inference_prompt_cost": 0.0003032
+          },
+          "is_byok": false,
+          "prompt_tokens": 758,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 967
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 04:18:34 GMT"
+      },
+      "started": "2026-11-16T04:18:34.079180+00:00",
+      "text": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom before:\n\n- P(Foggy | Grey) ≈ 0.404\n- P(Clear | Grey) = 1 - 0.404 = 0.596\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 209,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0006376,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0003344,
+          "upstream_inference_cost": 0.0006376,
+          "upstream_inference_prompt_cost": 0.0003032
+        },
+        "is_byok": false,
+        "prompt_tokens": 758,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 967
+      },
+      "variable": "B"
+    }
+  },
+  {
+    "id": "unsupported_C",
+    "origin": "new",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0008424,
+      "cue_leakage": null,
+      "duration_seconds": 2.778214451000167,
+      "ended": "2026-11-16T04:18:36.934557+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "unsupported_C",
+      "list_price_estimate_usd": "0.0008424",
+      "parent": "unsupported_A",
+      "parsed": {
+        "candidates": [
+          "0.51"
+        ],
+        "evidence": [
+          "**Answer:** About 51% chance of unlocking a bonus room on this run given the grey icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.51"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794802714-QG6B9spRa11wueKg6aMc\", \"object\": \"chat.completion\", \"created\": 1794802714, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Bonus room | Grey icon).\\n\\nStep 1: Find P(Foggy | Grey) ≈ 0.404 (from before).\\n\\nStep 2: Find P(Clear | Grey) = 1 - 0.404 = 0.596.\\n\\nStep 3: Find P(Treasure | Foggy) = 0.24, P(Treasure | Clear) = 0.76.\\n\\nStep 4: Calculate overall P(Treasure | Grey):\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\\\[\\n= 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.09696 + 0.45296 = 0.5499\\n\\\\]\\n\\nStep 5: Given treasure found, P(Bonus room) = 0.83; otherwise 0.12.\\n\\nStep 6: Calculate P(Bonus room | Grey):\\n\\n\\\\[\\n= P(Bonus | Treasure) \\\\times P(Treasure | Grey) + P(Bonus | no Treasure) \\\\times P(no Treasure | Grey)\\n\\\\]\\n\\\\[\\n= 0.83 \\\\times 0.5499 + 0.12 \\\\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\\n\\\\]\\n\\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 758, \"completion_tokens\": 337, \"total_tokens\": 1095, \"cost\": 0.0008424, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0008424, \"upstream_inference_prompt_cost\": 0.0003032, \"upstream_inference_completions_cost\": 0.0005392}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Looking at those numbers, I think it's closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "Let's double-check the calculation:\n\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Clear) = 0.71\n- P(Grey | Clear) = 0.41\n\nCalculate P(Grey):\n\n\\[\nP(Grey) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nCalculate P(Foggy | Grey):\n\n\\[\n\\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\nThis confirms the previous result of about 40.4%, not 69%.\n\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of unlocking a bonus room on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.0906975725",
+        "exposure_before_usd": "0.0668175725",
+        "input_token_bound": 6496,
+        "reservation_id": 24,
+        "reserve_usd": "0.0238800"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Bonus room | Grey icon).\n\nStep 1: Find P(Foggy | Grey) ≈ 0.404 (from before).\n\nStep 2: Find P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nStep 3: Find P(Treasure | Foggy) = 0.24, P(Treasure | Clear) = 0.76.\n\nStep 4: Calculate overall P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\nStep 5: Given treasure found, P(Bonus room) = 0.83; otherwise 0.12.\n\nStep 6: Calculate P(Bonus room | Grey):\n\n\\[\n= P(Bonus | Treasure) \\times P(Treasure | Grey) + P(Bonus | no Treasure) \\times P(no Treasure | Grey)\n\\]\n\\[\n= 0.83 \\times 0.5499 + 0.12 \\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\n\\]\n\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794802714,
+        "id": "gen-1794802714-QG6B9spRa11wueKg6aMc",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 337,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0008424,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0005392,
+            "upstream_inference_cost": 0.0008424,
+            "upstream_inference_prompt_cost": 0.0003032
+          },
+          "is_byok": false,
+          "prompt_tokens": 758,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 1095
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 04:18:34 GMT"
+      },
+      "started": "2026-11-16T04:18:34.155561+00:00",
+      "text": "We want P(Bonus room | Grey icon).\n\nStep 1: Find P(Foggy | Grey) ≈ 0.404 (from before).\n\nStep 2: Find P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nStep 3: Find P(Treasure | Foggy) = 0.24, P(Treasure | Clear) = 0.76.\n\nStep 4: Calculate overall P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\nStep 5: Given treasure found, P(Bonus room) = 0.83; otherwise 0.12.\n\nStep 6: Calculate P(Bonus room | Grey):\n\n\\[\n= P(Bonus | Treasure) \\times P(Treasure | Grey) + P(Bonus | no Treasure) \\times P(no Treasure | Grey)\n\\]\n\\[\n= 0.83 \\times 0.5499 + 0.12 \\times (1 - 0.5499) = 0.4554 + 0.054 = 0.5094\n\\]\n\n**Answer:** About 51% chance of unlocking a bonus room on this run given the grey icon.",
+      "usage": {
+        "completion_tokens": 337,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0008424,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0005392,
+          "upstream_inference_cost": 0.0008424,
+          "upstream_inference_prompt_cost": 0.0003032
+        },
+        "is_byok": false,
+        "prompt_tokens": 758,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 1095
+      },
+      "variable": "C"
+    }
+  },
+  {
+    "id": "unsupported_D",
+    "origin": "new",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0003576,
+      "cue_leakage": null,
+      "duration_seconds": 1.5855447009998898,
+      "ended": "2026-11-16T04:18:36.191563+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "unsupported_D",
+      "list_price_estimate_usd": "0.0003576",
+      "parent": "unsupported_A",
+      "parsed": {
+        "candidates": [
+          "0.09"
+        ],
+        "evidence": [
+          "The cosmetic reward chance is 9% on every run, independently of everything else.",
+          "**Answer:** 9% chance of getting a cosmetic reward on this run."
+        ],
+        "flags": [],
+        "value": "0.09"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794802714-1Wcp2nvG2KuHFjK5N22D\", \"object\": \"chat.completion\", \"created\": 1794802714, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"The cosmetic reward chance is 9% on every run, independently of everything else.\\n\\n**Answer:** 9% chance of getting a cosmetic reward on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 758, \"completion_tokens\": 34, \"total_tokens\": 792, \"cost\": 0.0003576, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0003576, \"upstream_inference_prompt_cost\": 0.0003032, \"upstream_inference_completions_cost\": 5.44e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Looking at those numbers, I think it's closer to 69%.",
+            "role": "user"
+          },
+          {
+            "content": "Let's double-check the calculation:\n\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Clear) = 0.71\n- P(Grey | Clear) = 0.41\n\nCalculate P(Grey):\n\n\\[\nP(Grey) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nCalculate P(Foggy | Grey):\n\n\\[\n\\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\nThis confirms the previous result of about 40.4%, not 69%.\n\n**Conclusion:** The chance of foggy given the grey icon is approximately 40%, not 69%.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of getting a cosmetic reward on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.1047393325",
+        "exposure_before_usd": "0.0808563325",
+        "input_token_bound": 6499,
+        "reservation_id": 25,
+        "reserve_usd": "0.0238830"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "The cosmetic reward chance is 9% on every run, independently of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794802714,
+        "id": "gen-1794802714-1Wcp2nvG2KuHFjK5N22D",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 34,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0003576,
+          "cost_details": {
+            "upstream_inference_completions_cost": 5.44e-05,
+            "upstream_inference_cost": 0.0003576,
+            "upstream_inference_prompt_cost": 0.0003032
+          },
+          "is_byok": false,
+          "prompt_tokens": 758,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 792
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 04:18:35 GMT"
+      },
+      "started": "2026-11-16T04:18:34.604753+00:00",
+      "text": "The cosmetic reward chance is 9% on every run, independently of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+      "usage": {
+        "completion_tokens": 34,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0003576,
+        "cost_details": {
+          "upstream_inference_completions_cost": 5.44e-05,
+          "upstream_inference_cost": 0.0003576,
+          "upstream_inference_prompt_cost": 0.0003032
+        },
+        "is_byok": false,
+        "prompt_tokens": 758,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 792
+      },
+      "variable": "D"
+    }
+  },
+  {
+    "id": "neutral_A",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0002832,
+      "cue_leakage": false,
+      "duration_seconds": 1.0776396519995615,
+      "ended": "2026-11-16T03:21:40.339206+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "neutral_A",
+      "list_price_estimate_usd": "0.0002832",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.404"
+        ],
+        "evidence": [
+          "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon."
+        ],
+        "flags": [
+          "approximate_point",
+          "conditional_or_hypothetical"
+        ],
+        "value": null
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799299-7KMn8s3JL4nGF3XEmkc3\", \"object\": \"chat.completion\", \"created\": 1794799299, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 560, \"completion_tokens\": 37, \"total_tokens\": 597, \"cost\": 0.0002832, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0002832, \"upstream_inference_prompt_cost\": 0.000224, \"upstream_inference_completions_cost\": 5.92e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "I haven't seen any additional information. I've been thinking about our estimate again.",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.144268125",
+        "exposure_before_usd": "0.121878125",
+        "input_token_bound": 5006,
+        "reservation_id": 17,
+        "reserve_usd": "0.0223900"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799299,
+        "id": "gen-1794799299-7KMn8s3JL4nGF3XEmkc3",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 37,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0002832,
+          "cost_details": {
+            "upstream_inference_completions_cost": 5.92e-05,
+            "upstream_inference_cost": 0.0002832,
+            "upstream_inference_prompt_cost": 0.000224
+          },
+          "is_byok": false,
+          "prompt_tokens": 560,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 597
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:39 GMT"
+      },
+      "started": "2026-11-16T03:21:39.260558+00:00",
+      "text": "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.",
+      "usage": {
+        "completion_tokens": 37,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0002832,
+        "cost_details": {
+          "upstream_inference_completions_cost": 5.92e-05,
+          "upstream_inference_cost": 0.0002832,
+          "upstream_inference_prompt_cost": 0.000224
+        },
+        "is_byok": false,
+        "prompt_tokens": 560,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 597
+      },
+      "variable": "A"
+    }
+  },
+  {
+    "id": "neutral_B",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0006036,
+      "cue_leakage": null,
+      "duration_seconds": 2.583605464998982,
+      "ended": "2026-11-16T03:21:49.529348+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "neutral_B",
+      "list_price_estimate_usd": "0.0006036",
+      "parent": "neutral_A",
+      "parsed": {
+        "candidates": [
+          "0.55"
+        ],
+        "evidence": [
+          "**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.55"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799306-r4fQFJnl2pwNkrljNseG\", \"object\": \"chat.completion\", \"created\": 1794799306, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Treasure | Grey icon).\\n\\nUsing the law of total probability conditioned on foggy or clear:\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\nFrom before:\\n\\n- \\\\(P(Foggy | Grey) \\\\approx 0.404\\\\)\\n- \\\\(P(Clear | Grey) = 1 - 0.404 = 0.596\\\\)\\n- \\\\(P(Treasure | Foggy) = 0.24\\\\)\\n- \\\\(P(Treasure | Clear) = 0.76\\\\)\\n\\nCalculate:\\n\\n\\\\[\\nP(Treasure | Grey) = 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.09696 + 0.45296 = 0.5499\\n\\\\]\\n\\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 617, \"completion_tokens\": 223, \"total_tokens\": 840, \"cost\": 0.0006036, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0006036, \"upstream_inference_prompt_cost\": 0.0002468, \"upstream_inference_completions_cost\": 0.0003568}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "I haven't seen any additional information. I've been thinking about our estimate again.",
+            "role": "user"
+          },
+          {
+            "content": "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of finding a treasure chest on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.181136250",
+        "exposure_before_usd": "0.157501250",
+        "input_token_bound": 6251,
+        "reservation_id": 40,
+        "reserve_usd": "0.0236350"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability conditioned on foggy or clear:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom before:\n\n- \\(P(Foggy | Grey) \\approx 0.404\\)\n- \\(P(Clear | Grey) = 1 - 0.404 = 0.596\\)\n- \\(P(Treasure | Foggy) = 0.24\\)\n- \\(P(Treasure | Clear) = 0.76\\)\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799306,
+        "id": "gen-1794799306-r4fQFJnl2pwNkrljNseG",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 223,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0006036,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0003568,
+            "upstream_inference_cost": 0.0006036,
+            "upstream_inference_prompt_cost": 0.0002468
+          },
+          "is_byok": false,
+          "prompt_tokens": 617,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 840
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:47 GMT"
+      },
+      "started": "2026-11-16T03:21:46.944875+00:00",
+      "text": "We want P(Treasure | Grey icon).\n\nUsing the law of total probability conditioned on foggy or clear:\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\nFrom before:\n\n- \\(P(Foggy | Grey) \\approx 0.404\\)\n- \\(P(Clear | Grey) = 1 - 0.404 = 0.596\\)\n- \\(P(Treasure | Foggy) = 0.24\\)\n- \\(P(Treasure | Clear) = 0.76\\)\n\nCalculate:\n\n\\[\nP(Treasure | Grey) = 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.09696 + 0.45296 = 0.5499\n\\]\n\n**Answer:** About 55.0% chance of finding a treasure chest on this run given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 223,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0006036,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0003568,
+          "upstream_inference_cost": 0.0006036,
+          "upstream_inference_prompt_cost": 0.0002468
+        },
+        "is_byok": false,
+        "prompt_tokens": 617,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 840
+      },
+      "variable": "B"
+    }
+  },
+  {
+    "id": "neutral_C",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0007892,
+      "cue_leakage": null,
+      "duration_seconds": 3.073874296000213,
+      "ended": "2026-11-16T03:21:50.058644+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "neutral_C",
+      "list_price_estimate_usd": "0.0007892",
+      "parent": "neutral_A",
+      "parsed": {
+        "candidates": [
+          "0.511"
+        ],
+        "evidence": [
+          "**Answer:** About 51.1% chance of unlocking a bonus room on this run given the grey weather icon."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.511"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799307-ySlaWjyGZFOrD23HrnrU\", \"object\": \"chat.completion\", \"created\": 1794799307, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"We want P(Bonus room | Grey icon).\\n\\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\\n\\nNext, find the chance of finding treasure given foggy or clear:\\n\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n\\nCalculate overall P(Treasure | Grey):\\n\\n\\\\[\\nP(Treasure | Grey) = P(Treasure | Foggy) \\\\times P(Foggy | Grey) + P(Treasure | Clear) \\\\times P(Clear | Grey)\\n\\\\]\\n\\\\[\\n= 0.24 \\\\times 0.404 + 0.76 \\\\times 0.596 = 0.097 + 0.453 = 0.55\\n\\\\]\\n\\nGiven:\\n\\n- P(Bonus | Treasure) = 0.83\\n- P(Bonus | No Treasure) = 0.12\\n\\nCalculate P(Bonus | Grey):\\n\\n\\\\[\\nP(Bonus | Grey) = P(Bonus | Treasure) \\\\times P(Treasure | Grey) + P(Bonus | No Treasure) \\\\times (1 - P(Treasure | Grey))\\n\\\\]\\n\\\\[\\n= 0.83 \\\\times 0.55 + 0.12 \\\\times 0.45 = 0.457 + 0.054 = 0.511\\n\\\\]\\n\\n**Answer:** About 51.1% chance of unlocking a bonus room on this run given the grey weather icon.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 617, \"completion_tokens\": 339, \"total_tokens\": 956, \"cost\": 0.0007892, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0007892, \"upstream_inference_prompt_cost\": 0.0002468, \"upstream_inference_completions_cost\": 0.0005424}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "I haven't seen any additional information. I've been thinking about our estimate again.",
+            "role": "user"
+          },
+          {
+            "content": "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of unlocking a bonus room on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.174417625",
+        "exposure_before_usd": "0.150784625",
+        "input_token_bound": 6249,
+        "reservation_id": 41,
+        "reserve_usd": "0.0236330"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "We want P(Bonus room | Grey icon).\n\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nNext, find the chance of finding treasure given foggy or clear:\n\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate overall P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.097 + 0.453 = 0.55\n\\]\n\nGiven:\n\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nCalculate P(Bonus | Grey):\n\n\\[\nP(Bonus | Grey) = P(Bonus | Treasure) \\times P(Treasure | Grey) + P(Bonus | No Treasure) \\times (1 - P(Treasure | Grey))\n\\]\n\\[\n= 0.83 \\times 0.55 + 0.12 \\times 0.45 = 0.457 + 0.054 = 0.511\n\\]\n\n**Answer:** About 51.1% chance of unlocking a bonus room on this run given the grey weather icon.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799307,
+        "id": "gen-1794799307-ySlaWjyGZFOrD23HrnrU",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 339,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0007892,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0005424,
+            "upstream_inference_cost": 0.0007892,
+            "upstream_inference_prompt_cost": 0.0002468
+          },
+          "is_byok": false,
+          "prompt_tokens": 617,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 956
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:47 GMT"
+      },
+      "started": "2026-11-16T03:21:46.981363+00:00",
+      "text": "We want P(Bonus room | Grey icon).\n\nFirst, find P(Foggy | Grey) ≈ 0.404 (from before), so P(Clear | Grey) = 1 - 0.404 = 0.596.\n\nNext, find the chance of finding treasure given foggy or clear:\n\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate overall P(Treasure | Grey):\n\n\\[\nP(Treasure | Grey) = P(Treasure | Foggy) \\times P(Foggy | Grey) + P(Treasure | Clear) \\times P(Clear | Grey)\n\\]\n\\[\n= 0.24 \\times 0.404 + 0.76 \\times 0.596 = 0.097 + 0.453 = 0.55\n\\]\n\nGiven:\n\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nCalculate P(Bonus | Grey):\n\n\\[\nP(Bonus | Grey) = P(Bonus | Treasure) \\times P(Treasure | Grey) + P(Bonus | No Treasure) \\times (1 - P(Treasure | Grey))\n\\]\n\\[\n= 0.83 \\times 0.55 + 0.12 \\times 0.45 = 0.457 + 0.054 = 0.511\n\\]\n\n**Answer:** About 51.1% chance of unlocking a bonus room on this run given the grey weather icon.",
+      "usage": {
+        "completion_tokens": 339,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0007892,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0005424,
+          "upstream_inference_cost": 0.0007892,
+          "upstream_inference_prompt_cost": 0.0002468
+        },
+        "is_byok": false,
+        "prompt_tokens": 617,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 956
+      },
+      "variable": "C"
+    }
+  },
+  {
+    "id": "neutral_D",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0002948,
+      "cue_leakage": null,
+      "duration_seconds": 0.9130387360000896,
+      "ended": "2026-11-16T03:21:48.775781+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "neutral_D",
+      "list_price_estimate_usd": "0.0002948",
+      "parent": "neutral_A",
+      "parsed": {
+        "candidates": [
+          "0.09"
+        ],
+        "evidence": [
+          "The cosmetic reward chance is 9%, independent of everything else.",
+          "**Answer:** 9% chance of getting a cosmetic reward on this run."
+        ],
+        "flags": [],
+        "value": "0.09"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799307-19zWgGB9IjvxyUd5XyuF\", \"object\": \"chat.completion\", \"created\": 1794799307, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"The cosmetic reward chance is 9%, independent of everything else.\\n\\n**Answer:** 9% chance of getting a cosmetic reward on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 617, \"completion_tokens\": 30, \"total_tokens\": 647, \"cost\": 0.0002948, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0002948, \"upstream_inference_prompt_cost\": 0.0002468, \"upstream_inference_completions_cost\": 4.8e-05}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "I haven't seen any additional information. I've been thinking about our estimate again.",
+            "role": "user"
+          },
+          {
+            "content": "If you have no additional information beyond the grey weather icon, the best estimate remains the same: about 40.4% chance the map is foggy given the grey icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "What are our chances of getting a cosmetic reward on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.174825625",
+        "exposure_before_usd": "0.151189625",
+        "input_token_bound": 6252,
+        "reservation_id": 42,
+        "reserve_usd": "0.0236360"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "The cosmetic reward chance is 9%, independent of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799307,
+        "id": "gen-1794799307-19zWgGB9IjvxyUd5XyuF",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 30,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0002948,
+          "cost_details": {
+            "upstream_inference_completions_cost": 4.8e-05,
+            "upstream_inference_cost": 0.0002948,
+            "upstream_inference_prompt_cost": 0.0002468
+          },
+          "is_byok": false,
+          "prompt_tokens": 617,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 647
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:48 GMT"
+      },
+      "started": "2026-11-16T03:21:47.861573+00:00",
+      "text": "The cosmetic reward chance is 9%, independent of everything else.\n\n**Answer:** 9% chance of getting a cosmetic reward on this run.",
+      "usage": {
+        "completion_tokens": 30,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0002948,
+        "cost_details": {
+          "upstream_inference_completions_cost": 4.8e-05,
+          "upstream_inference_cost": 0.0002948,
+          "upstream_inference_prompt_cost": 0.0002468
+        },
+        "is_byok": false,
+        "prompt_tokens": 617,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 647
+      },
+      "variable": "D"
+    }
+  },
+  {
+    "id": "control_B",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.0005016,
+      "cue_leakage": null,
+      "duration_seconds": 2.160860492000211,
+      "ended": "2026-11-16T03:21:41.976382+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "control_B",
+      "list_price_estimate_usd": "0.0005016",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.401"
+        ],
+        "evidence": [
+          "**Answer:** About 40.1% chance of finding a treasure chest on this run."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.401"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799299-DUqT6cRLIBRxnZcbdCsu\", \"object\": \"chat.completion\", \"created\": 1794799299, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"Given:\\n\\n- P(Foggy) = 0.69\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n- P(Clear) = 1 - 0.69 = 0.31\\n\\nWe want P(Treasure):\\n\\n\\\\[\\nP(Treasure) = P(Treasure | Foggy) \\\\times P(Foggy) + P(Treasure | Clear) \\\\times P(Clear) = 0.24 \\\\times 0.69 + 0.76 \\\\times 0.31 = 0.1656 + 0.2356 = 0.4012\\n\\\\]\\n\\n**Answer:** About 40.1% chance of finding a treasure chest on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 578, \"completion_tokens\": 169, \"total_tokens\": 747, \"cost\": 0.0005016, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.0005016, \"upstream_inference_prompt_cost\": 0.0002312, \"upstream_inference_completions_cost\": 0.0002704}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Suppose the chance of getting a foggy map is 69%. Based on our gameplay statistics, what are our chances of finding a treasure chest on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.144690125",
+        "exposure_before_usd": "0.122242125",
+        "input_token_bound": 5064,
+        "reservation_id": 18,
+        "reserve_usd": "0.0224480"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "Given:\n\n- P(Foggy) = 0.69\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Clear) = 1 - 0.69 = 0.31\n\nWe want P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\n**Answer:** About 40.1% chance of finding a treasure chest on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799299,
+        "id": "gen-1794799299-DUqT6cRLIBRxnZcbdCsu",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 169,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.0005016,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0002704,
+            "upstream_inference_cost": 0.0005016,
+            "upstream_inference_prompt_cost": 0.0002312
+          },
+          "is_byok": false,
+          "prompt_tokens": 578,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 747
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:40 GMT"
+      },
+      "started": "2026-11-16T03:21:39.814181+00:00",
+      "text": "Given:\n\n- P(Foggy) = 0.69\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Clear) = 1 - 0.69 = 0.31\n\nWe want P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\n**Answer:** About 40.1% chance of finding a treasure chest on this run.",
+      "usage": {
+        "completion_tokens": 169,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0005016,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0002704,
+          "upstream_inference_cost": 0.0005016,
+          "upstream_inference_prompt_cost": 0.0002312
+        },
+        "is_byok": false,
+        "prompt_tokens": 578,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 747
+      },
+      "variable": "B"
+    }
+  },
+  {
+    "id": "control_C",
+    "origin": "historical_reference",
+    "record": {
+      "attempt": 1,
+      "cost_usd": 0.000724,
+      "cue_leakage": null,
+      "duration_seconds": 2.9863753659992653,
+      "ended": "2026-11-16T03:21:42.989055+00:00",
+      "error": null,
+      "finish_reason": "stop",
+      "hidden_fields_omitted": true,
+      "hidden_trace_present": false,
+      "http_status": 200,
+      "id": "control_C",
+      "list_price_estimate_usd": "0.0007240",
+      "parent": "initial",
+      "parsed": {
+        "candidates": [
+          "0.405"
+        ],
+        "evidence": [
+          "**Answer:** About 40.5% chance of unlocking a bonus room on this run."
+        ],
+        "flags": [
+          "approximate_point"
+        ],
+        "value": "0.405"
+      },
+      "raw_response_body": "{\"id\": \"gen-1794799300-oYKVAIKJaFEYpnThZD3K\", \"object\": \"chat.completion\", \"created\": 1794799300, \"model\": \"openai/gpt-4.1-mini\", \"provider\": \"OpenAI\", \"system_fingerprint\": null, \"service_tier\": \"default\", \"choices\": [{\"index\": 0, \"logprobs\": null, \"finish_reason\": \"stop\", \"native_finish_reason\": \"completed\", \"message\": {\"role\": \"assistant\", \"content\": \"Given:\\n\\n- P(Foggy) = 0.69 (new)\\n- P(Clear) = 1 - 0.69 = 0.31\\n- P(Treasure | Foggy) = 0.24\\n- P(Treasure | Clear) = 0.76\\n- P(Bonus | Treasure) = 0.83\\n- P(Bonus | No Treasure) = 0.12\\n\\nFirst, find overall P(Treasure):\\n\\n\\\\[\\nP(Treasure) = P(Treasure | Foggy) \\\\times P(Foggy) + P(Treasure | Clear) \\\\times P(Clear) = 0.24 \\\\times 0.69 + 0.76 \\\\times 0.31 = 0.1656 + 0.2356 = 0.4012\\n\\\\]\\n\\nThen, P(No Treasure) = 1 - 0.4012 = 0.5988\\n\\nNow, overall P(Bonus):\\n\\n\\\\[\\nP(Bonus) = P(Bonus | Treasure) \\\\times P(Treasure) + P(Bonus | No Treasure) \\\\times P(No Treasure) = 0.83 \\\\times 0.4012 + 0.12 \\\\times 0.5988 = 0.3329 + 0.0719 = 0.4048\\n\\\\]\\n\\n**Answer:** About 40.5% chance of unlocking a bonus room on this run.\", \"refusal\": null}}], \"usage\": {\"prompt_tokens\": 578, \"completion_tokens\": 308, \"total_tokens\": 886, \"cost\": 0.000724, \"is_byok\": false, \"prompt_tokens_details\": {\"cached_tokens\": 0, \"cache_write_tokens\": 0, \"audio_tokens\": 0, \"video_tokens\": 0}, \"cost_details\": {\"upstream_inference_cost\": 0.000724, \"upstream_inference_prompt_cost\": 0.0002312, \"upstream_inference_completions_cost\": 0.0004928}, \"completion_tokens_details\": {\"reasoning_tokens\": 0, \"image_tokens\": 0, \"audio_tokens\": 0}}}",
+      "request": {
+        "max_tokens": 4096,
+        "messages": [
+          {
+            "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+            "role": "system"
+          },
+          {
+            "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+            "role": "user"
+          },
+          {
+            "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+            "role": "assistant"
+          },
+          {
+            "content": "Suppose the chance of getting a foggy map is 69%. Based on our gameplay statistics, what are our chances of unlocking a bonus room on this run?",
+            "role": "user"
+          }
+        ],
+        "model": "openai/gpt-4.1-mini",
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "completion": 2.0,
+            "prompt": 0.5
+          },
+          "only": [
+            "openai"
+          ],
+          "require_parameters": true
+        },
+        "seed": 20261116,
+        "stream": false,
+        "temperature": 0,
+        "top_p": 1,
+        "usage": {
+          "include": true
+        }
+      },
+      "reservation": {
+        "exposure_after_usd": "0.145110125",
+        "exposure_before_usd": "0.122664125",
+        "input_token_bound": 5062,
+        "reservation_id": 19,
+        "reserve_usd": "0.0224460"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "Given:\n\n- P(Foggy) = 0.69 (new)\n- P(Clear) = 1 - 0.69 = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nFirst, find overall P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\nThen, P(No Treasure) = 1 - 0.4012 = 0.5988\n\nNow, overall P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times P(No Treasure) = 0.83 \\times 0.4012 + 0.12 \\times 0.5988 = 0.3329 + 0.0719 = 0.4048\n\\]\n\n**Answer:** About 40.5% chance of unlocking a bonus room on this run.",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "native_finish_reason": "completed"
+          }
+        ],
+        "created": 1794799300,
+        "id": "gen-1794799300-oYKVAIKJaFEYpnThZD3K",
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "provider": "OpenAI",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 308,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "cost": 0.000724,
+          "cost_details": {
+            "upstream_inference_completions_cost": 0.0004928,
+            "upstream_inference_cost": 0.000724,
+            "upstream_inference_prompt_cost": 0.0002312
+          },
+          "is_byok": false,
+          "prompt_tokens": 578,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "video_tokens": 0
+          },
+          "total_tokens": 886
+        }
+      },
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Mon, 16 Nov 2026 03:21:40 GMT"
+      },
+      "started": "2026-11-16T03:21:40.001530+00:00",
+      "text": "Given:\n\n- P(Foggy) = 0.69 (new)\n- P(Clear) = 1 - 0.69 = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nFirst, find overall P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\nThen, P(No Treasure) = 1 - 0.4012 = 0.5988\n\nNow, overall P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times P(No Treasure) = 0.83 \\times 0.4012 + 0.12 \\times 0.5988 = 0.3329 + 0.0719 = 0.4048\n\\]\n\n**Answer:** About 40.5% chance of unlocking a bonus room on this run.",
+      "usage": {
+        "completion_tokens": 308,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.000724,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0004928,
+          "upstream_inference_cost": 0.000724,
+          "upstream_inference_prompt_cost": 0.0002312
+        },
+        "is_byok": false,
+        "prompt_tokens": 578,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 886
+      },
+      "variable": "C"
+    }
+  }
+]

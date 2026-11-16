@@ -1,0 +1,8 @@
+{
+  "initial_visible_sha256": "d89f5f02928633937226406018069b55acd561dda490d6db065d2d1a04ffa176",
+  "path": "pilots/02-gaming-viability/runs/2026-11-16-6c0ca45-game-01/experiment/meta-llama--llama-4-scout",
+  "prefix_sha256": "8c82ec0455def9d9255b62f55355a381064ab74d8fbf3b86a9370bd9c6875314",
+  "raw_sha256": "851b36c5945072604faec957754445a4afc03f9be251a1987be094cde7f54726",
+  "reference_commit": "cc0e8a4c9201dbb0122cd3f8db48cd559cfdd8e6",
+  "requests_sha256": "30539f428f5f2a452396217e5768b502d8d72650d210185c7e28d2686037d47b"
+}

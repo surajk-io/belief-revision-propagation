@@ -1,0 +1,8 @@
+{
+  "initial_visible_sha256": "26ae6ad3e8f5a701000f5befad050daaec46860dc972e7aac90b499e2f72aace",
+  "path": "pilots/02-gaming-viability/runs/2026-11-16-6c0ca45-game-01/experiment/openai--gpt-4.1-mini",
+  "prefix_sha256": "f6532851a652bfdb536b8f36db3e38e7ed512489b22af3e25b1a88b8e940e50a",
+  "raw_sha256": "1e97c2053568ab36f627d07e58e1bcb97f857450319facb0eae725dcb34f9888",
+  "reference_commit": "cc0e8a4c9201dbb0122cd3f8db48cd559cfdd8e6",
+  "requests_sha256": "fe5d718e70813404489742bad09679083e241debbc3a4e314c0788f2460720e4"
+}

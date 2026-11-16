@@ -1,0 +1,233 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 18,
+    "attempts_with_usage": 18,
+    "completion_tokens": 3097,
+    "list_price_estimate_subtotal_usd": "0.00214898",
+    "prompt_tokens": 10960,
+    "reported_cost_subtotal_usd": "0.00214898",
+    "unknown_cost_attempts": 0
+  },
+  "attempts": 18,
+  "candidate": "google/gemma-4-31b-it",
+  "config": {
+    "budget_usd": "1.00",
+    "case": {
+      "bonus_given_no_treasure": "0.12",
+      "bonus_given_treasure": "0.83",
+      "cosmetic": "0.09",
+      "fog_prior": "0.29",
+      "grey_given_clear": "0.41",
+      "grey_given_fog": "0.68",
+      "id": "GAME-01",
+      "target_fog_posterior": "0.69",
+      "treasure_given_clear": "0.76",
+      "treasure_given_fog": "0.24"
+    },
+    "max_attempts_per_call": 3,
+    "max_concurrent_requests": 6,
+    "max_logical_calls": 18,
+    "max_tokens": 4096,
+    "minimum_attempt_reserve_usd": "0.01",
+    "model_family": "google/gemma-4-31b-it",
+    "provider": "CoreWeave",
+    "scope": "GAME-01 implicit wording follow-up; six models;80 new logical calls maximum",
+    "scoring": {
+      "downstream_tolerance_probability": "0.03",
+      "near_zero_delta": "0.000001",
+      "unsupported_movement_threshold": "0.15",
+      "upstream_tolerance": "0.05"
+    },
+    "seed": 20261116,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "historical_analysis_ids": [],
+  "jobs": {
+    "baseline_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_D": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "initial": {
+      "failure": null,
+      "parent": null,
+      "status": "complete"
+    },
+    "neutral_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "neutral_B": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_C": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_D": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "unsupported_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "unsupported_B": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "unsupported_C": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "unsupported_D": {
+      "failure": null,
+      "parent": "unsupported_A",
+      "status": "complete"
+    },
+    "warranted_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "warranted_B": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_C": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_D": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    }
+  },
+  "logical_calls_dispatched": 18,
+  "mode": "live",
+  "plan_sha256": "acd88594a1c3e987db3c03d30deb2ece753e5128ce017e62816b26afb1509d57",
+  "selection": {
+    "allowed_returned_models": [
+      "google/gemma-4-31b-it",
+      "google/gemma-4-31b-it-20260402"
+    ],
+    "candidate": "google/gemma-4-31b-it",
+    "canonical_slug": "google/gemma-4-31b-it-20260402",
+    "endpoint": {
+      "context_length": 262144,
+      "latency_last_30m": null,
+      "max_completion_tokens": 235929,
+      "max_prompt_tokens": null,
+      "model_id": "google/gemma-4-31b-it",
+      "model_name": "Google: Gemma 4 31B",
+      "name": "CoreWeave | google/gemma-4-31b-it-20260402",
+      "native_tools": {},
+      "pricing": {
+        "completion": "0.00000034",
+        "discount": 0,
+        "input_cache_read": "0.0000001",
+        "prompt": "0.0000001"
+      },
+      "provider_name": "CoreWeave",
+      "quantization": "fp4",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "reasoning",
+        "include_reasoning",
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "repetition_penalty",
+        "frequency_penalty",
+        "presence_penalty",
+        "stop",
+        "seed",
+        "response_format",
+        "structured_outputs",
+        "logprobs",
+        "top_logprobs",
+        "tools",
+        "tool_choice"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": true,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": true,
+        "none": false,
+        "required": true
+      },
+      "supports_voice_cloning": false,
+      "tag": "coreweave/fp4",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 92.22222222222223,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "coreweave/fp4",
+    "exclusions": [],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": {
+      "default_enabled": false,
+      "mandatory": false
+    },
+    "parameters": {
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "4.250E-7",
+      "prompt": "1.25E-7"
+    },
+    "provider_name": "CoreWeave",
+    "reasoning_mode": "explicitly_disabled",
+    "request_model": "google/gemma-4-31b-it",
+    "selection_cost_score_usd": "0.00219264",
+    "selection_rule": "seed support, then 8000 input +4096 output cost, then endpoint tag",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "status": "complete"
+}

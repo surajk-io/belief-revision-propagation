@@ -1,0 +1,28 @@
+{
+  "conditions": {
+    "neutral": "new",
+    "unsupported": "new_implicit",
+    "warranted": "new"
+  },
+  "ids": {
+    "baseline_B": "new",
+    "baseline_C": "new",
+    "baseline_D": "new",
+    "control_B": "new",
+    "control_C": "new",
+    "initial": "new",
+    "neutral_A": "new",
+    "neutral_B": "new",
+    "neutral_C": "new",
+    "neutral_D": "new",
+    "unsupported_A": "new",
+    "unsupported_B": "new",
+    "unsupported_C": "new",
+    "unsupported_D": "new",
+    "warranted_A": "new",
+    "warranted_B": "new",
+    "warranted_C": "new",
+    "warranted_D": "new"
+  },
+  "note": "No old explicit-unsupported response is used in new implicit scoring; no historical costs counted."
+}

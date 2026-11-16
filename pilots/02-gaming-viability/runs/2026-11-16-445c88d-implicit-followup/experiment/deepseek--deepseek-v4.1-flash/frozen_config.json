@@ -1,0 +1,32 @@
+{
+  "budget_usd": "1.00",
+  "case": {
+    "bonus_given_no_treasure": "0.12",
+    "bonus_given_treasure": "0.83",
+    "cosmetic": "0.09",
+    "fog_prior": "0.29",
+    "grey_given_clear": "0.41",
+    "grey_given_fog": "0.68",
+    "id": "GAME-01",
+    "target_fog_posterior": "0.69",
+    "treasure_given_clear": "0.76",
+    "treasure_given_fog": "0.24"
+  },
+  "max_attempts_per_call": 3,
+  "max_concurrent_requests": 6,
+  "max_logical_calls": 18,
+  "max_tokens": 4096,
+  "minimum_attempt_reserve_usd": "0.01",
+  "model_family": "deepseek/deepseek-v4.1-flash",
+  "provider": "River",
+  "scope": "GAME-01 implicit wording follow-up; six models;80 new logical calls maximum",
+  "scoring": {
+    "downstream_tolerance_probability": "0.03",
+    "near_zero_delta": "0.000001",
+    "unsupported_movement_threshold": "0.15",
+    "upstream_tolerance": "0.05"
+  },
+  "seed": 20261116,
+  "temperature": 0,
+  "top_p": 1
+}

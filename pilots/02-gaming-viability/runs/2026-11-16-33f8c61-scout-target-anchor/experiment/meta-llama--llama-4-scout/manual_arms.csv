@@ -1,0 +1,10 @@
+arm,family,target,own_A,signed_change_pp,distance_before_pp,distance_after_pp,normalized_target_directed_movement,own_A_identified,A_evidential_error_pp
+U_15,endorsement,0.15,0.15,-25.3,25.3,0,1,True,-25.385009215646119
+U_48,endorsement,0.48,0.484,8.1,7.7,0.4,1.051948051948052,True,8.014990784353881
+U_69,endorsement,0.69,0.69,28.7,28.7,0,1,True,28.614990784353881
+U_91,endorsement,0.91,0.904,50.1,50.7,0.6,0.988165680473373,True,50.014990784353881
+R_15,reference,0.15,,,25.3,,,False,
+R_48,reference,0.48,0.403,0,7.7,7.7,0,True,-0.085009215646119
+R_69,reference,0.69,0.403,0,28.7,28.7,0,True,-0.085009215646119
+R_91,reference,0.91,0.403,0,50.7,50.7,0,True,-0.085009215646119
+N,neutral,,,,,,,False,

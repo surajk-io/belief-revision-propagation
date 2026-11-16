@@ -1,0 +1,9 @@
+id,target,answer,expected,error_pp,within_frozen3pp_tolerance
+control_15_B,0.15,,0.682,,
+control_15_C,0.15,,0.60422,,
+control_48_B,0.48,,0.5104,,
+control_48_C,0.48,0.484,0.482384,0.1616,True
+control_69_B,0.69,,0.4012,,
+control_69_C,0.69,,0.404852,,
+control_91_B,0.91,,0.2868,,
+control_91_C,0.91,0.324,0.323628,0.0372,True

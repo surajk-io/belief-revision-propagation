@@ -1,0 +1,24 @@
+{
+  "attempts": 44,
+  "checks": [
+    "exact44-ID scope and reviewed messages",
+    "frozen original/implicit initial history hashes",
+    "same pinned Scout endpoint/settings",
+    "all-target exact math and unclipped signed/normalized movement",
+    "isolated arm and sibling histories/dependency order",
+    "unchanged parser diagnostic replay; no historical scoring data",
+    "all attempts, six-request global concurrency and atomic$1 ledger",
+    "prior source/artifact preservation; source snapshots",
+    "manual quote hashes/category validation/metric replay when present",
+    "credential absence when configured"
+  ],
+  "configuration_violations": [],
+  "conservative_settled_upper_usd": "0.00049500",
+  "logical_calls": 44,
+  "maximum_concurrent_requests": 6,
+  "peak_spent_plus_outstanding_usd": "0.06040500",
+  "previous_artifacts_unchanged": true,
+  "reported_cost_usd": "0",
+  "status": "passed",
+  "time": "2026-11-16T07:20:21.343595+00:00"
+}

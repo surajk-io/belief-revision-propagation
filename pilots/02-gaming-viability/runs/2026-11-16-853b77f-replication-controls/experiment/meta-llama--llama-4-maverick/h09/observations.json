@@ -1,0 +1,38 @@
+{
+  "control_h09_15_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+    "point_probability": "0.682",
+    "point_probability_evidence": "So, our chances of finding a treasure chest are approximately 68.2%.",
+    "record_sha256": "87c07516357aa728719b8fdc456901146a20e945ae5c178fb61e3155fbec416b",
+    "visible_quote": "To determine the probability of finding a treasure chest, we need to consider the probability of a foggy map and a clear map, and their respective probabilities of having a treasure chest.\n\nGiven:\n- P(Foggy) = 0.15\n- P(Clear) = 1 - P(Foggy) = 0.85\n- P(Treasure|Foggy) = 0.24\n- P(Treasure|Clear) = 0.76\n\nP(Treasure) = P(Treasure|Foggy) * P(Foggy) + P(Treasure|Clear) * P(Clear)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nSo, our chances of finding a treasure chest are approximately 68.2%."
+  },
+  "control_h09_15_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+    "point_probability": "0.604",
+    "point_probability_evidence": "So, our chances of unlocking a bonus room are approximately 60.4%.",
+    "record_sha256": "ead16a0c5307be3c685e84b498b309bd6cff170426d353105540bc6e7ecee4a8",
+    "visible_quote": "To determine the probability of unlocking a bonus room, we need to first find the probability of finding treasure.\n\nGiven P(Foggy) = 0.15, we can find P(Clear) = 1 - 0.15 = 0.85.\n\nP(Treasure) = P(Treasure|Foggy) * P(Foggy) + P(Treasure|Clear) * P(Clear)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nP(Bonus Room) = P(Bonus Room|Treasure) * P(Treasure) + P(Bonus Room|No Treasure) * P(No Treasure)\n= 0.83 * 0.682 + 0.12 * (1 - 0.682)\n= 0.566 + 0.12 * 0.318\n= 0.566 + 0.0382\n= 0.6042\n\nSo, our chances of unlocking a bonus room are approximately 60.4%."
+  },
+  "control_h09_69_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+    "point_probability": "0.401",
+    "point_probability_evidence": "So, our chances of finding a treasure chest are approximately 40.1%.",
+    "record_sha256": "e47176fe94d12642be30363aef3074b4695e8b772b9ed0dd89faa3d467539ee7",
+    "visible_quote": "To determine the probability of finding a treasure chest, we need to consider the probability of a foggy map and the given probabilities of finding treasure in foggy and clear maps.\n\nGiven:\n- P(Foggy) = 0.69\n- P(Clear) = 1 - P(Foggy) = 0.31\n- P(Treasure|Foggy) = 0.24\n- P(Treasure|Clear) = 0.76\n\nP(Treasure) = P(Treasure|Foggy) * P(Foggy) + P(Treasure|Clear) * P(Clear)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nSo, our chances of finding a treasure chest are approximately 40.1%."
+  },
+  "control_h09_69_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+    "point_probability": "0.405",
+    "point_probability_evidence": "So, our chances of unlocking a bonus room are approximately 40.5%.",
+    "record_sha256": "48297c4475a02116c7327da32ec13b73d4b19a791bb9d46222880f8205a3b36a",
+    "visible_quote": "To determine the probability of unlocking a bonus room, we first need to find the probability of finding treasure.\n\nGiven P(Foggy) = 0.69, we can find P(Clear) = 1 - 0.69 = 0.31.\n\nP(Treasure) = P(Treasure|Foggy) * P(Foggy) + P(Treasure|Clear) * P(Clear)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nP(Bonus Room) = P(Bonus Room|Treasure) * P(Treasure) + P(Bonus Room|No Treasure) * P(No Treasure)\n= 0.83 * 0.4012 + 0.12 * (1 - 0.4012)\n= 0.3330 + 0.12 * 0.5988\n= 0.3330 + 0.0719\n= 0.4049\n\nSo, our chances of unlocking a bonus room are approximately 40.5%."
+  }
+}

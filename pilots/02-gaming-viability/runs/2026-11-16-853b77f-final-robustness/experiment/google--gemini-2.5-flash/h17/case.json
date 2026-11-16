@@ -1,0 +1,8 @@
+{
+  "candidate": "google/gemini-2.5-flash",
+  "case": "h17",
+  "controls": true,
+  "replicate": 1,
+  "seed": 20261133,
+  "stage": 1
+}

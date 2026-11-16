@@ -1,0 +1,55 @@
+{
+  "all15_histories_retained": true,
+  "all_work_reported_subtotal_usd": "0.14460562176",
+  "canceled_coverage_logical_calls": 91,
+  "canceled_coverage_physical_attempts": 93,
+  "combined_budget_usd": "2.00",
+  "combined_conservative_upper_usd": "0.2275718400",
+  "controls_audit": {
+    "all_histories_own_initials": true,
+    "calls": 60,
+    "combined_conservative_upper_usd": "0.2275718400",
+    "maximum_controls_concurrency": 4,
+    "original_exposure_including_inflight_held": true,
+    "status": "passed"
+  },
+  "distinct_replication_seeds": 15,
+  "global_maximum_concurrent_requests": 6,
+  "manuscript_and_all_previously_tracked_files_unchanged": true,
+  "original_audit": {
+    "all_previous_tracked_files_unchanged": true,
+    "attempts": 393,
+    "checks": [
+      "20 fresh initial requests with distinct recorded seeds",
+      "all420 planned nodes retained;no correctness/susceptibility selection",
+      "own-history baseline and isolated WU/BC/D/control branches",
+      "exact frozen prompts and same pinned settings",
+      "replication before coverage,global6 concurrency",
+      "one combined atomic$2 ledger with all retries/errors",
+      "unchanged probability parser and exact math;separate quoted coding",
+      "all tracked files including any manuscript unchanged"
+    ],
+    "configuration_violations": [],
+    "conservative_settled_upper_usd": "0.1985433400",
+    "logical_calls": 391,
+    "maximum_concurrent_requests": 6,
+    "peak_spent_plus_outstanding_usd": "0.3449434300",
+    "reported_cost_usd": "0.12316554176",
+    "status": "passed",
+    "time": "2026-11-16T11:38:38.628444+00:00"
+  },
+  "primary_accounting": {
+    "attempts_with_reported_cost": 360,
+    "attempts_with_usage": 360,
+    "completion_tokens": 68214,
+    "list_price_estimate_subtotal_usd": "0.12534740",
+    "prompt_tokens": 242828,
+    "reported_cost_subtotal_usd": "0.11281076",
+    "unknown_cost_attempts": 0
+  },
+  "primary_controls_calls": 60,
+  "primary_replication_calls": 300,
+  "status": "passed",
+  "time": "2026-11-16T11:38:38.801915+00:00",
+  "unknown_cost_attempts": 3
+}

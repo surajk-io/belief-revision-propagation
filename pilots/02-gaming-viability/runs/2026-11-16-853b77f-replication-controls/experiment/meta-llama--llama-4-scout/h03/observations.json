@@ -1,0 +1,38 @@
+{
+  "control_h03_15_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+    "point_probability": "0.682",
+    "point_probability_evidence": "So, the chance of finding a treasure chest on this run is approximately 68.2%.",
+    "record_sha256": "d791372ad6099724b88ec660faf2b33830d4e6f83360f5aff0c7211d0ebc956b",
+    "visible_quote": "To estimate the chance of finding a treasure chest, we need to consider both foggy and clear maps.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.15\n- P(C) = probability of a clear map = 1 - P(F) = 0.85\n- P(T|F) = probability of treasure given foggy map = 0.24\n- P(T|C) = probability of treasure given clear map = 0.76\n\nThe probability of finding a treasure chest is:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nSo, the chance of finding a treasure chest on this run is approximately 68.2%."
+  },
+  "control_h03_15_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+    "point_probability": "0.604",
+    "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 60.4%.",
+    "record_sha256": "6ac75ad3b78ed69a428adc6fddc333a72b06f4c53ae1011548fb907db251f308",
+    "visible_quote": "To estimate the chance of unlocking a bonus room, we need to calculate the probability of finding treasure and then use that to find the probability of unlocking a bonus room.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.15\n- P(C) = probability of a clear map = 1 - P(F) = 0.85\n- P(T|F) = probability of finding treasure given foggy map = 0.24\n- P(T|C) = probability of finding treasure given clear map = 0.76\n\nFirst, we calculate the probability of finding treasure:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nNow, we can calculate the probability of unlocking a bonus room:\nP(B) = P(B|T) * P(T) + P(B|not T) * P(not T)\n= 0.83 * 0.682 + 0.12 * (1 - 0.682)\n= 0.56586 + 0.12 * 0.318\n= 0.56586 + 0.03816\n= 0.60402\n\nSo, the chance of unlocking a bonus room on this run is approximately 60.4%."
+  },
+  "control_h03_69_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+    "point_probability": "0.401",
+    "point_probability_evidence": "So, the chance of finding a treasure chest on this run is approximately 40.1%.",
+    "record_sha256": "6ae749a502b15ea98f37c166d56a462c2c5f0719e596107c78e6353b7ba49636",
+    "visible_quote": "To estimate the chance of finding a treasure chest, we need to calculate the weighted probability of finding treasure on a foggy map and a clear map.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.69\n- P(C) = probability of a clear map = 1 - P(F) = 0.31\n- P(T|F) = probability of finding treasure given foggy map = 0.24\n- P(T|C) = probability of finding treasure given clear map = 0.76\n\nThe probability of finding treasure is:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nSo, the chance of finding a treasure chest on this run is approximately 40.1%."
+  },
+  "control_h03_69_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+    "point_probability": "0.405",
+    "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 40.5%.",
+    "record_sha256": "e4470fe1807811f1ad133450fd7136f0df4a55776e8c2a4766de402f5b992388",
+    "visible_quote": "To estimate the chance of unlocking a bonus room, we need to calculate the probability of finding treasure and then use that to find the probability of unlocking the bonus room.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.69\n- P(C) = probability of a clear map = 1 - P(F) = 0.31\n- P(T|F) = probability of finding treasure given foggy map = 0.24\n- P(T|C) = probability of finding treasure given clear map = 0.76\n\nFirst, we calculate the probability of finding treasure:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nNow, we know that we unlock a bonus room on 83% of runs where we find treasure and 12% otherwise. \nP(B|T) = 0.83 (probability of bonus room given treasure)\nP(B|not T) = 0.12 (probability of bonus room given no treasure)\n\nThe probability of unlocking a bonus room is:\nP(B) = P(B|T) * P(T) + P(B|not T) * P(not T)\n= 0.83 * 0.4012 + 0.12 * (1 - 0.4012)\n= 0.3330 + 0.12 * 0.5988\n= 0.3330 + 0.0719\n= 0.4049\n\nSo, the chance of unlocking a bonus room on this run is approximately 40.5%."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "meta-llama/llama-4-scout",
+  "case": "h01",
+  "controls": false,
+  "replicate": 1,
+  "seed": 20261117,
+  "stage": 0
+}

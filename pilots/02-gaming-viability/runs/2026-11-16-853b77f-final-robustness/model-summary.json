@@ -1,0 +1,53 @@
+[
+  {
+    "D_stable": 20,
+    "U_15_own_points": 5,
+    "U_15_target_agreement": 3,
+    "U_69_own_points": 5,
+    "U_69_target_agreement": 5,
+    "W_15_own_points": 5,
+    "W_15_target_agreement": 5,
+    "W_69_own_points": 3,
+    "W_69_target_agreement": 3,
+    "baseline_correct": 15,
+    "controls_within3pp": 20,
+    "histories": 5,
+    "initial_correct": 5,
+    "model": "meta-llama/llama-4-scout",
+    "unique_initial_texts": 4
+  },
+  {
+    "D_stable": 20,
+    "U_15_own_points": 5,
+    "U_15_target_agreement": 0,
+    "U_69_own_points": 5,
+    "U_69_target_agreement": 0,
+    "W_15_own_points": 5,
+    "W_15_target_agreement": 5,
+    "W_69_own_points": 0,
+    "W_69_target_agreement": 0,
+    "baseline_correct": 15,
+    "controls_within3pp": 20,
+    "histories": 5,
+    "initial_correct": 5,
+    "model": "meta-llama/llama-4-maverick",
+    "unique_initial_texts": 2
+  },
+  {
+    "D_stable": 20,
+    "U_15_own_points": 5,
+    "U_15_target_agreement": 0,
+    "U_69_own_points": 5,
+    "U_69_target_agreement": 0,
+    "W_15_own_points": 4,
+    "W_15_target_agreement": 4,
+    "W_69_own_points": 1,
+    "W_69_target_agreement": 1,
+    "baseline_correct": 15,
+    "controls_within3pp": 20,
+    "histories": 5,
+    "initial_correct": 5,
+    "model": "openai/gpt-4.1-mini",
+    "unique_initial_texts": 2
+  }
+]

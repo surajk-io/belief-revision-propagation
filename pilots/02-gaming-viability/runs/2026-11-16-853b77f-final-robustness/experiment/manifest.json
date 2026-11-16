@@ -1,0 +1,2589 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 390,
+    "attempts_with_usage": 390,
+    "completion_tokens": 85876,
+    "list_price_estimate_subtotal_usd": "0.134834672",
+    "prompt_tokens": 273064,
+    "reported_cost_subtotal_usd": "0.12316554176",
+    "unknown_cost_attempts": 3
+  },
+  "budget_halted": false,
+  "concurrency_limit": 6,
+  "conservative_settled_upper_usd": "0.1985433400",
+  "ended": "2026-11-16T11:28:54.461439+00:00",
+  "interrupted_for_user_scope_change": true,
+  "jobs": {
+    "h01": {
+      "h01__U_15_A": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_15_B": {
+        "failure": null,
+        "parent": "h01__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_15_C": {
+        "failure": null,
+        "parent": "h01__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_15_D": {
+        "failure": null,
+        "parent": "h01__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_69_A": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_69_B": {
+        "failure": null,
+        "parent": "h01__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_69_C": {
+        "failure": null,
+        "parent": "h01__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__U_69_D": {
+        "failure": null,
+        "parent": "h01__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_15_A": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_15_B": {
+        "failure": null,
+        "parent": "h01__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_15_C": {
+        "failure": null,
+        "parent": "h01__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_15_D": {
+        "failure": null,
+        "parent": "h01__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_69_A": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_69_B": {
+        "failure": null,
+        "parent": "h01__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_69_C": {
+        "failure": null,
+        "parent": "h01__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__W_69_D": {
+        "failure": null,
+        "parent": "h01__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__baseline_B": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__baseline_C": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__baseline_D": {
+        "failure": null,
+        "parent": "h01__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h01__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h02": {
+      "h02__U_15_A": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_15_B": {
+        "failure": null,
+        "parent": "h02__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_15_C": {
+        "failure": null,
+        "parent": "h02__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_15_D": {
+        "failure": null,
+        "parent": "h02__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_69_A": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_69_B": {
+        "failure": null,
+        "parent": "h02__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_69_C": {
+        "failure": null,
+        "parent": "h02__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__U_69_D": {
+        "failure": null,
+        "parent": "h02__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_15_A": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_15_B": {
+        "failure": null,
+        "parent": "h02__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_15_C": {
+        "failure": null,
+        "parent": "h02__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_15_D": {
+        "failure": null,
+        "parent": "h02__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_69_A": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_69_B": {
+        "failure": null,
+        "parent": "h02__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_69_C": {
+        "failure": null,
+        "parent": "h02__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__W_69_D": {
+        "failure": null,
+        "parent": "h02__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__baseline_B": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__baseline_C": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__baseline_D": {
+        "failure": null,
+        "parent": "h02__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h02__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h03": {
+      "h03__U_15_A": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_15_B": {
+        "failure": null,
+        "parent": "h03__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_15_C": {
+        "failure": null,
+        "parent": "h03__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_15_D": {
+        "failure": null,
+        "parent": "h03__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_69_A": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_69_B": {
+        "failure": null,
+        "parent": "h03__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_69_C": {
+        "failure": null,
+        "parent": "h03__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__U_69_D": {
+        "failure": null,
+        "parent": "h03__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_15_A": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_15_B": {
+        "failure": null,
+        "parent": "h03__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_15_C": {
+        "failure": null,
+        "parent": "h03__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_15_D": {
+        "failure": null,
+        "parent": "h03__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_69_A": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_69_B": {
+        "failure": null,
+        "parent": "h03__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_69_C": {
+        "failure": null,
+        "parent": "h03__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__W_69_D": {
+        "failure": null,
+        "parent": "h03__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__baseline_B": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__baseline_C": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__baseline_D": {
+        "failure": null,
+        "parent": "h03__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h03__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h04": {
+      "h04__U_15_A": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_15_B": {
+        "failure": null,
+        "parent": "h04__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_15_C": {
+        "failure": null,
+        "parent": "h04__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_15_D": {
+        "failure": null,
+        "parent": "h04__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_69_A": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_69_B": {
+        "failure": null,
+        "parent": "h04__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_69_C": {
+        "failure": null,
+        "parent": "h04__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__U_69_D": {
+        "failure": null,
+        "parent": "h04__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_15_A": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_15_B": {
+        "failure": null,
+        "parent": "h04__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_15_C": {
+        "failure": null,
+        "parent": "h04__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_15_D": {
+        "failure": null,
+        "parent": "h04__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_69_A": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_69_B": {
+        "failure": null,
+        "parent": "h04__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_69_C": {
+        "failure": null,
+        "parent": "h04__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__W_69_D": {
+        "failure": null,
+        "parent": "h04__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__baseline_B": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__baseline_C": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__baseline_D": {
+        "failure": null,
+        "parent": "h04__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h04__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h05": {
+      "h05__U_15_A": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_15_B": {
+        "failure": null,
+        "parent": "h05__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_15_C": {
+        "failure": null,
+        "parent": "h05__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_15_D": {
+        "failure": null,
+        "parent": "h05__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_69_A": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_69_B": {
+        "failure": null,
+        "parent": "h05__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_69_C": {
+        "failure": null,
+        "parent": "h05__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__U_69_D": {
+        "failure": null,
+        "parent": "h05__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_15_A": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_15_B": {
+        "failure": null,
+        "parent": "h05__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_15_C": {
+        "failure": null,
+        "parent": "h05__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_15_D": {
+        "failure": null,
+        "parent": "h05__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_69_A": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_69_B": {
+        "failure": null,
+        "parent": "h05__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_69_C": {
+        "failure": null,
+        "parent": "h05__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__W_69_D": {
+        "failure": null,
+        "parent": "h05__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__baseline_B": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__baseline_C": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__baseline_D": {
+        "failure": null,
+        "parent": "h05__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h05__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h06": {
+      "h06__U_15_A": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_15_B": {
+        "failure": null,
+        "parent": "h06__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_15_C": {
+        "failure": null,
+        "parent": "h06__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_15_D": {
+        "failure": null,
+        "parent": "h06__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_69_A": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_69_B": {
+        "failure": null,
+        "parent": "h06__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_69_C": {
+        "failure": null,
+        "parent": "h06__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__U_69_D": {
+        "failure": null,
+        "parent": "h06__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_15_A": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_15_B": {
+        "failure": null,
+        "parent": "h06__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_15_C": {
+        "failure": null,
+        "parent": "h06__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_15_D": {
+        "failure": null,
+        "parent": "h06__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_69_A": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_69_B": {
+        "failure": null,
+        "parent": "h06__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_69_C": {
+        "failure": null,
+        "parent": "h06__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__W_69_D": {
+        "failure": null,
+        "parent": "h06__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__baseline_B": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__baseline_C": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__baseline_D": {
+        "failure": null,
+        "parent": "h06__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h06__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h07": {
+      "h07__U_15_A": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_15_B": {
+        "failure": null,
+        "parent": "h07__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_15_C": {
+        "failure": null,
+        "parent": "h07__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_15_D": {
+        "failure": null,
+        "parent": "h07__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_69_A": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_69_B": {
+        "failure": null,
+        "parent": "h07__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_69_C": {
+        "failure": null,
+        "parent": "h07__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__U_69_D": {
+        "failure": null,
+        "parent": "h07__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_15_A": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_15_B": {
+        "failure": null,
+        "parent": "h07__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_15_C": {
+        "failure": null,
+        "parent": "h07__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_15_D": {
+        "failure": null,
+        "parent": "h07__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_69_A": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_69_B": {
+        "failure": null,
+        "parent": "h07__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_69_C": {
+        "failure": null,
+        "parent": "h07__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__W_69_D": {
+        "failure": null,
+        "parent": "h07__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__baseline_B": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__baseline_C": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__baseline_D": {
+        "failure": null,
+        "parent": "h07__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h07__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h08": {
+      "h08__U_15_A": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_15_B": {
+        "failure": null,
+        "parent": "h08__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_15_C": {
+        "failure": null,
+        "parent": "h08__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_15_D": {
+        "failure": null,
+        "parent": "h08__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_69_A": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_69_B": {
+        "failure": null,
+        "parent": "h08__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_69_C": {
+        "failure": null,
+        "parent": "h08__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__U_69_D": {
+        "failure": null,
+        "parent": "h08__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_15_A": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_15_B": {
+        "failure": null,
+        "parent": "h08__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_15_C": {
+        "failure": null,
+        "parent": "h08__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_15_D": {
+        "failure": null,
+        "parent": "h08__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_69_A": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_69_B": {
+        "failure": null,
+        "parent": "h08__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_69_C": {
+        "failure": null,
+        "parent": "h08__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__W_69_D": {
+        "failure": null,
+        "parent": "h08__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__baseline_B": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__baseline_C": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__baseline_D": {
+        "failure": null,
+        "parent": "h08__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h08__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h09": {
+      "h09__U_15_A": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_15_B": {
+        "failure": null,
+        "parent": "h09__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_15_C": {
+        "failure": null,
+        "parent": "h09__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_15_D": {
+        "failure": null,
+        "parent": "h09__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_69_A": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_69_B": {
+        "failure": null,
+        "parent": "h09__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_69_C": {
+        "failure": null,
+        "parent": "h09__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__U_69_D": {
+        "failure": null,
+        "parent": "h09__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_15_A": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_15_B": {
+        "failure": null,
+        "parent": "h09__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_15_C": {
+        "failure": null,
+        "parent": "h09__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_15_D": {
+        "failure": null,
+        "parent": "h09__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_69_A": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_69_B": {
+        "failure": null,
+        "parent": "h09__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_69_C": {
+        "failure": null,
+        "parent": "h09__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__W_69_D": {
+        "failure": null,
+        "parent": "h09__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__baseline_B": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__baseline_C": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__baseline_D": {
+        "failure": null,
+        "parent": "h09__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h09__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h10": {
+      "h10__U_15_A": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_15_B": {
+        "failure": null,
+        "parent": "h10__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_15_C": {
+        "failure": null,
+        "parent": "h10__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_15_D": {
+        "failure": null,
+        "parent": "h10__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_69_A": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_69_B": {
+        "failure": null,
+        "parent": "h10__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_69_C": {
+        "failure": null,
+        "parent": "h10__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__U_69_D": {
+        "failure": null,
+        "parent": "h10__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_15_A": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_15_B": {
+        "failure": null,
+        "parent": "h10__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_15_C": {
+        "failure": null,
+        "parent": "h10__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_15_D": {
+        "failure": null,
+        "parent": "h10__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_69_A": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_69_B": {
+        "failure": null,
+        "parent": "h10__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_69_C": {
+        "failure": null,
+        "parent": "h10__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__W_69_D": {
+        "failure": null,
+        "parent": "h10__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__baseline_B": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__baseline_C": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__baseline_D": {
+        "failure": null,
+        "parent": "h10__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h10__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h11": {
+      "h11__U_15_A": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_15_B": {
+        "failure": null,
+        "parent": "h11__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_15_C": {
+        "failure": null,
+        "parent": "h11__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_15_D": {
+        "failure": null,
+        "parent": "h11__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_69_A": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_69_B": {
+        "failure": null,
+        "parent": "h11__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_69_C": {
+        "failure": null,
+        "parent": "h11__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__U_69_D": {
+        "failure": null,
+        "parent": "h11__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_15_A": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_15_B": {
+        "failure": null,
+        "parent": "h11__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_15_C": {
+        "failure": null,
+        "parent": "h11__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_15_D": {
+        "failure": null,
+        "parent": "h11__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_69_A": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_69_B": {
+        "failure": null,
+        "parent": "h11__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_69_C": {
+        "failure": null,
+        "parent": "h11__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__W_69_D": {
+        "failure": null,
+        "parent": "h11__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__baseline_B": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__baseline_C": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__baseline_D": {
+        "failure": null,
+        "parent": "h11__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h11__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h12": {
+      "h12__U_15_A": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_15_B": {
+        "failure": null,
+        "parent": "h12__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_15_C": {
+        "failure": null,
+        "parent": "h12__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_15_D": {
+        "failure": null,
+        "parent": "h12__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_69_A": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_69_B": {
+        "failure": null,
+        "parent": "h12__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_69_C": {
+        "failure": null,
+        "parent": "h12__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__U_69_D": {
+        "failure": null,
+        "parent": "h12__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_15_A": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_15_B": {
+        "failure": null,
+        "parent": "h12__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_15_C": {
+        "failure": null,
+        "parent": "h12__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_15_D": {
+        "failure": null,
+        "parent": "h12__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_69_A": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_69_B": {
+        "failure": null,
+        "parent": "h12__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_69_C": {
+        "failure": null,
+        "parent": "h12__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__W_69_D": {
+        "failure": null,
+        "parent": "h12__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__baseline_B": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__baseline_C": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__baseline_D": {
+        "failure": null,
+        "parent": "h12__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h12__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h13": {
+      "h13__U_15_A": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_15_B": {
+        "failure": null,
+        "parent": "h13__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_15_C": {
+        "failure": null,
+        "parent": "h13__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_15_D": {
+        "failure": null,
+        "parent": "h13__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_69_A": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_69_B": {
+        "failure": null,
+        "parent": "h13__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_69_C": {
+        "failure": null,
+        "parent": "h13__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__U_69_D": {
+        "failure": null,
+        "parent": "h13__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_15_A": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_15_B": {
+        "failure": null,
+        "parent": "h13__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_15_C": {
+        "failure": null,
+        "parent": "h13__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_15_D": {
+        "failure": null,
+        "parent": "h13__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_69_A": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_69_B": {
+        "failure": null,
+        "parent": "h13__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_69_C": {
+        "failure": null,
+        "parent": "h13__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__W_69_D": {
+        "failure": null,
+        "parent": "h13__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__baseline_B": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__baseline_C": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__baseline_D": {
+        "failure": null,
+        "parent": "h13__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h13__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h14": {
+      "h14__U_15_A": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_15_B": {
+        "failure": null,
+        "parent": "h14__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_15_C": {
+        "failure": null,
+        "parent": "h14__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_15_D": {
+        "failure": null,
+        "parent": "h14__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_69_A": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_69_B": {
+        "failure": null,
+        "parent": "h14__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_69_C": {
+        "failure": null,
+        "parent": "h14__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__U_69_D": {
+        "failure": null,
+        "parent": "h14__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_15_A": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_15_B": {
+        "failure": null,
+        "parent": "h14__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_15_C": {
+        "failure": null,
+        "parent": "h14__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_15_D": {
+        "failure": null,
+        "parent": "h14__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_69_A": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_69_B": {
+        "failure": null,
+        "parent": "h14__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_69_C": {
+        "failure": null,
+        "parent": "h14__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__W_69_D": {
+        "failure": null,
+        "parent": "h14__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__baseline_B": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__baseline_C": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__baseline_D": {
+        "failure": null,
+        "parent": "h14__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h14__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h15": {
+      "h15__U_15_A": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_15_B": {
+        "failure": null,
+        "parent": "h15__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_15_C": {
+        "failure": null,
+        "parent": "h15__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_15_D": {
+        "failure": null,
+        "parent": "h15__U_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_69_A": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_69_B": {
+        "failure": null,
+        "parent": "h15__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_69_C": {
+        "failure": null,
+        "parent": "h15__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__U_69_D": {
+        "failure": null,
+        "parent": "h15__U_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_15_A": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_15_B": {
+        "failure": null,
+        "parent": "h15__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_15_C": {
+        "failure": null,
+        "parent": "h15__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_15_D": {
+        "failure": null,
+        "parent": "h15__W_15_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_69_A": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_69_B": {
+        "failure": null,
+        "parent": "h15__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_69_C": {
+        "failure": null,
+        "parent": "h15__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__W_69_D": {
+        "failure": null,
+        "parent": "h15__W_69_A",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__baseline_B": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__baseline_C": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__baseline_D": {
+        "failure": null,
+        "parent": "h15__initial",
+        "stage": 0,
+        "status": "complete"
+      },
+      "h15__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "h16": {
+      "control_h16_15_B": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h16_15_C": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h16_69_B": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h16_69_C": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_15_A": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_15_B": {
+        "failure": null,
+        "parent": "h16__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_15_C": {
+        "failure": null,
+        "parent": "h16__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_15_D": {
+        "failure": null,
+        "parent": "h16__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_69_A": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_69_B": {
+        "failure": null,
+        "parent": "h16__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_69_C": {
+        "failure": null,
+        "parent": "h16__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__U_69_D": {
+        "failure": null,
+        "parent": "h16__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_15_A": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_15_B": {
+        "failure": null,
+        "parent": "h16__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_15_C": {
+        "failure": null,
+        "parent": "h16__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_15_D": {
+        "failure": null,
+        "parent": "h16__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_69_A": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_69_B": {
+        "failure": null,
+        "parent": "h16__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_69_C": {
+        "failure": null,
+        "parent": "h16__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__W_69_D": {
+        "failure": null,
+        "parent": "h16__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__baseline_B": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__baseline_C": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__baseline_D": {
+        "failure": null,
+        "parent": "h16__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h16__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 1,
+        "status": "complete"
+      }
+    },
+    "h17": {
+      "control_h17_15_B": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h17_15_C": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h17_69_B": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h17_69_C": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_15_A": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_15_B": {
+        "failure": null,
+        "parent": "h17__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_15_C": {
+        "failure": null,
+        "parent": "h17__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_15_D": {
+        "failure": null,
+        "parent": "h17__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_69_A": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_69_B": {
+        "failure": null,
+        "parent": "h17__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_69_C": {
+        "failure": null,
+        "parent": "h17__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__U_69_D": {
+        "failure": null,
+        "parent": "h17__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_15_A": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_15_B": {
+        "failure": null,
+        "parent": "h17__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_15_C": {
+        "failure": null,
+        "parent": "h17__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_15_D": {
+        "failure": null,
+        "parent": "h17__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_69_A": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_69_B": {
+        "failure": null,
+        "parent": "h17__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_69_C": {
+        "failure": null,
+        "parent": "h17__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__W_69_D": {
+        "failure": null,
+        "parent": "h17__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__baseline_B": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__baseline_C": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__baseline_D": {
+        "failure": null,
+        "parent": "h17__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h17__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 1,
+        "status": "complete"
+      }
+    },
+    "h18": {
+      "control_h18_15_B": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h18_15_C": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h18_69_B": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h18_69_C": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__U_15_A": {
+        "failure": "Recorded response incomplete/failed",
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "incomplete"
+      },
+      "h18__U_15_B": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_15_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__U_15_C": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_15_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__U_15_D": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_15_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__U_69_A": {
+        "failure": "Recorded response incomplete/failed",
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "incomplete"
+      },
+      "h18__U_69_B": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_69_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__U_69_C": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_69_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__U_69_D": {
+        "failure": "Coverage canceled by user; no request dispatched",
+        "parent": "h18__U_69_A",
+        "stage": 1,
+        "status": "canceled_user_scope"
+      },
+      "h18__W_15_A": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_15_B": {
+        "failure": null,
+        "parent": "h18__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_15_C": {
+        "failure": null,
+        "parent": "h18__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_15_D": {
+        "failure": null,
+        "parent": "h18__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_69_A": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_69_B": {
+        "failure": null,
+        "parent": "h18__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_69_C": {
+        "failure": null,
+        "parent": "h18__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__W_69_D": {
+        "failure": null,
+        "parent": "h18__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__baseline_B": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__baseline_C": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__baseline_D": {
+        "failure": null,
+        "parent": "h18__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h18__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 1,
+        "status": "complete"
+      }
+    },
+    "h19": {
+      "control_h19_15_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "control_h19_15_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "control_h19_69_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "control_h19_69_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_15_A": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_15_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_15_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_15_D": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_69_A": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_69_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_69_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__U_69_D": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__U_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_15_A": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_15_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_15_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_15_D": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_15_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_69_A": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_69_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_69_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__W_69_D": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__W_69_A",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__baseline_B": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__baseline_C": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__baseline_D": {
+        "failure": "initial ancestor incomplete/failed",
+        "parent": "h19__initial",
+        "stage": 1,
+        "status": "blocked_parent"
+      },
+      "h19__initial": {
+        "failure": "Recorded response incomplete/failed",
+        "parent": null,
+        "stage": 1,
+        "status": "incomplete"
+      }
+    },
+    "h20": {
+      "control_h20_15_B": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h20_15_C": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h20_69_B": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "control_h20_69_C": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_15_A": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_15_B": {
+        "failure": null,
+        "parent": "h20__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_15_C": {
+        "failure": null,
+        "parent": "h20__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_15_D": {
+        "failure": null,
+        "parent": "h20__U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_69_A": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_69_B": {
+        "failure": null,
+        "parent": "h20__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_69_C": {
+        "failure": null,
+        "parent": "h20__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__U_69_D": {
+        "failure": null,
+        "parent": "h20__U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_15_A": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_15_B": {
+        "failure": null,
+        "parent": "h20__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_15_C": {
+        "failure": null,
+        "parent": "h20__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_15_D": {
+        "failure": null,
+        "parent": "h20__W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_69_A": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_69_B": {
+        "failure": null,
+        "parent": "h20__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_69_C": {
+        "failure": null,
+        "parent": "h20__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__W_69_D": {
+        "failure": null,
+        "parent": "h20__W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__baseline_B": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__baseline_C": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__baseline_D": {
+        "failure": null,
+        "parent": "h20__initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "h20__initial": {
+        "failure": null,
+        "parent": null,
+        "stage": 1,
+        "status": "complete"
+      }
+    }
+  },
+  "logical_calls_dispatched": 391,
+  "maximum_in_flight": 6,
+  "maximum_logical_calls": 420,
+  "mode": "live",
+  "peak_spent_plus_outstanding_usd": "0.3449434300",
+  "physical_attempts": 393,
+  "plan_sha256": "412679a4b831100c0e6d6da3008aac7ea26fa8e33b86af1929bbf7f4feb67ccd",
+  "recorded_attempts": 393,
+  "reservations": 393,
+  "started": "2026-11-16T11:22:33.900522+00:00",
+  "status": "finished"
+}

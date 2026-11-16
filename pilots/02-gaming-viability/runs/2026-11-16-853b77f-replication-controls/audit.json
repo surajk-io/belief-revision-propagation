@@ -1,0 +1,8 @@
+{
+  "all_histories_own_initials": true,
+  "calls": 60,
+  "combined_conservative_upper_usd": "0.2275718400",
+  "maximum_controls_concurrency": 4,
+  "original_exposure_including_inflight_held": true,
+  "status": "passed"
+}

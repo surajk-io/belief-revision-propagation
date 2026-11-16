@@ -1,0 +1,8 @@
+{
+  "candidate": "deepseek/deepseek-v4.1-flash",
+  "case": "h16",
+  "controls": true,
+  "replicate": 1,
+  "seed": 20261132,
+  "stage": 1
+}

@@ -1,0 +1,443 @@
+{
+  "allowed_returned_models": [
+    "meta-llama/llama-4-scout",
+    "meta-llama/llama-4-scout-17b-16e-instruct"
+  ],
+  "candidate": "meta-llama/llama-4-scout",
+  "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "configuration_differences": {
+    "max_tokens": 4096,
+    "seed": "distinct per fresh history; frozen in cases"
+  },
+  "configuration_policy": "Preserved latest compatible prior pin",
+  "endpoint": {
+    "context_length": 327680,
+    "latency_last_30m": null,
+    "max_completion_tokens": 16384,
+    "max_prompt_tokens": null,
+    "model_id": "meta-llama/llama-4-scout",
+    "model_name": "Meta: Llama 4 Scout",
+    "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+    "native_tools": {},
+    "pricing": {
+      "completion": "0.0000003",
+      "discount": 0,
+      "prompt": "0.0000001"
+    },
+    "provider_name": "DeepInfra",
+    "quantization": "fp8",
+    "service_tier": null,
+    "status": 0,
+    "supported_parameters": [
+      "max_tokens",
+      "temperature",
+      "top_p",
+      "stop",
+      "frequency_penalty",
+      "presence_penalty",
+      "repetition_penalty",
+      "top_k",
+      "seed",
+      "min_p",
+      "logit_bias",
+      "structured_outputs"
+    ],
+    "supports_diarization": false,
+    "supports_image_reference": false,
+    "supports_implicit_caching": false,
+    "supports_multiple_audio_references": false,
+    "supports_tool_choice": {
+      "auto": true,
+      "function": false,
+      "none": true,
+      "required": false
+    },
+    "supports_voice_cloning": false,
+    "tag": "deepinfra/fp8",
+    "throughput_last_30m": null,
+    "uptime_last_1d": 99.92997198879551,
+    "uptime_last_30m": 100,
+    "uptime_last_5m": 100
+  },
+  "endpoint_tag": "deepinfra/fp8",
+  "exclusions": [
+    {
+      "reason": "Unavailable or non-standard service tier",
+      "tag": "deepinfra/fp8/flex"
+    },
+    {
+      "reason": "Unavailable or non-standard service tier",
+      "tag": "deepinfra/fp8/priority"
+    }
+  ],
+  "independent_version_pin_available": false,
+  "model_reasoning_metadata": null,
+  "parameters": {
+    "max_tokens": 4096,
+    "seed": 20261120,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "previous_selection": {
+    "allowed_returned_models": [
+      "meta-llama/llama-4-scout",
+      "meta-llama/llama-4-scout-17b-16e-instruct"
+    ],
+    "candidate": "meta-llama/llama-4-scout",
+    "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "configuration_differences": {},
+    "endpoint": {
+      "context_length": 327680,
+      "latency_last_30m": null,
+      "max_completion_tokens": 16384,
+      "max_prompt_tokens": null,
+      "model_id": "meta-llama/llama-4-scout",
+      "model_name": "Meta: Llama 4 Scout",
+      "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+      "native_tools": {},
+      "pricing": {
+        "completion": "0.0000003",
+        "discount": 0,
+        "prompt": "0.0000001"
+      },
+      "provider_name": "DeepInfra",
+      "quantization": "fp8",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "seed",
+        "min_p",
+        "logit_bias",
+        "structured_outputs"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": false,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": false,
+        "none": true,
+        "required": false
+      },
+      "supports_voice_cloning": false,
+      "tag": "deepinfra/fp8",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 99.93002099370189,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "deepinfra/fp8",
+    "exclusions": [
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "deepinfra/fp8/flex"
+      },
+      {
+        "reason": "Unavailable or non-standard service tier",
+        "tag": "deepinfra/fp8/priority"
+      }
+    ],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": null,
+    "parameters": {
+      "max_tokens": 4096,
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "previous_selection": {
+      "allowed_returned_models": [
+        "meta-llama/llama-4-scout",
+        "meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "candidate": "meta-llama/llama-4-scout",
+      "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "configuration_differences": {},
+      "endpoint": {
+        "context_length": 327680,
+        "latency_last_30m": null,
+        "max_completion_tokens": 16384,
+        "max_prompt_tokens": null,
+        "model_id": "meta-llama/llama-4-scout",
+        "model_name": "Meta: Llama 4 Scout",
+        "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+        "native_tools": {},
+        "pricing": {
+          "completion": "0.0000003",
+          "discount": 0,
+          "prompt": "0.0000001"
+        },
+        "provider_name": "DeepInfra",
+        "quantization": "fp8",
+        "service_tier": null,
+        "status": 0,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
+          "structured_outputs"
+        ],
+        "supports_diarization": false,
+        "supports_image_reference": false,
+        "supports_implicit_caching": false,
+        "supports_multiple_audio_references": false,
+        "supports_tool_choice": {
+          "auto": true,
+          "function": false,
+          "none": true,
+          "required": false
+        },
+        "supports_voice_cloning": false,
+        "tag": "deepinfra/fp8",
+        "throughput_last_30m": null,
+        "uptime_last_1d": 100,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100
+      },
+      "endpoint_tag": "deepinfra/fp8",
+      "exclusions": [
+        {
+          "reason": "Unavailable or non-standard service tier",
+          "tag": "deepinfra/fp8/flex"
+        },
+        {
+          "reason": "Unavailable or non-standard service tier",
+          "tag": "deepinfra/fp8/priority"
+        }
+      ],
+      "independent_version_pin_available": false,
+      "model_reasoning_metadata": null,
+      "parameters": {
+        "max_tokens": 4096,
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "previous_selection": {
+        "allowed_returned_models": [
+          "meta-llama/llama-4-scout",
+          "meta-llama/llama-4-scout-17b-16e-instruct"
+        ],
+        "candidate": "meta-llama/llama-4-scout",
+        "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "configuration_differences": {
+          "max_tokens": {
+            "after": 4096,
+            "before": 1200
+          }
+        },
+        "endpoint": {
+          "context_length": 327680,
+          "latency_last_30m": null,
+          "max_completion_tokens": 16384,
+          "max_prompt_tokens": null,
+          "model_id": "meta-llama/llama-4-scout",
+          "model_name": "Meta: Llama 4 Scout",
+          "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+          "native_tools": {},
+          "pricing": {
+            "completion": "0.0000003",
+            "discount": 0,
+            "prompt": "0.0000001"
+          },
+          "provider_name": "DeepInfra",
+          "quantization": "fp8",
+          "service_tier": null,
+          "status": 0,
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "stop",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "top_k",
+            "seed",
+            "min_p",
+            "logit_bias",
+            "structured_outputs"
+          ],
+          "supports_diarization": false,
+          "supports_image_reference": false,
+          "supports_implicit_caching": false,
+          "supports_multiple_audio_references": false,
+          "supports_tool_choice": {
+            "auto": true,
+            "function": false,
+            "none": true,
+            "required": false
+          },
+          "supports_voice_cloning": false,
+          "tag": "deepinfra/fp8",
+          "throughput_last_30m": null,
+          "uptime_last_1d": 100,
+          "uptime_last_30m": 100,
+          "uptime_last_5m": 100
+        },
+        "endpoint_tag": "deepinfra/fp8",
+        "exclusions": [
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "deepinfra/fp8/flex"
+          },
+          {
+            "reason": "Unavailable or non-standard service tier",
+            "tag": "deepinfra/fp8/priority"
+          }
+        ],
+        "independent_version_pin_available": false,
+        "model_reasoning_metadata": null,
+        "parameters": {
+          "max_tokens": 4096,
+          "seed": 20261116,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "previous_selection": {
+          "allowed_returned_models": [
+            "meta-llama/llama-4-scout",
+            "meta-llama/llama-4-scout-17b-16e-instruct"
+          ],
+          "candidate": "meta-llama/llama-4-scout",
+          "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+          "endpoint": {
+            "context_length": 327680,
+            "latency_last_30m": null,
+            "max_completion_tokens": 16384,
+            "max_prompt_tokens": null,
+            "model_id": "meta-llama/llama-4-scout",
+            "model_name": "Meta: Llama 4 Scout",
+            "name": "DeepInfra | meta-llama/llama-4-scout-17b-16e-instruct",
+            "native_tools": {},
+            "pricing": {
+              "completion": "0.0000003",
+              "discount": 0,
+              "prompt": "0.0000001"
+            },
+            "provider_name": "DeepInfra",
+            "quantization": "fp8",
+            "service_tier": null,
+            "status": 0,
+            "supported_parameters": [
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "stop",
+              "frequency_penalty",
+              "presence_penalty",
+              "repetition_penalty",
+              "top_k",
+              "seed",
+              "min_p",
+              "logit_bias",
+              "structured_outputs"
+            ],
+            "supports_diarization": false,
+            "supports_image_reference": false,
+            "supports_implicit_caching": false,
+            "supports_multiple_audio_references": false,
+            "supports_tool_choice": {
+              "auto": true,
+              "function": false,
+              "none": true,
+              "required": false
+            },
+            "supports_voice_cloning": false,
+            "tag": "deepinfra/fp8",
+            "throughput_last_30m": null,
+            "uptime_last_1d": 100,
+            "uptime_last_30m": 100,
+            "uptime_last_5m": 100
+          },
+          "endpoint_tag": "deepinfra/fp8",
+          "exclusions": [
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "deepinfra/fp8/flex"
+            },
+            {
+              "reason": "Unavailable or non-standard service tier",
+              "tag": "deepinfra/fp8/priority"
+            }
+          ],
+          "independent_version_pin_available": false,
+          "model_reasoning_metadata": null,
+          "parameters": {
+            "max_tokens": 1200,
+            "seed": 20261116,
+            "temperature": 0,
+            "top_p": 1
+          },
+          "price_ceilings_usd_per_token": {
+            "completion": "3.75E-7",
+            "prompt": "1.25E-7"
+          },
+          "provider_name": "DeepInfra",
+          "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+          "request_model": "meta-llama/llama-4-scout",
+          "selection_cost_score_usd": "0.0011600",
+          "status": "selected",
+          "unsupported_settings": []
+        },
+        "price_ceilings_usd_per_token": {
+          "completion": "3.75E-7",
+          "prompt": "1.25E-7"
+        },
+        "provider_name": "DeepInfra",
+        "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+        "request_model": "meta-llama/llama-4-scout",
+        "selection_cost_score_usd": "0.0011600",
+        "status": "selected",
+        "unsupported_settings": []
+      },
+      "price_ceilings_usd_per_token": {
+        "completion": "3.75E-7",
+        "prompt": "1.25E-7"
+      },
+      "provider_name": "DeepInfra",
+      "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+      "request_model": "meta-llama/llama-4-scout",
+      "selection_cost_score_usd": "0.0011600",
+      "status": "selected",
+      "unsupported_settings": []
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "3.75E-7",
+      "prompt": "1.25E-7"
+    },
+    "provider_name": "DeepInfra",
+    "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+    "request_model": "meta-llama/llama-4-scout",
+    "selection_cost_score_usd": "0.0011600",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "price_ceilings_usd_per_token": {
+    "completion": "3.75E-7",
+    "prompt": "1.25E-7"
+  },
+  "provider_name": "DeepInfra",
+  "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+  "request_model": "meta-llama/llama-4-scout",
+  "selection_cost_score_usd": "0.0011600",
+  "status": "selected",
+  "unsupported_settings": []
+}

@@ -1,0 +1,8 @@
+{
+  "original_conservative_settled_usd": "0.1985433400",
+  "raw_count": 393,
+  "reason": "User canceled Experiment2 after replication complete and coverage already dispatched. Scheduler interrupted; only already dispatched requests finished. No lost raw attempt, no regenerated call.",
+  "replication_calls": 300,
+  "request_count": 393,
+  "statuses_reconstructed_from": "Durable scheduler, requests/raw, execution and budget ledgers; only missing coverage nodes marked canceled. Original frozen plan retained."
+}

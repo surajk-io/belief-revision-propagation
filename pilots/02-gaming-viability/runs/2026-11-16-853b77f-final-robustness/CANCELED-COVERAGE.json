@@ -1,0 +1,807 @@
+{
+  "cases": [
+    {
+      "case": "h16",
+      "incomplete_or_errors": [],
+      "logical_calls": 24,
+      "model": "deepseek/deepseek-v4.1-flash",
+      "physical_attempts": 24,
+      "records_path": "experiment/deepseek--deepseek-v4.1-flash/h16",
+      "statuses": {
+        "control_h16_15_B": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h16_15_C": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h16_69_B": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h16_69_C": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_15_A": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_15_B": {
+          "failure": null,
+          "parent": "h16__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_15_C": {
+          "failure": null,
+          "parent": "h16__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_15_D": {
+          "failure": null,
+          "parent": "h16__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_69_A": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_69_B": {
+          "failure": null,
+          "parent": "h16__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_69_C": {
+          "failure": null,
+          "parent": "h16__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__U_69_D": {
+          "failure": null,
+          "parent": "h16__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_15_A": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_15_B": {
+          "failure": null,
+          "parent": "h16__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_15_C": {
+          "failure": null,
+          "parent": "h16__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_15_D": {
+          "failure": null,
+          "parent": "h16__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_69_A": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_69_B": {
+          "failure": null,
+          "parent": "h16__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_69_C": {
+          "failure": null,
+          "parent": "h16__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__W_69_D": {
+          "failure": null,
+          "parent": "h16__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__baseline_B": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__baseline_C": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__baseline_D": {
+          "failure": null,
+          "parent": "h16__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h16__initial": {
+          "failure": null,
+          "parent": null,
+          "stage": 1,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "case": "h17",
+      "incomplete_or_errors": [],
+      "logical_calls": 24,
+      "model": "google/gemini-2.5-flash",
+      "physical_attempts": 24,
+      "records_path": "experiment/google--gemini-2.5-flash/h17",
+      "statuses": {
+        "control_h17_15_B": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h17_15_C": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h17_69_B": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h17_69_C": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_15_A": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_15_B": {
+          "failure": null,
+          "parent": "h17__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_15_C": {
+          "failure": null,
+          "parent": "h17__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_15_D": {
+          "failure": null,
+          "parent": "h17__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_69_A": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_69_B": {
+          "failure": null,
+          "parent": "h17__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_69_C": {
+          "failure": null,
+          "parent": "h17__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__U_69_D": {
+          "failure": null,
+          "parent": "h17__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_15_A": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_15_B": {
+          "failure": null,
+          "parent": "h17__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_15_C": {
+          "failure": null,
+          "parent": "h17__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_15_D": {
+          "failure": null,
+          "parent": "h17__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_69_A": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_69_B": {
+          "failure": null,
+          "parent": "h17__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_69_C": {
+          "failure": null,
+          "parent": "h17__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__W_69_D": {
+          "failure": null,
+          "parent": "h17__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__baseline_B": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__baseline_C": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__baseline_D": {
+          "failure": null,
+          "parent": "h17__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h17__initial": {
+          "failure": null,
+          "parent": null,
+          "stage": 1,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "case": "h18",
+      "incomplete_or_errors": [
+        {
+          "cost": 0.00018098,
+          "finish_reason": "length",
+          "id": "h18__U_69_A",
+          "status": 200
+        },
+        {
+          "cost": 0.00018098,
+          "finish_reason": "length",
+          "id": "h18__U_15_A",
+          "status": 200
+        }
+      ],
+      "logical_calls": 18,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "physical_attempts": 18,
+      "records_path": "experiment/meta-llama--llama-3.1-8b-instruct/h18",
+      "statuses": {
+        "control_h18_15_B": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h18_15_C": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h18_69_B": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h18_69_C": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__U_15_A": {
+          "failure": "Recorded response incomplete/failed",
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "incomplete"
+        },
+        "h18__U_15_B": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_15_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__U_15_C": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_15_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__U_15_D": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_15_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__U_69_A": {
+          "failure": "Recorded response incomplete/failed",
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "incomplete"
+        },
+        "h18__U_69_B": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_69_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__U_69_C": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_69_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__U_69_D": {
+          "failure": "Coverage canceled by user; no request dispatched",
+          "parent": "h18__U_69_A",
+          "stage": 1,
+          "status": "canceled_user_scope"
+        },
+        "h18__W_15_A": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_15_B": {
+          "failure": null,
+          "parent": "h18__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_15_C": {
+          "failure": null,
+          "parent": "h18__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_15_D": {
+          "failure": null,
+          "parent": "h18__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_69_A": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_69_B": {
+          "failure": null,
+          "parent": "h18__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_69_C": {
+          "failure": null,
+          "parent": "h18__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__W_69_D": {
+          "failure": null,
+          "parent": "h18__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__baseline_B": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__baseline_C": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__baseline_D": {
+          "failure": null,
+          "parent": "h18__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h18__initial": {
+          "failure": null,
+          "parent": null,
+          "stage": 1,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "case": "h19",
+      "incomplete_or_errors": [
+        {
+          "cost": null,
+          "finish_reason": null,
+          "id": "h19__initial",
+          "status": 429
+        },
+        {
+          "cost": null,
+          "finish_reason": null,
+          "id": "h19__initial",
+          "status": 429
+        },
+        {
+          "cost": null,
+          "finish_reason": null,
+          "id": "h19__initial",
+          "status": 429
+        }
+      ],
+      "logical_calls": 1,
+      "model": "qwen/qwen3.5-9b",
+      "physical_attempts": 3,
+      "records_path": "experiment/qwen--qwen3.5-9b/h19",
+      "statuses": {
+        "control_h19_15_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "control_h19_15_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "control_h19_69_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "control_h19_69_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_15_A": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_15_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_15_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_15_D": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_69_A": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_69_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_69_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__U_69_D": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__U_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_15_A": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_15_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_15_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_15_D": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_15_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_69_A": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_69_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_69_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__W_69_D": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__W_69_A",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__baseline_B": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__baseline_C": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__baseline_D": {
+          "failure": "initial ancestor incomplete/failed",
+          "parent": "h19__initial",
+          "stage": 1,
+          "status": "blocked_parent"
+        },
+        "h19__initial": {
+          "failure": "Recorded response incomplete/failed",
+          "parent": null,
+          "stage": 1,
+          "status": "incomplete"
+        }
+      }
+    },
+    {
+      "case": "h20",
+      "incomplete_or_errors": [],
+      "logical_calls": 24,
+      "model": "google/gemma-4-26b-a4b-it",
+      "physical_attempts": 24,
+      "records_path": "experiment/google--gemma-4-26b-a4b-it/h20",
+      "statuses": {
+        "control_h20_15_B": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h20_15_C": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h20_69_B": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "control_h20_69_C": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_15_A": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_15_B": {
+          "failure": null,
+          "parent": "h20__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_15_C": {
+          "failure": null,
+          "parent": "h20__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_15_D": {
+          "failure": null,
+          "parent": "h20__U_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_69_A": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_69_B": {
+          "failure": null,
+          "parent": "h20__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_69_C": {
+          "failure": null,
+          "parent": "h20__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__U_69_D": {
+          "failure": null,
+          "parent": "h20__U_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_15_A": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_15_B": {
+          "failure": null,
+          "parent": "h20__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_15_C": {
+          "failure": null,
+          "parent": "h20__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_15_D": {
+          "failure": null,
+          "parent": "h20__W_15_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_69_A": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_69_B": {
+          "failure": null,
+          "parent": "h20__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_69_C": {
+          "failure": null,
+          "parent": "h20__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__W_69_D": {
+          "failure": null,
+          "parent": "h20__W_69_A",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__baseline_B": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__baseline_C": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__baseline_D": {
+          "failure": null,
+          "parent": "h20__initial",
+          "stage": 1,
+          "status": "complete"
+        },
+        "h20__initial": {
+          "failure": null,
+          "parent": null,
+          "stage": 1,
+          "status": "complete"
+        }
+      }
+    }
+  ],
+  "scope": "Canceled at user direction after coverage had already begun. Historical partial data only; no further scheduling; excluded from primary replication conclusions. All raw attempts and missing planned nodes preserved."
+}

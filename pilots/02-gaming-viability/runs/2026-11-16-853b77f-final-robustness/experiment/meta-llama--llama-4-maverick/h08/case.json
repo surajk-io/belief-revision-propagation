@@ -1,0 +1,8 @@
+{
+  "candidate": "meta-llama/llama-4-maverick",
+  "case": "h08",
+  "controls": false,
+  "replicate": 3,
+  "seed": 20261124,
+  "stage": 0
+}

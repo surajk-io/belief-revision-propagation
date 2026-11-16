@@ -1,0 +1,56 @@
+[
+  {
+    "file": "models-raw.json",
+    "url": "https://openrouter.ai/api/v1/models",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.609599+00:00"
+  },
+  {
+    "file": "meta-llama--llama-4-scout-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-4-scout/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.414874+00:00"
+  },
+  {
+    "file": "meta-llama--llama-4-maverick-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-4-maverick/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.378937+00:00"
+  },
+  {
+    "file": "openai--gpt-4.1-mini-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/openai/gpt-4.1-mini/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.396398+00:00"
+  },
+  {
+    "file": "deepseek--deepseek-v4.1-flash-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.370096+00:00"
+  },
+  {
+    "file": "google--gemini-2.5-flash-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/google/gemini-2.5-flash/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.327416+00:00"
+  },
+  {
+    "file": "meta-llama--llama-3.1-8b-instruct-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.466444+00:00"
+  },
+  {
+    "file": "qwen--qwen3.5-9b-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.5-9b/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.451821+00:00"
+  },
+  {
+    "file": "google--gemma-4-26b-a4b-it-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/google/gemma-4-26b-a4b-it/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T11:17:53.441795+00:00"
+  }
+]

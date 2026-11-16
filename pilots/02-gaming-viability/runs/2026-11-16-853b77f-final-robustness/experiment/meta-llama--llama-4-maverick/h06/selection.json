@@ -1,0 +1,339 @@
+{
+  "allowed_returned_models": [
+    "meta-llama/llama-4-maverick",
+    "meta-llama/llama-4-maverick-17b-128e-instruct"
+  ],
+  "candidate": "meta-llama/llama-4-maverick",
+  "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
+  "configuration_differences": {
+    "max_tokens": 4096,
+    "seed": "distinct per fresh history; frozen in cases"
+  },
+  "configuration_policy": "Preserved latest compatible prior pin",
+  "endpoint": {
+    "context_length": 524288,
+    "latency_last_30m": null,
+    "max_completion_tokens": 32768,
+    "max_prompt_tokens": null,
+    "model_id": "meta-llama/llama-4-maverick",
+    "model_name": "Meta: Llama 4 Maverick",
+    "name": "Parasail | meta-llama/llama-4-maverick-17b-128e-instruct",
+    "native_tools": {},
+    "pricing": {
+      "completion": "0.000001",
+      "discount": 0,
+      "input_cache_read": "0.00000017",
+      "prompt": "0.00000035"
+    },
+    "provider_name": "Parasail",
+    "quantization": "fp8",
+    "service_tier": null,
+    "status": 0,
+    "supported_parameters": [
+      "structured_outputs",
+      "response_format",
+      "max_tokens",
+      "temperature",
+      "top_p",
+      "frequency_penalty",
+      "presence_penalty",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "top_k",
+      "logit_bias",
+      "tools",
+      "tool_choice",
+      "logprobs",
+      "top_logprobs"
+    ],
+    "supports_diarization": false,
+    "supports_image_reference": false,
+    "supports_implicit_caching": true,
+    "supports_multiple_audio_references": false,
+    "supports_tool_choice": {
+      "auto": true,
+      "function": true,
+      "none": false,
+      "required": true
+    },
+    "supports_voice_cloning": false,
+    "tag": "parasail/fp8",
+    "throughput_last_30m": null,
+    "uptime_last_1d": 100,
+    "uptime_last_30m": 100,
+    "uptime_last_5m": 100
+  },
+  "endpoint_tag": "parasail/fp8",
+  "exclusions": [],
+  "independent_version_pin_available": false,
+  "model_reasoning_metadata": null,
+  "parameters": {
+    "max_tokens": 4096,
+    "seed": 20261122,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "previous_selection": {
+    "allowed_returned_models": [
+      "meta-llama/llama-4-maverick",
+      "meta-llama/llama-4-maverick-17b-128e-instruct"
+    ],
+    "candidate": "meta-llama/llama-4-maverick",
+    "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "configuration_differences": {},
+    "endpoint": {
+      "context_length": 524288,
+      "latency_last_30m": null,
+      "max_completion_tokens": 32768,
+      "max_prompt_tokens": null,
+      "model_id": "meta-llama/llama-4-maverick",
+      "model_name": "Meta: Llama 4 Maverick",
+      "name": "Parasail | meta-llama/llama-4-maverick-17b-128e-instruct",
+      "native_tools": {},
+      "pricing": {
+        "completion": "0.000001",
+        "discount": 0,
+        "input_cache_read": "0.00000017",
+        "prompt": "0.00000035"
+      },
+      "provider_name": "Parasail",
+      "quantization": "fp8",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "structured_outputs",
+        "response_format",
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "top_k",
+        "logit_bias",
+        "tools",
+        "tool_choice",
+        "logprobs",
+        "top_logprobs"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": true,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": true,
+        "none": false,
+        "required": true
+      },
+      "supports_voice_cloning": false,
+      "tag": "parasail/fp8",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 100,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "parasail/fp8",
+    "exclusions": [],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": null,
+    "parameters": {
+      "max_tokens": 4096,
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "previous_selection": {
+      "allowed_returned_models": [
+        "meta-llama/llama-4-maverick",
+        "meta-llama/llama-4-maverick-17b-128e-instruct"
+      ],
+      "candidate": "meta-llama/llama-4-maverick",
+      "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "endpoint": {
+        "context_length": 524288,
+        "latency_last_30m": null,
+        "max_completion_tokens": 32768,
+        "max_prompt_tokens": null,
+        "model_id": "meta-llama/llama-4-maverick",
+        "model_name": "Meta: Llama 4 Maverick",
+        "name": "Parasail | meta-llama/llama-4-maverick-17b-128e-instruct",
+        "native_tools": {},
+        "pricing": {
+          "completion": "0.000001",
+          "discount": 0,
+          "input_cache_read": "0.00000017",
+          "prompt": "0.00000035"
+        },
+        "provider_name": "Parasail",
+        "quantization": "fp8",
+        "service_tier": null,
+        "status": 0,
+        "supported_parameters": [
+          "structured_outputs",
+          "response_format",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "top_k",
+          "logit_bias",
+          "tools",
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
+        ],
+        "supports_diarization": false,
+        "supports_image_reference": false,
+        "supports_implicit_caching": true,
+        "supports_multiple_audio_references": false,
+        "supports_tool_choice": {
+          "auto": true,
+          "function": true,
+          "none": false,
+          "required": true
+        },
+        "supports_voice_cloning": false,
+        "tag": "parasail/fp8",
+        "throughput_last_30m": null,
+        "uptime_last_1d": 100,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100
+      },
+      "endpoint_tag": "parasail/fp8",
+      "exclusions": [],
+      "independent_version_pin_available": false,
+      "model_reasoning_metadata": null,
+      "parameters": {
+        "max_tokens": 4096,
+        "seed": 20261116,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "price_ceilings_usd_per_token": {
+        "completion": "0.00000125",
+        "prompt": "4.375E-7"
+      },
+      "provider_name": "Parasail",
+      "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+      "request_model": "meta-llama/llama-4-maverick",
+      "routing_differences_from_scout": {
+        "candidate": {
+          "after": "meta-llama/llama-4-maverick",
+          "before": "meta-llama/llama-4-scout"
+        },
+        "canonical_slug": {
+          "after": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "before": "meta-llama/llama-4-scout-17b-16e-instruct"
+        },
+        "endpoint_tag": {
+          "after": "parasail/fp8",
+          "before": "deepinfra/fp8"
+        },
+        "provider_name": {
+          "after": "Parasail",
+          "before": "DeepInfra"
+        },
+        "request_model": {
+          "after": "meta-llama/llama-4-maverick",
+          "before": "meta-llama/llama-4-scout"
+        }
+      },
+      "scout_configuration_preferred": false,
+      "scout_reference": {
+        "endpoint_tag": "deepinfra/fp8",
+        "provider_name": "DeepInfra",
+        "quantization": "fp8"
+      },
+      "selection_cost_score_usd": "0.00689600",
+      "selection_rule": "Compatible Scout provider+quantization first; then seed support, then 8000 input +4096 output cost, then endpoint tag",
+      "status": "selected",
+      "unsupported_settings": []
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "0.00000125",
+      "prompt": "4.375E-7"
+    },
+    "provider_name": "Parasail",
+    "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+    "request_model": "meta-llama/llama-4-maverick",
+    "routing_differences_from_scout": {
+      "candidate": {
+        "after": "meta-llama/llama-4-maverick",
+        "before": "meta-llama/llama-4-scout"
+      },
+      "canonical_slug": {
+        "after": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "before": "meta-llama/llama-4-scout-17b-16e-instruct"
+      },
+      "endpoint_tag": {
+        "after": "parasail/fp8",
+        "before": "deepinfra/fp8"
+      },
+      "provider_name": {
+        "after": "Parasail",
+        "before": "DeepInfra"
+      },
+      "request_model": {
+        "after": "meta-llama/llama-4-maverick",
+        "before": "meta-llama/llama-4-scout"
+      }
+    },
+    "scout_configuration_preferred": false,
+    "scout_reference": {
+      "endpoint_tag": "deepinfra/fp8",
+      "provider_name": "DeepInfra",
+      "quantization": "fp8"
+    },
+    "selection_cost_score_usd": "0.00689600",
+    "selection_rule": "Compatible Scout provider+quantization first; then seed support, then 8000 input +4096 output cost, then endpoint tag",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "price_ceilings_usd_per_token": {
+    "completion": "0.00000125",
+    "prompt": "4.375E-7"
+  },
+  "provider_name": "Parasail",
+  "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+  "request_model": "meta-llama/llama-4-maverick",
+  "routing_differences_from_scout": {
+    "candidate": {
+      "after": "meta-llama/llama-4-maverick",
+      "before": "meta-llama/llama-4-scout"
+    },
+    "canonical_slug": {
+      "after": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "before": "meta-llama/llama-4-scout-17b-16e-instruct"
+    },
+    "endpoint_tag": {
+      "after": "parasail/fp8",
+      "before": "deepinfra/fp8"
+    },
+    "provider_name": {
+      "after": "Parasail",
+      "before": "DeepInfra"
+    },
+    "request_model": {
+      "after": "meta-llama/llama-4-maverick",
+      "before": "meta-llama/llama-4-scout"
+    }
+  },
+  "scout_configuration_preferred": false,
+  "scout_reference": {
+    "endpoint_tag": "deepinfra/fp8",
+    "provider_name": "DeepInfra",
+    "quantization": "fp8"
+  },
+  "selection_cost_score_usd": "0.00689600",
+  "selection_rule": "Compatible Scout provider+quantization first; then seed support, then 8000 input +4096 output cost, then endpoint tag",
+  "status": "selected",
+  "unsupported_settings": []
+}

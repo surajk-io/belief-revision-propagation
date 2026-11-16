@@ -1,0 +1,38 @@
+{
+  "control_h14_15_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "= 0.24 \\times 0.15 + 0.76 \\times 0.85 = 0.036 + 0.646 = 0.682",
+    "point_probability": "0.682",
+    "point_probability_evidence": "**Answer:** About 68.2% chance of finding a treasure chest on this run.",
+    "record_sha256": "a6908170053a2eeb4cda4aaeff0f23619352550090c25df1312036b96d5ec9bc",
+    "visible_quote": "Given:\n\n- P(Foggy) = 0.15\n- P(Clear) = 0.85\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nCalculate overall chance of treasure:\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear)\n\\]\n\n\\[\n= 0.24 \\times 0.15 + 0.76 \\times 0.85 = 0.036 + 0.646 = 0.682\n\\]\n\n**Answer:** About 68.2% chance of finding a treasure chest on this run."
+  },
+  "control_h14_15_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.15",
+    "operational_A_evidence": "P(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.15 + 0.76 \\times 0.85 = 0.036 + 0.646 = 0.682",
+    "point_probability": "0.604",
+    "point_probability_evidence": "**Answer:** About 60.4% chance of unlocking a bonus room on this run.",
+    "record_sha256": "c1589d1e931868a8711800c1712a2e2513b5e10d4c698353bea32faa31018d74",
+    "visible_quote": "Given:\n\n- P(Foggy) = 0.15, so P(Clear) = 0.85\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nWe want P(Bonus).\n\nFirst, find P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear) = 0.24 \\times 0.15 + 0.76 \\times 0.85 = 0.036 + 0.646 = 0.682\n\\]\n\nThen, P(No Treasure) = 1 - 0.682 = 0.318\n\nNow, find P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times P(No Treasure) = 0.83 \\times 0.682 + 0.12 \\times 0.318 = 0.566 + 0.038 = 0.604\n\\]\n\n**Answer:** About 60.4% chance of unlocking a bonus room on this run."
+  },
+  "control_h14_69_B": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012",
+    "point_probability": "0.401",
+    "point_probability_evidence": "**Answer:** About 40.1% chance of finding a treasure chest on this run.",
+    "record_sha256": "0efefd178f902ca1896c965ea982d877b7c0ba393f3d412ae486dc1e043ee5a0",
+    "visible_quote": "Given:\n\n- P(Foggy) = 0.69\n- P(Clear) = 1 - 0.69 = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n\nWe want P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear)\n\\]\n\nCalculate:\n\n\\[\n= 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\n**Answer:** About 40.1% chance of finding a treasure chest on this run."
+  },
+  "control_h14_69_C": {
+    "coding_provenance": "quoted_final_answer_rule; control arithmetic review flagged below",
+    "operational_A": "0.69",
+    "operational_A_evidence": "= 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012",
+    "point_probability": "0.405",
+    "point_probability_evidence": "**Answer:** About 40.5% chance of unlocking a bonus room on this run.",
+    "record_sha256": "6b70acceaf40255bd4d81423781a736fce92262a4a153ca203d71a0079b49c56",
+    "visible_quote": "Given:\n\n- P(Foggy) = 0.69 (new)\n- P(Clear) = 1 - 0.69 = 0.31\n- P(Treasure | Foggy) = 0.24\n- P(Treasure | Clear) = 0.76\n- P(Bonus | Treasure) = 0.83\n- P(Bonus | No Treasure) = 0.12\n\nWe want P(Bonus).\n\nFirst, find P(Treasure):\n\n\\[\nP(Treasure) = P(Treasure | Foggy) \\times P(Foggy) + P(Treasure | Clear) \\times P(Clear)\n\\]\n\\[\n= 0.24 \\times 0.69 + 0.76 \\times 0.31 = 0.1656 + 0.2356 = 0.4012\n\\]\n\nThen, P(No Treasure) = 1 - 0.4012 = 0.5988\n\nNow, find P(Bonus):\n\n\\[\nP(Bonus) = P(Bonus | Treasure) \\times P(Treasure) + P(Bonus | No Treasure) \\times P(No Treasure)\n\\]\n\\[\n= 0.83 \\times 0.4012 + 0.12 \\times 0.5988 = 0.333 + 0.0719 = 0.4049\n\\]\n\n**Answer:** About 40.5% chance of unlocking a bonus room on this run."
+  }
+}

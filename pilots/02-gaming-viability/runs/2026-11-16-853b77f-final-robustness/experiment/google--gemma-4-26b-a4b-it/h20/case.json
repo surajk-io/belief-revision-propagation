@@ -1,0 +1,8 @@
+{
+  "candidate": "google/gemma-4-26b-a4b-it",
+  "case": "h20",
+  "controls": true,
+  "replicate": 1,
+  "seed": 20261136,
+  "stage": 1
+}

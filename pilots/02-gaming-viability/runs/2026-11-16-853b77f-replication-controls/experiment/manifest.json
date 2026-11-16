@@ -1,0 +1,353 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 60,
+    "attempts_with_usage": 60,
+    "completion_tokens": 14255,
+    "list_price_estimate_subtotal_usd": "0.02322280",
+    "prompt_tokens": 35676,
+    "reported_cost_subtotal_usd": "0.02144008",
+    "unknown_cost_attempts": 0
+  },
+  "combined_conservative_upper_usd": "0.2275718400",
+  "ended": "2026-11-16T11:30:35.470737+00:00",
+  "jobs": {
+    "h01": {
+      "control_h01_15_B": {
+        "failure": null,
+        "parent": "h01__initial",
+        "status": "complete"
+      },
+      "control_h01_15_C": {
+        "failure": null,
+        "parent": "h01__initial",
+        "status": "complete"
+      },
+      "control_h01_69_B": {
+        "failure": null,
+        "parent": "h01__initial",
+        "status": "complete"
+      },
+      "control_h01_69_C": {
+        "failure": null,
+        "parent": "h01__initial",
+        "status": "complete"
+      }
+    },
+    "h02": {
+      "control_h02_15_B": {
+        "failure": null,
+        "parent": "h02__initial",
+        "status": "complete"
+      },
+      "control_h02_15_C": {
+        "failure": null,
+        "parent": "h02__initial",
+        "status": "complete"
+      },
+      "control_h02_69_B": {
+        "failure": null,
+        "parent": "h02__initial",
+        "status": "complete"
+      },
+      "control_h02_69_C": {
+        "failure": null,
+        "parent": "h02__initial",
+        "status": "complete"
+      }
+    },
+    "h03": {
+      "control_h03_15_B": {
+        "failure": null,
+        "parent": "h03__initial",
+        "status": "complete"
+      },
+      "control_h03_15_C": {
+        "failure": null,
+        "parent": "h03__initial",
+        "status": "complete"
+      },
+      "control_h03_69_B": {
+        "failure": null,
+        "parent": "h03__initial",
+        "status": "complete"
+      },
+      "control_h03_69_C": {
+        "failure": null,
+        "parent": "h03__initial",
+        "status": "complete"
+      }
+    },
+    "h04": {
+      "control_h04_15_B": {
+        "failure": null,
+        "parent": "h04__initial",
+        "status": "complete"
+      },
+      "control_h04_15_C": {
+        "failure": null,
+        "parent": "h04__initial",
+        "status": "complete"
+      },
+      "control_h04_69_B": {
+        "failure": null,
+        "parent": "h04__initial",
+        "status": "complete"
+      },
+      "control_h04_69_C": {
+        "failure": null,
+        "parent": "h04__initial",
+        "status": "complete"
+      }
+    },
+    "h05": {
+      "control_h05_15_B": {
+        "failure": null,
+        "parent": "h05__initial",
+        "status": "complete"
+      },
+      "control_h05_15_C": {
+        "failure": null,
+        "parent": "h05__initial",
+        "status": "complete"
+      },
+      "control_h05_69_B": {
+        "failure": null,
+        "parent": "h05__initial",
+        "status": "complete"
+      },
+      "control_h05_69_C": {
+        "failure": null,
+        "parent": "h05__initial",
+        "status": "complete"
+      }
+    },
+    "h06": {
+      "control_h06_15_B": {
+        "failure": null,
+        "parent": "h06__initial",
+        "status": "complete"
+      },
+      "control_h06_15_C": {
+        "failure": null,
+        "parent": "h06__initial",
+        "status": "complete"
+      },
+      "control_h06_69_B": {
+        "failure": null,
+        "parent": "h06__initial",
+        "status": "complete"
+      },
+      "control_h06_69_C": {
+        "failure": null,
+        "parent": "h06__initial",
+        "status": "complete"
+      }
+    },
+    "h07": {
+      "control_h07_15_B": {
+        "failure": null,
+        "parent": "h07__initial",
+        "status": "complete"
+      },
+      "control_h07_15_C": {
+        "failure": null,
+        "parent": "h07__initial",
+        "status": "complete"
+      },
+      "control_h07_69_B": {
+        "failure": null,
+        "parent": "h07__initial",
+        "status": "complete"
+      },
+      "control_h07_69_C": {
+        "failure": null,
+        "parent": "h07__initial",
+        "status": "complete"
+      }
+    },
+    "h08": {
+      "control_h08_15_B": {
+        "failure": null,
+        "parent": "h08__initial",
+        "status": "complete"
+      },
+      "control_h08_15_C": {
+        "failure": null,
+        "parent": "h08__initial",
+        "status": "complete"
+      },
+      "control_h08_69_B": {
+        "failure": null,
+        "parent": "h08__initial",
+        "status": "complete"
+      },
+      "control_h08_69_C": {
+        "failure": null,
+        "parent": "h08__initial",
+        "status": "complete"
+      }
+    },
+    "h09": {
+      "control_h09_15_B": {
+        "failure": null,
+        "parent": "h09__initial",
+        "status": "complete"
+      },
+      "control_h09_15_C": {
+        "failure": null,
+        "parent": "h09__initial",
+        "status": "complete"
+      },
+      "control_h09_69_B": {
+        "failure": null,
+        "parent": "h09__initial",
+        "status": "complete"
+      },
+      "control_h09_69_C": {
+        "failure": null,
+        "parent": "h09__initial",
+        "status": "complete"
+      }
+    },
+    "h10": {
+      "control_h10_15_B": {
+        "failure": null,
+        "parent": "h10__initial",
+        "status": "complete"
+      },
+      "control_h10_15_C": {
+        "failure": null,
+        "parent": "h10__initial",
+        "status": "complete"
+      },
+      "control_h10_69_B": {
+        "failure": null,
+        "parent": "h10__initial",
+        "status": "complete"
+      },
+      "control_h10_69_C": {
+        "failure": null,
+        "parent": "h10__initial",
+        "status": "complete"
+      }
+    },
+    "h11": {
+      "control_h11_15_B": {
+        "failure": null,
+        "parent": "h11__initial",
+        "status": "complete"
+      },
+      "control_h11_15_C": {
+        "failure": null,
+        "parent": "h11__initial",
+        "status": "complete"
+      },
+      "control_h11_69_B": {
+        "failure": null,
+        "parent": "h11__initial",
+        "status": "complete"
+      },
+      "control_h11_69_C": {
+        "failure": null,
+        "parent": "h11__initial",
+        "status": "complete"
+      }
+    },
+    "h12": {
+      "control_h12_15_B": {
+        "failure": null,
+        "parent": "h12__initial",
+        "status": "complete"
+      },
+      "control_h12_15_C": {
+        "failure": null,
+        "parent": "h12__initial",
+        "status": "complete"
+      },
+      "control_h12_69_B": {
+        "failure": null,
+        "parent": "h12__initial",
+        "status": "complete"
+      },
+      "control_h12_69_C": {
+        "failure": null,
+        "parent": "h12__initial",
+        "status": "complete"
+      }
+    },
+    "h13": {
+      "control_h13_15_B": {
+        "failure": null,
+        "parent": "h13__initial",
+        "status": "complete"
+      },
+      "control_h13_15_C": {
+        "failure": null,
+        "parent": "h13__initial",
+        "status": "complete"
+      },
+      "control_h13_69_B": {
+        "failure": null,
+        "parent": "h13__initial",
+        "status": "complete"
+      },
+      "control_h13_69_C": {
+        "failure": null,
+        "parent": "h13__initial",
+        "status": "complete"
+      }
+    },
+    "h14": {
+      "control_h14_15_B": {
+        "failure": null,
+        "parent": "h14__initial",
+        "status": "complete"
+      },
+      "control_h14_15_C": {
+        "failure": null,
+        "parent": "h14__initial",
+        "status": "complete"
+      },
+      "control_h14_69_B": {
+        "failure": null,
+        "parent": "h14__initial",
+        "status": "complete"
+      },
+      "control_h14_69_C": {
+        "failure": null,
+        "parent": "h14__initial",
+        "status": "complete"
+      }
+    },
+    "h15": {
+      "control_h15_15_B": {
+        "failure": null,
+        "parent": "h15__initial",
+        "status": "complete"
+      },
+      "control_h15_15_C": {
+        "failure": null,
+        "parent": "h15__initial",
+        "status": "complete"
+      },
+      "control_h15_69_B": {
+        "failure": null,
+        "parent": "h15__initial",
+        "status": "complete"
+      },
+      "control_h15_69_C": {
+        "failure": null,
+        "parent": "h15__initial",
+        "status": "complete"
+      }
+    }
+  },
+  "maximum_in_flight": 4,
+  "mode": "live",
+  "opening_conservative_exposure_usd": "0.1985433400",
+  "peak_combined_exposure_usd": "0.3142143400",
+  "physical_attempts": 60,
+  "plan_sha256": "65eac6dc01ec233c4989dcfe131d90a30cbff240091d535045f3b9e99849012b",
+  "started": "2026-11-16T11:29:39.366749+00:00",
+  "status": "finished"
+}

@@ -1,0 +1,22 @@
+{
+  "all_previous_tracked_files_unchanged": true,
+  "attempts": 420,
+  "checks": [
+    "20 fresh initial requests with distinct recorded seeds",
+    "all420 planned nodes retained;no correctness/susceptibility selection",
+    "own-history baseline and isolated WU/BC/D/control branches",
+    "exact frozen prompts and same pinned settings",
+    "replication before coverage,global6 concurrency",
+    "one combined atomic$2 ledger with all retries/errors",
+    "unchanged probability parser and exact math;separate quoted coding",
+    "all tracked files including any manuscript unchanged"
+  ],
+  "configuration_violations": [],
+  "conservative_settled_upper_usd": "0.012872300",
+  "logical_calls": 420,
+  "maximum_concurrent_requests": 6,
+  "peak_spent_plus_outstanding_usd": "0.196832900",
+  "reported_cost_usd": "0",
+  "status": "passed",
+  "time": "2026-11-16T11:22:11.089443+00:00"
+}

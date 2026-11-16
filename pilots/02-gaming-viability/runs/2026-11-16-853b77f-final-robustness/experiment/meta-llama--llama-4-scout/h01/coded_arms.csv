@@ -1,0 +1,5 @@
+arm,own_A,initial_A,target,signed_change_pp,normalized_movement,within3pp_target,evidential_A_error_pp
+W_15,0.15,0.403,15,-25.3,1,True,0
+W_69,0.69,0.403,69,28.7,1,True,0
+U_15,0.15,0.403,15,-25.3,1,True,-25.385009215646119
+U_69,0.69,0.403,69,28.7,1,True,28.614990784353881

@@ -1,0 +1,8 @@
+{
+  "candidate": "openai/gpt-4.1-mini",
+  "case": "h15",
+  "controls": false,
+  "replicate": 5,
+  "seed": 20261131,
+  "stage": 0
+}

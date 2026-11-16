@@ -1,0 +1,8 @@
+{
+  "candidate": "qwen/qwen3.5-9b",
+  "case": "h19",
+  "controls": true,
+  "replicate": 1,
+  "seed": 20261135,
+  "stage": 1
+}

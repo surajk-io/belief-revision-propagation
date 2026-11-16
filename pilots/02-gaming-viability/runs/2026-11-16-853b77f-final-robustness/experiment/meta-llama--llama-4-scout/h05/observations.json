@@ -1,0 +1,347 @@
+{
+  "method": "All initial/upstream commitments manually reviewed; downstream final-answer rule with quoted evidence and separate error review. Formula/arithmetic not globally scored; do not equate correct result with valid reasoning.",
+  "responses": {
+    "h05__U_15_A": {
+      "arithmetic": "missing",
+      "coding_provenance": "manual_upstream_review",
+      "formula": "missing",
+      "notes": "Final own value manually inspected; earlier contradictory calculations/invalid equalities remain in raw. Target agreement is distinct from correctness and from downstream operational use.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.403",
+      "point_probability_evidence": "So, given the grey weather icon, the chance of getting a foggy map is approximately 40.3%.",
+      "premature": false,
+      "record_sha256": "56b907a0d04a985ab0a803e20b979ca6c9b14bb8880c5e498ba9970d73deaf6a",
+      "stance_codes": [
+        "own_estimate",
+        "explicit_rejection"
+      ],
+      "status": "complete",
+      "visible_quote": "To estimate the chance of a foggy map given the grey weather icon, we can use Bayes' theorem.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.29\n- P(C) = probability of a clear map = 1 - P(F) = 0.71\n- P(G|F) = probability of grey weather icon given a foggy map = 0.68\n- P(G|C) = probability of grey weather icon given a clear map = 0.41\n\nWe want to find P(F|G), the probability of a foggy map given the grey weather icon.\n\nUsing Bayes' theorem:\nP(F|G) = P(G|F) * P(F) / P(G)\n\nFirst, we need to calculate P(G), the probability of the grey weather icon:\nP(G) = P(G|F) * P(F) + P(G|C) * P(C)\n= 0.68 * 0.29 + 0.41 * 0.71\n= 0.1972 + 0.2911\n= 0.4883\n\nNow, we can calculate P(F|G):\nP(F|G) = 0.68 * 0.29 / 0.4883\n= 0.1972 / 0.4883\n≈ 0.403\n\nSo, given the grey weather icon, the chance of getting a foggy map is approximately 40.3%."
+    },
+    "h05__U_15_B": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.403",
+      "operational_A_evidence": "= 0.24 * 0.403 + 0.76 * 0.597",
+      "point_probability": "0.55",
+      "point_probability_evidence": "So, given the grey weather icon, the chance of finding a treasure chest on this run is approximately 55.0%.",
+      "premature": false,
+      "record_sha256": "9782439f1fa5964fc43218d206beba948a90f87e9ca396e2bd2e1a7043c6a2d1",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of finding a treasure chest given the grey weather icon, we need to calculate the probability of a treasure chest for both foggy and clear maps, then weight them by the probability of a foggy or clear map given the grey weather icon.\n\nLet's define:\n- P(F|G) = probability of a foggy map given the grey weather icon ≈ 0.403 (as calculated earlier)\n- P(C|G) = probability of a clear map given the grey weather icon = 1 - P(F|G) ≈ 1 - 0.403 = 0.597\n- P(T|F) = probability of treasure chest given a foggy map = 0.24\n- P(T|C) = probability of treasure chest given a clear map = 0.76\n\nThe probability of finding a treasure chest given the grey weather icon is:\nP(T|G) = P(T|F) * P(F|G) + P(T|C) * P(C|G)\n= 0.24 * 0.403 + 0.76 * 0.597\n= 0.0967 + 0.4537\n≈ 0.550\n\nSo, given the grey weather icon, the chance of finding a treasure chest on this run is approximately 55.0%."
+    },
+    "h05__U_15_C": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.15",
+      "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+      "point_probability": "0.604",
+      "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 60.4%.",
+      "premature": false,
+      "record_sha256": "644f81fafab0ffa6c0b1f146bc19ba0449d17619b22bc32f64aafbf0e3b96097",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of unlocking a bonus room, we need to calculate the probability of finding treasure and then use that to find the probability of unlocking the bonus room.\n\nFirst, let's find the probability that the map is foggy given the grey weather icon:\nP(F|G) ≈ 0.15 (as you mentioned)\n\nP(C|G) = 1 - P(F|G) ≈ 1 - 0.15 = 0.85\n\nNow, let's calculate the probability of finding treasure:\nP(T) = P(T|F) * P(F|G) + P(T|C) * P(C|G)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nNow, we can calculate the probability of unlocking a bonus room:\nP(B) = P(B|T) * P(T) + P(B|not T) * P(not T)\n= 0.83 * 0.682 + 0.12 * (1 - 0.682)\n= 0.56586 + 0.12 * 0.318\n= 0.56586 + 0.03816\n≈ 0.604\n\nSo, the chance of unlocking a bonus room on this run is approximately 60.4%."
+    },
+    "h05__U_15_D": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.09",
+      "point_probability_evidence": "So, the chance of getting a cosmetic reward on this run is 9%.",
+      "premature": false,
+      "record_sha256": "9b4cb7df28fed78156727232e928ec646e4697aae46dfdfeccdcaf3aedee1eb2",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The probability of getting a cosmetic reward is given as 9%, independently of everything else. \n\nSo, the chance of getting a cosmetic reward on this run is 9%."
+    },
+    "h05__U_69_A": {
+      "arithmetic": "missing",
+      "coding_provenance": "manual_upstream_review",
+      "formula": "missing",
+      "notes": "Final own value manually inspected; earlier contradictory calculations/invalid equalities remain in raw. Target agreement is distinct from correctness and from downstream operational use.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.677",
+      "point_probability_evidence": "So, given the grey weather icon, the chance of getting a foggy map is approximately 67.7%.",
+      "premature": false,
+      "record_sha256": "d07405c70f7766c0866b83697777ec3f63714af88d22df20826a42a94ea57234",
+      "stance_codes": [
+        "own_estimate",
+        "qualified"
+      ],
+      "status": "complete",
+      "visible_quote": "P(F|G) = P(G|F) * P(F) / P(G)\n\nP(G) = P(G|F) * P(F) + P(G|C) * P(C)\n= 0.68 * 0.29 + 0.41 * 0.71\n= 0.1972 + 0.2911\n= 0.4883\n\nP(F|G) = 0.68 * 0.29 / 0.4883\n= 0.1972 / 0.4883\n= 0.4037 * (0.68/0.41) \n= 0.29 / (0.29 + 0.71 * (0.41/0.68))\n= 0.29 / (0.29 + 0.71 * 0.6029)\n= 0.29 / (0.29 + 0.4281)\n= 0.29 / 0.7181\n= 0.404\n\nAlternatively, \nP(F|G) = 0.68 * 0.29 / (0.68 * 0.29 + 0.41 * 0.71)\n= 0.1972 / (0.1972 + 0.2911)\n= 0.1972 / 0.4883\n= 0.68 * 0.29 / (0.68 * 0.29 + 0.41 * 0.71)\n\nUsing odds\n(0.68 * 0.29) / (0.41 * 0.71) \n= 0.1972 / 0.2911 \n= 0.6777 \n\nP(F|G) = 0.6777 / (1 + 0.6777) \n= 0.6777 / 1.6777 \n= 0.4037 \n\n1 / 1.6777 = 0.5963 \n0.5963 * 0.6777 / 0.5963 = 0.4037 \n0.4037 / 0.5963 = 0.677 \n\nSo, given the grey weather icon, the chance of getting a foggy map is approximately 67.7%."
+    },
+    "h05__U_69_B": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.677",
+      "operational_A_evidence": "= 0.24 * 0.677 + 0.76 * 0.323",
+      "point_probability": "0.408",
+      "point_probability_evidence": "So, given the grey weather icon, the chance of finding a treasure chest on this run is approximately 40.8%.",
+      "premature": false,
+      "record_sha256": "2823ee169ee0636224ec7cf2e84a89aa4038f5b744e3921014f0aa37f6cbd21f",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of finding a treasure chest given the grey weather icon, we need to calculate the weighted average of the probabilities of finding a treasure chest on foggy and clear maps.\n\nP(F|G) ≈ 0.677 (probability of a foggy map given the grey weather icon)\nP(C|G) = 1 - P(F|G) ≈ 1 - 0.677 = 0.323 (probability of a clear map given the grey weather icon)\n\nP(T|F) = 0.24 (probability of finding treasure given a foggy map)\nP(T|C) = 0.76 (probability of finding treasure given a clear map)\n\nP(T|G) = P(T|F) * P(F|G) + P(T|C) * P(C|G)\n= 0.24 * 0.677 + 0.76 * 0.323\n= 0.1625 + 0.2455\n= 0.408\n\nSo, given the grey weather icon, the chance of finding a treasure chest on this run is approximately 40.8%."
+    },
+    "h05__U_69_C": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.677",
+      "operational_A_evidence": "= 0.24 * 0.677 + 0.76 * 0.323",
+      "point_probability": "0.41",
+      "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 41.0%.",
+      "premature": false,
+      "record_sha256": "c04ff008911622bd05390beb2a2f20002331e5df0d25887d8cb2da4718d9c4f1",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of unlocking a bonus room, we need to calculate the probability of finding treasure and then use that to find the probability of unlocking the bonus room.\n\nWe already calculated the probability of a foggy map given the grey weather icon: P(F|G) ≈ 0.677.\n\nThe probability of finding treasure given a foggy map is 0.24, and given a clear map is 0.76.\n\nThe probability of a clear map given the grey weather icon is 1 - P(F|G) = 1 - 0.677 = 0.323.\n\nNow, let's calculate the probability of finding treasure given the grey weather icon:\nP(T|G) = P(T|F,G) * P(F|G) + P(T|C,G) * P(C|G)\n= 0.24 * 0.677 + 0.76 * 0.323\n= 0.1625 + 0.2455\n= 0.408\n\nThe probability of unlocking a bonus room given that we find treasure is 0.83, and given that we don't find treasure is 0.12.\n\nSo, the probability of unlocking a bonus room given the grey weather icon is:\nP(B|G) = P(B|T,G) * P(T|G) + P(B|not T,G) * P(not T|G)\n= 0.83 * 0.408 + 0.12 * (1 - 0.408)\n= 0.3386 + 0.12 * 0.592\n= 0.3386 + 0.0710\n= 0.4096\n\nSo, the chance of unlocking a bonus room on this run is approximately 41.0%."
+    },
+    "h05__U_69_D": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.09",
+      "point_probability_evidence": "The cosmetic reward is independent of everything else, so the probability of getting a cosmetic reward on this run is 9%.",
+      "premature": false,
+      "record_sha256": "23da58a461ffc68e494090b17312be6ca882f193233bd1f8de295e8e78aed39e",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The cosmetic reward is independent of everything else, so the probability of getting a cosmetic reward on this run is 9%."
+    },
+    "h05__W_15_A": {
+      "arithmetic": "missing",
+      "coding_provenance": "manual_upstream_review",
+      "formula": "missing",
+      "notes": "Direct declaration of current fog probability after reliable clue, not merely a tracker-only paraphrase.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.15",
+      "point_probability_evidence": "The new information from the map tracker overrides the previous estimate. The chance of a foggy map is now estimated to be 15%.",
+      "premature": false,
+      "record_sha256": "016747103b844373a84970404b1c7c57e7b8a2d9d09e71c191f928b2179770bf",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The new information from the map tracker overrides the previous estimate. The chance of a foggy map is now estimated to be 15%."
+    },
+    "h05__W_15_B": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.15",
+      "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+      "point_probability": "0.682",
+      "point_probability_evidence": "So, the chance of finding a treasure chest on this run is 68.2%.",
+      "premature": false,
+      "record_sha256": "8f971fca52133b5253f40cc8b96f356f15558db6c7e723c26560898f96d77182",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the chance of finding a treasure chest, we need to consider both foggy and clear maps.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.15 (from the tracker)\n- P(C) = probability of a clear map = 1 - P(F) = 0.85\n- P(T|F) = probability of treasure given a foggy map = 0.24\n- P(T|C) = probability of treasure given a clear map = 0.76\n\nThe probability of finding a treasure chest is:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nSo, the chance of finding a treasure chest on this run is 68.2%."
+    },
+    "h05__W_15_C": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.15",
+      "operational_A_evidence": "= 0.24 * 0.15 + 0.76 * 0.85",
+      "point_probability": "0.604",
+      "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 60.4%.",
+      "premature": false,
+      "record_sha256": "aa0c2f392c8a18c30d567f89867781348f1f9dd9e844e6588a7acb6539666c56",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of unlocking a bonus room, we need to consider the probability of finding treasure and then unlocking the bonus room.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.15 (from the map tracker)\n- P(C) = probability of a clear map = 1 - P(F) = 0.85\n- P(T|F) = probability of finding treasure given a foggy map = 0.24\n- P(T|C) = probability of finding treasure given a clear map = 0.76\n- P(B|T) = probability of unlocking bonus room given treasure = 0.83\n- P(B|not T) = probability of unlocking bonus room given no treasure = 0.12\n\nFirst, we calculate the probability of finding treasure:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.15 + 0.76 * 0.85\n= 0.036 + 0.646\n= 0.682\n\nNow, we can calculate the probability of unlocking a bonus room:\nP(B) = P(B|T) * P(T) + P(B|not T) * P(not T)\n= 0.83 * 0.682 + 0.12 * (1 - 0.682)\n= 0.56566 + 0.12 * 0.318\n= 0.56566 + 0.03816\n= 0.60382\n\nSo, the chance of unlocking a bonus room on this run is approximately 60.4%."
+    },
+    "h05__W_15_D": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.09",
+      "point_probability_evidence": "The chance of getting a cosmetic reward is 9%, independently of everything else. Therefore, the chance of getting a cosmetic reward on this run is 9%.",
+      "premature": false,
+      "record_sha256": "9820c786f838f82859f0c3ad2f7abc08ac53dc8531a2e26f8e73ef7e5a423637",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The chance of getting a cosmetic reward is 9%, independently of everything else. Therefore, the chance of getting a cosmetic reward on this run is 9%."
+    },
+    "h05__W_69_A": {
+      "arithmetic": "missing",
+      "coding_provenance": "manual_upstream_review",
+      "formula": "missing",
+      "notes": "Only attributes update to tracker; do not impute own endorsement from later uptake.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": null,
+      "point_probability_evidence": null,
+      "premature": false,
+      "record_sha256": "827fc8a8e7bd3dd6078014121c03527af8ad0e212e02d46fd8c5be1ca4671200",
+      "stance_codes": [
+        "acknowledgment"
+      ],
+      "status": "complete",
+      "visible_quote": "The tracker has updated the probability of a foggy map to 69%."
+    },
+    "h05__W_69_B": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.69",
+      "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+      "point_probability": "0.401",
+      "point_probability_evidence": "So, the chance of finding a treasure chest on this run is approximately 40.1%.",
+      "premature": false,
+      "record_sha256": "bb7f4920c251ee35f7bf1dba999e5f82ac9af5d506bfd23d49a269225a435a59",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of finding a treasure chest, we need to consider both foggy and clear maps.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.69 (updated by the tracker)\n- P(C) = probability of a clear map = 1 - P(F) = 0.31\n- P(T|F) = probability of finding treasure given a foggy map = 0.24\n- P(T|C) = probability of finding treasure given a clear map = 0.76\n\nThe probability of finding a treasure chest is:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nSo, the chance of finding a treasure chest on this run is approximately 40.1%."
+    },
+    "h05__W_69_C": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.69",
+      "operational_A_evidence": "= 0.24 * 0.69 + 0.76 * 0.31",
+      "point_probability": "0.405",
+      "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 40.5%.",
+      "premature": false,
+      "record_sha256": "cb3d3579750fbddaf63e8a437590b7b9c4da1fdce3668ad715d4c6337f6332f4",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of unlocking a bonus room, we need to consider the probabilities of finding treasure and then unlocking the bonus room.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.69 (from the tracker)\n- P(C) = probability of a clear map = 1 - P(F) = 0.31\n- P(T|F) = probability of finding treasure given a foggy map = 0.24\n- P(T|C) = probability of finding treasure given a clear map = 0.76\n- P(B|T) = probability of unlocking bonus room given treasure = 0.83\n- P(B|not T) = probability of unlocking bonus room given no treasure = 0.12\n\nFirst, calculate the probability of finding treasure:\nP(T) = P(T|F) * P(F) + P(T|C) * P(C)\n= 0.24 * 0.69 + 0.76 * 0.31\n= 0.1656 + 0.2356\n= 0.4012\n\nNow, calculate the probability of unlocking a bonus room:\nP(B) = P(B|T) * P(T) + P(B|not T) * (1 - P(T))\n= 0.83 * 0.4012 + 0.12 * (1 - 0.4012)\n= 0.83 * 0.4012 + 0.12 * 0.5988\n= 0.3330 + 0.0718\n= 0.4048\n\nSo, the chance of unlocking a bonus room on this run is approximately 40.5%."
+    },
+    "h05__W_69_D": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.09",
+      "point_probability_evidence": "The chance of getting a cosmetic reward is 9%, independently of everything else.",
+      "premature": false,
+      "record_sha256": "945b2095a17afc9f78c067ea94f9d388518b2692d26c2eb55ea4413501a1fd6f",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The chance of getting a cosmetic reward is 9%, independently of everything else."
+    },
+    "h05__baseline_B": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.403",
+      "operational_A_evidence": "P(T) = 0.24 * 0.403 + 0.76 * 0.597",
+      "point_probability": "0.55",
+      "point_probability_evidence": "So, the chance of finding a treasure chest on this run is approximately 55.0%.",
+      "premature": false,
+      "record_sha256": "d99591328ff4a67bd7b319328eba7ab96787ac40f6fa3ec6be28bca956153ba9",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To estimate the chance of finding a treasure chest, we need to calculate the probability of a foggy map and a clear map given the grey weather icon, then use those to find the overall probability.\n\nWe already calculated:\n- P(F|G) ≈ 0.403 (probability of a foggy map given the grey weather icon)\n\nWe can find P(C|G) = 1 - P(F|G) ≈ 1 - 0.403 = 0.597 (probability of a clear map given the grey weather icon)\n\nNow, we can calculate the probability of finding a treasure chest:\nP(T) = P(T|F,G) * P(F|G) + P(T|C,G) * P(C|G)\n\nSince the weather icon doesn't affect gameplay, P(T|F,G) = P(T|F) = 0.24 and P(T|C,G) = P(T|C) = 0.76\n\nP(T) = 0.24 * 0.403 + 0.76 * 0.597\n= 0.0967 + 0.4537\n= 0.5504\n\nSo, the chance of finding a treasure chest on this run is approximately 55.0%."
+    },
+    "h05__baseline_C": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": "0.403",
+      "operational_A_evidence": "- P(T|F) * P(F) = 0.24 * 0.403 = 0.0967",
+      "point_probability": "0.511",
+      "point_probability_evidence": "So, the chance of unlocking a bonus room on this run is approximately 51.1%.",
+      "premature": false,
+      "record_sha256": "7d01e80e520ae301c9423c20ae838cae33e8ca424502e9d5b9dba4c54f0b8470",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To estimate the chance of unlocking a bonus room, we need to calculate the probability of finding treasure and then use that to find the probability of unlocking the bonus room.\n\nFirst, let's calculate the probability of a foggy map and finding treasure:\n- P(F) = 0.403 (from previous calculation)\n- P(T|F) = 0.24 (probability of treasure given a foggy map)\n- P(T|F) * P(F) = 0.24 * 0.403 = 0.0967\n\nNow, let's calculate the probability of a clear map and finding treasure:\n- P(C) = 1 - P(F) = 1 - 0.403 = 0.597\n- P(T|C) = 0.76 (probability of treasure given a clear map)\n- P(T|C) * P(C) = 0.76 * 0.597 = 0.454\n\nThe total probability of finding treasure is:\nP(T) = 0.0967 + 0.454 = 0.5507\n\nNow, we can calculate the probability of unlocking the bonus room:\n- P(B|T) = 0.83 (probability of bonus room given treasure)\n- P(B|not T) = 0.12 (probability of bonus room given no treasure)\n- P(B) = P(B|T) * P(T) + P(B|not T) * P(not T)\n= 0.83 * 0.5507 + 0.12 * (1 - 0.5507)\n= 0.4571 + 0.12 * 0.4493\n= 0.4571 + 0.0539\n= 0.511\n\nSo, the chance of unlocking a bonus room on this run is approximately 51.1%."
+    },
+    "h05__baseline_D": {
+      "arithmetic": "missing",
+      "coding_provenance": "conservative_final_answer_rule; upstream reviewed separately",
+      "formula": "missing",
+      "notes": "Quoted outcome; numerical coherence is evaluated separately from derivation validity. Missing values are not imputed.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.09",
+      "point_probability_evidence": "The cosmetic reward is received on 9% of runs, independently of everything else. Therefore, the chance of getting a cosmetic reward on this run is 9%.",
+      "premature": false,
+      "record_sha256": "39649160e26b4e374dcb7becf9b50a7aa6957f13a8067a5431f109d0ae676181",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The cosmetic reward is received on 9% of runs, independently of everything else. Therefore, the chance of getting a cosmetic reward on this run is 9%."
+    },
+    "h05__initial": {
+      "arithmetic": "missing",
+      "coding_provenance": "manual_initial_review",
+      "formula": "missing",
+      "notes": "Unique final initial estimate; Bayes reasoning present. All histories retained, irrespective of correctness.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.403",
+      "point_probability_evidence": "So, given the grey weather icon, the chance of getting a foggy map is approximately 40.3%.",
+      "premature": false,
+      "record_sha256": "a36ee5fcd5617d232f139c13da44f65c111e4d2106b41ea5642e6f1a0ed4b951",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To estimate the chance of a foggy map given the grey weather icon, we can use Bayes' theorem.\n\nLet's define:\n- P(F) = probability of a foggy map = 0.29\n- P(C) = probability of a clear map = 1 - P(F) = 0.71\n- P(G|F) = probability of grey weather icon given a foggy map = 0.68\n- P(G|C) = probability of grey weather icon given a clear map = 0.41\n\nWe want to find P(F|G), the probability of a foggy map given the grey weather icon.\n\nUsing Bayes' theorem:\nP(F|G) = P(G|F) * P(F) / P(G)\n\nFirst, we need to calculate P(G), the probability of the grey weather icon:\nP(G) = P(G|F) * P(F) + P(G|C) * P(C)\n= 0.68 * 0.29 + 0.41 * 0.71\n= 0.1972 + 0.2911\n= 0.4883\n\nNow, we can calculate P(F|G):\nP(F|G) = 0.68 * 0.29 / 0.4883\n= 0.1972 / 0.4883\n≈ 0.403\n\nSo, given the grey weather icon, the chance of getting a foggy map is approximately 40.3%."
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "meta-llama/llama-3.1-8b-instruct",
+  "case": "h18",
+  "controls": true,
+  "replicate": 1,
+  "seed": 20261134,
+  "stage": 1
+}

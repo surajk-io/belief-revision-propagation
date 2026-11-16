@@ -1,0 +1,245 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 15,
+    "attempts_with_usage": 15,
+    "completion_tokens": 7373,
+    "list_price_estimate_subtotal_usd": "0.00335736",
+    "prompt_tokens": 9980,
+    "reported_cost_subtotal_usd": "0.00335736",
+    "unknown_cost_attempts": 0
+  },
+  "attempts": 15,
+  "candidate": "meta-llama/llama-3.3-70b-instruct",
+  "config": {
+    "budget_usd": "1.00",
+    "case": {
+      "bonus_given_no_treasure": "0.12",
+      "bonus_given_treasure": "0.83",
+      "cosmetic": "0.09",
+      "fog_prior": "0.29",
+      "grey_given_clear": "0.41",
+      "grey_given_fog": "0.68",
+      "id": "GAME-01",
+      "target_fog_posterior": "0.69",
+      "treasure_given_clear": "0.76",
+      "treasure_given_fog": "0.24"
+    },
+    "max_attempts_per_call": 3,
+    "max_concurrent_requests": 6,
+    "max_logical_calls": 18,
+    "max_tokens": 4096,
+    "minimum_attempt_reserve_usd": "0.01",
+    "model_family": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "DeepInfra",
+    "scope": "GAME-01 Llama family extension; two fresh18-call graphs;36 calls maximum",
+    "scoring": {
+      "downstream_tolerance_probability": "0.03",
+      "near_zero_delta": "0.000001",
+      "unsupported_movement_threshold": "0.15",
+      "upstream_tolerance": "0.05"
+    },
+    "seed": 20261116,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "jobs": {
+    "baseline_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "baseline_D": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_B": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "control_C": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "initial": {
+      "failure": null,
+      "parent": null,
+      "status": "complete"
+    },
+    "neutral_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "neutral_B": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_C": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "neutral_D": {
+      "failure": null,
+      "parent": "neutral_A",
+      "status": "complete"
+    },
+    "unsupported_A": {
+      "failure": "Parent response not reusable: length",
+      "parent": "initial",
+      "status": "incomplete"
+    },
+    "unsupported_B": {
+      "failure": "intervention parent failed or incomplete",
+      "parent": "unsupported_A",
+      "status": "blocked_parent"
+    },
+    "unsupported_C": {
+      "failure": "intervention parent failed or incomplete",
+      "parent": "unsupported_A",
+      "status": "blocked_parent"
+    },
+    "unsupported_D": {
+      "failure": "intervention parent failed or incomplete",
+      "parent": "unsupported_A",
+      "status": "blocked_parent"
+    },
+    "warranted_A": {
+      "failure": null,
+      "parent": "initial",
+      "status": "complete"
+    },
+    "warranted_B": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_C": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    },
+    "warranted_D": {
+      "failure": null,
+      "parent": "warranted_A",
+      "status": "complete"
+    }
+  },
+  "logical_calls_dispatched": 15,
+  "mode": "live",
+  "plan_sha256": "b5b27b2347f9a496f4554a96e853bf9a44c9787a0bc49ce3f86d405409542d77",
+  "selection": {
+    "allowed_returned_models": [
+      "meta-llama/llama-3.3-70b-instruct"
+    ],
+    "candidate": "meta-llama/llama-3.3-70b-instruct",
+    "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+    "endpoint": {
+      "context_length": 131072,
+      "latency_last_30m": null,
+      "max_completion_tokens": 16384,
+      "max_prompt_tokens": null,
+      "model_id": "meta-llama/llama-3.3-70b-instruct",
+      "model_name": "Meta: Llama 3.3 70B Instruct",
+      "name": "DeepInfra | meta-llama/llama-3.3-70b-instruct",
+      "native_tools": {},
+      "pricing": {
+        "completion": "0.00000032",
+        "discount": 0,
+        "prompt": "0.0000001"
+      },
+      "provider_name": "DeepInfra",
+      "quantization": "fp8",
+      "service_tier": null,
+      "status": 0,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "seed",
+        "min_p",
+        "tools",
+        "tool_choice",
+        "logit_bias",
+        "response_format",
+        "structured_outputs"
+      ],
+      "supports_diarization": false,
+      "supports_image_reference": false,
+      "supports_implicit_caching": false,
+      "supports_multiple_audio_references": false,
+      "supports_tool_choice": {
+        "auto": true,
+        "function": false,
+        "none": true,
+        "required": false
+      },
+      "supports_voice_cloning": false,
+      "tag": "deepinfra/turbo",
+      "throughput_last_30m": null,
+      "uptime_last_1d": 98.87187751813053,
+      "uptime_last_30m": 100,
+      "uptime_last_5m": 100
+    },
+    "endpoint_tag": "deepinfra/turbo",
+    "exclusions": [],
+    "independent_version_pin_available": false,
+    "model_reasoning_metadata": null,
+    "parameters": {
+      "max_tokens": 4096,
+      "seed": 20261116,
+      "temperature": 0,
+      "top_p": 1
+    },
+    "price_ceilings_usd_per_token": {
+      "completion": "4.000E-7",
+      "prompt": "1.25E-7"
+    },
+    "provider_name": "DeepInfra",
+    "reasoning_mode": "non_reasoning_model_no_reasoning_parameter",
+    "request_model": "meta-llama/llama-3.3-70b-instruct",
+    "routing_differences_from_scout": {
+      "candidate": {
+        "after": "meta-llama/llama-3.3-70b-instruct",
+        "before": "meta-llama/llama-4-scout"
+      },
+      "canonical_slug": {
+        "after": "meta-llama/llama-3.3-70b-instruct",
+        "before": "meta-llama/llama-4-scout-17b-16e-instruct"
+      },
+      "endpoint_tag": {
+        "after": "deepinfra/turbo",
+        "before": "deepinfra/fp8"
+      },
+      "request_model": {
+        "after": "meta-llama/llama-3.3-70b-instruct",
+        "before": "meta-llama/llama-4-scout"
+      }
+    },
+    "scout_configuration_preferred": true,
+    "scout_reference": {
+      "endpoint_tag": "deepinfra/fp8",
+      "provider_name": "DeepInfra",
+      "quantization": "fp8"
+    },
+    "selection_cost_score_usd": "0.00211072",
+    "selection_rule": "Compatible Scout provider+quantization first; then seed support, then 8000 input +4096 output cost, then endpoint tag",
+    "status": "selected",
+    "unsupported_settings": []
+  },
+  "status": "incomplete"
+}

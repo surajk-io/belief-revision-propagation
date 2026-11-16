@@ -1,0 +1,25 @@
+{
+  "attempts": 36,
+  "checks": [
+    "exact frozen implicit wording and original game prompts",
+    "exact Bayesian/negative-slope math references",
+    "isolated parent/sibling histories and dependency order",
+    "stable unique logical IDs and all attempts",
+    "global six-request concurrency",
+    "atomic $1 spent-plus-outstanding replay",
+    "prefrozen Scout provider/fp8 preference; same non-thinking settings",
+    "game-only score replay and raw visible text fidelity",
+    "source snapshots and prior artifact preservation",
+    "secret absence when configured",
+    "two fresh18-call graphs only; no historical reruns;36-call maximum"
+  ],
+  "configuration_violations": [],
+  "conservative_settled_upper_usd": "0.000897750",
+  "logical_calls": 36,
+  "maximum_concurrent_requests": 6,
+  "peak_spent_plus_outstanding_usd": "0.0974040000",
+  "previous_artifacts_unchanged": true,
+  "reported_cost_usd": "0",
+  "status": "passed",
+  "time": "2026-11-16T04:38:33.317003+00:00"
+}

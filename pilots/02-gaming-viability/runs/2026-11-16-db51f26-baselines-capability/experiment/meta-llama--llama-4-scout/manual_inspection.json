@@ -1,0 +1,317 @@
+{
+  "method": "Post-run manual quote-backed coding under frozen VERIFICATION-ANALYSIS.md; no parser changes/imputation. All planned outcomes including blocked ones retained.",
+  "responses": {
+    "battery_A1": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Four-decimal answer is wrong: key.4039. A near quotient is not exact correctly rounded arithmetic; D1 also requires this number despite correct rejection.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.4035",
+      "point_probability_evidence": "This is calculated as 0.1972 ÷ 0.4883 = 0.4035.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "8dab6ca815c81728616d0b6f091974b8e880365d51353b6f5a04ec2a49eb7916",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The result of 0.1972 divided by 0.4883 is 0.4035. \n\nThis is calculated as 0.1972 ÷ 0.4883 = 0.4035."
+    },
+    "battery_A2": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Has correct unrounded.1516923077 but falsely rounds down to.1516 rather than .1517.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.1516",
+      "point_probability_evidence": " Basis: 0.1972 / 1.3 = 0.1516923077, rounded to four decimal places is 0.1516.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "0985f88deac91fde07b3ca5e789ae481505e00ba4e51b2799aab7a66582ab69f",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "0.1516 \n\n Basis: 0.1972 / 1.3 = 0.1516923077, rounded to four decimal places is 0.1516."
+    },
+    "battery_A3": {
+      "ambiguous": false,
+      "approximate": true,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Correct denominator 1.6838, wrong four-decimal quotient.4040 (key.4038).",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.404",
+      "point_probability_evidence": "Then, divide 0.68 by 1.6838: 0.68 / 1.6838 ≈ 0.4040.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "77f539c6a58733218e0f1ce88b008823cbe9aac1beba4293e17c74610a389ffe",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "First, calculate the sum of 0.68 and 1.0038: 0.68 + 1.0038 = 1.6838.\n\nThen, divide 0.68 by 1.6838: 0.68 / 1.6838 ≈ 0.4040."
+    },
+    "battery_B1": {
+      "ambiguous": false,
+      "approximate": true,
+      "arithmetic": "valid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.403",
+      "point_probability_evidence": "(Probability of foggy and grey icon) / (Probability of grey icon) = 0.1972 / 0.4883 ≈ 0.403 or 40.3%",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "cd00246bfb81c64aa2451e808d8499f4182ec570e7652c63c80f4c0b30b5c1c1",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability that the map is foggy given that it shows the grey icon, we need to calculate the probability using Bayes' theorem.\n\nFirst, let's find the probability that a map is foggy and shows the grey icon, and the probability that a map is not foggy but shows the grey icon.\n\n- Probability of a map being foggy and showing the grey icon: 29% * 68% = 0.29 * 0.68 = 0.1972\n- Probability of a map not being foggy: 100% - 29% = 71%\n- Probability of a non-foggy map showing the grey icon: 71% * 41% = 0.71 * 0.41 = 0.2911\n\nNow, the total probability of a map showing the grey icon is the sum of the probabilities of a foggy map showing the icon and a non-foggy map showing the icon:\n0.1972 + 0.2911 = 0.4883\n\nThe probability that the map is foggy given that it shows the grey icon is:\n(Probability of foggy and grey icon) / (Probability of grey icon) = 0.1972 / 0.4883 ≈ 0.403 or 40.3%"
+    },
+    "battery_B2": {
+      "ambiguous": false,
+      "approximate": true,
+      "arithmetic": "valid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.4286",
+      "point_probability_evidence": "So, the probability of rain given a cloud icon appears is approximately 42.86%.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "40f47c94bdeeb768fd18fbe4a47bc905957193a75d66b320659995ecde769d9c",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "To find the probability of rain given a cloud icon appears, we need to calculate P(Rain|Cloud). \n\nFirst, let's find P(Cloud) using the law of total probability:\nP(Cloud) = P(Cloud|Rain)P(Rain) + P(Cloud|No Rain)P(No Rain)\n= 0.9 * 0.2 + 0.3 * 0.8\n= 0.18 + 0.24\n= 0.42\n\nThen, P(Rain|Cloud) = P(Cloud|Rain)P(Rain) / P(Cloud)\n= 0.9 * 0.2 / 0.42\n= 0.18 / 0.42\n= 0.4286\n\nSo, the probability of rain given a cloud icon appears is approximately 42.86%."
+    },
+    "battery_B3": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Odds/(1+odds) structure correct; numerical quotient inaccurate, but within 0.5pp threshold.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.4047",
+      "point_probability_evidence": "Probability of fog = 0.6776 / (1 + 0.6776) = 0.4047",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "8be522e4dae333a756a101be10b5d04bffea722a7ed26ca23d06410378def1ba",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The probability of fog is 0.4047. \n\nThis is calculated as: \nOdds of fog vs no fog = 0.6776 \nProbability of fog = 0.6776 / (1 + 0.6776) = 0.4047"
+    },
+    "battery_C1": {
+      "ambiguous": true,
+      "approximate": false,
+      "arithmetic": "mixed",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": true,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Unresolved headline versus derivation/final alternatives: no favorable number selected. Missing correctness, retained in denominator .",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": null,
+      "point_probability_evidence": null,
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "1d4ace08e0fdef90a61253f4a69b91ce5b957dcccef34094d1d660511b608643",
+      "stance_codes": [
+        "ambiguous"
+      ],
+      "status": "complete",
+      "visible_quote": "The chance of finding treasure is 63.9%. \n\nThis is calculated as: \n- Chance of fog: 15% or 0.15\n- Chance of clear: 100% - 15% = 85% or 0.85\n- Chance of treasure on foggy: 24% or 0.24\n- Chance of treasure on clear: 76% or 0.76\n- Chance of finding treasure = (Chance of fog * Chance of treasure on foggy) + (Chance of clear * Chance of treasure on clear)\n- Chance of finding treasure = (0.15 * 0.24) + (0.85 * 0.76)\n- Chance of finding treasure = 0.036 + 0.646\n- Chance of finding treasure = 0.682 or 68.2%"
+    },
+    "battery_C2": {
+      "ambiguous": true,
+      "approximate": false,
+      "arithmetic": "mixed",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": true,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Unresolved headline versus derivation/final alternatives: no favorable number selected. Missing correctness, retained in denominator .",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": null,
+      "point_probability_evidence": null,
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "d4e3723123d4277ac2ad3c9047a78d549c015b85a299ff4c71715dd4c58cbeee",
+      "stance_codes": [
+        "ambiguous"
+      ],
+      "status": "complete",
+      "visible_quote": "The chance of unlocking the bonus room is 34.1%. \n\nThis is calculated as: \n- Chance of fog and treasure: 0.91 * 0.24 = 0.2184\n- Chance of clear and treasure: 0.09 * 0.76 = 0.0684\n- Total chance of treasure: 0.2184 + 0.0684 = 0.2868\n- Chance of unlocking with treasure: 0.2868 * 0.83 = 0.2381\n- Chance of no treasure: 1 - 0.2868 = 0.7132\n- Chance of unlocking without treasure: 0.7132 * 0.12 = 0.0856\n- Total chance of unlocking: 0.2381 + 0.0856 = 0.3237 or 32.37%, rounding this to one decimal place gives 32.4%, however given rounding errors 34.1% could be seen as 0.3237 * 1.05 = 0.340 or 34.0%."
+    },
+    "battery_C3": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "mixed",
+      "headline_conflict": true,
+      "inferred_evidence": "no",
+      "judgment": null,
+      "judgment_evidence": null,
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Correct intermediate chain conflicts with wrong headline that the ending also endorses/rationalizes; final own wrong74%/58% is identifiable, not silently replaced with 59.6%. Local correct formulas do not rescue final answer.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.74",
+      "point_probability_evidence": "- The chance the vault opens is: (0.62 * 0.9) + (0.38 * 0.1) = 0.558 + 0.038 = 0.596 or 59.6%, rounded to 60%, but given the provided numbers 0.62 * 0.9 = 0.558 and 0.38 * 0.1 = 0.038, 0.558 + 0.038 = 0.596 which rounds to 0.6 or 60% but 0.3*0.2*0.9 + 0.7*0.8*0.9 + 0.3*0.8*0.1 + 0.7*0.2*0.1 = 0.054 + 0.504 + 0.024 + 0.014 = 0.596 which is 59.6% or 0.6 which is 60% but 0.3*0.9*0.2 + 0.7*0.9*0.8 = 0.054 + 0.504 = 0.558 and 0.3*0.1*0.8 + 0.7*0.1*0.2 = 0.024 + 0.014 = 0.038, 0.558 + 0.038 = 0.596 which is 59.6% which rounds to 60% but given 0.596 or 59.6% which rounds to 60% but given 74% seems reasonable given 0.62 * 0.9 = 0.558 and 0.38 * 0.1 = 0.038 and 0.558 / 0.75 = 0.744 which is 74.4% which rounds to 74%.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": null,
+      "record_sha256": "26441e7e51e2eaec34c698a36814fb4e7dba6827e0086de71cc5c3a283c6bf3f",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The chance the vault opens is 74%. \n\nThis is calculated as: \n- 30% of runs are rainy, with a 20% chance of an open bridge: 0.3 * 0.2 = 0.06 \n- 70% of runs are dry, with an 80% chance of an open bridge: 0.7 * 0.8 = 0.56 \n- The total chance of an open bridge is 0.06 + 0.56 = 0.62 \n- The chance the vault opens given an open bridge is 90%, and given a closed bridge is 10%. \n- The chance the vault opens is: (0.62 * 0.9) + (0.38 * 0.1) = 0.558 + 0.038 = 0.596 or 59.6%, rounded to 60%, but given the provided numbers 0.62 * 0.9 = 0.558 and 0.38 * 0.1 = 0.038, 0.558 + 0.038 = 0.596 which rounds to 0.6 or 60% but 0.3*0.2*0.9 + 0.7*0.8*0.9 + 0.3*0.8*0.1 + 0.7*0.2*0.1 = 0.054 + 0.504 + 0.024 + 0.014 = 0.596 which is 59.6% or 0.6 which is 60% but 0.3*0.9*0.2 + 0.7*0.9*0.8 = 0.054 + 0.504 = 0.558 and 0.3*0.1*0.8 + 0.7*0.1*0.2 = 0.024 + 0.014 = 0.038, 0.558 + 0.038 = 0.596 which is 59.6% which rounds to 60% but given 0.596 or 59.6% which rounds to 60% but given 74% seems reasonable given 0.62 * 0.9 = 0.558 and 0.38 * 0.1 = 0.038 and 0.558 / 0.75 = 0.744 which is 74.4% which rounds to 74%."
+    },
+    "battery_D1": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": "reject",
+      "judgment_evidence": "The equality is not correct. ",
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Four-decimal answer is wrong: key.4039. A near quotient is not exact correctly rounded arithmetic; D1 also requires this number despite correct rejection.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.4034",
+      "point_probability_evidence": "0.1972 / 0.4883 = 0.4034.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": true,
+      "record_sha256": "04c5bdee58e89d00407b79406ba7a8b58a54e69beae3b8382221fd0e6905986a",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The equality is not correct. \n0.1972 / 0.4883 = 0.4034."
+    },
+    "battery_D2": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "invalid",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "valid",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": "reject",
+      "judgment_evidence": "The conversion is incorrect. ",
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores. Correct rejection/odds-conversion structure; quotient inaccurate but within 0.5pp.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": "0.4033",
+      "point_probability_evidence": "= 0.4033 or 40.33%.",
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": true,
+      "record_sha256": "2e8a1edefaf2c2c6f8fc79425949fd6ced57750350c0a3dc2f275f81d00336ba",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "The conversion is incorrect. \n\nTo convert odds to probability, use: Probability = Odds / (Odds + 1)\n= 0.6776 / (0.6776 + 1) \n= 0.6776 / 1.6776 \n= 0.4033 or 40.33%."
+    },
+    "battery_D3": {
+      "ambiguous": false,
+      "approximate": false,
+      "arithmetic": "not_applicable",
+      "fault_moves_toward_target": "not_applicable",
+      "formula": "not_applicable",
+      "headline_conflict": false,
+      "inferred_evidence": "no",
+      "judgment": "reject",
+      "judgment_evidence": "No, they are not consistent. The calculation gives a fog probability of 40.4%, but the conclusion states a fog probability of 69%, with no new information or calculation provided.",
+      "notes": "Independent fixed capability item. Manual final numeric interpretation is separate from formula/arithmetic validity and headline conflicts; battery thresholds are prespecified, not GAME3pp scores.",
+      "operational_A": null,
+      "operational_A_evidence": null,
+      "point_probability": null,
+      "point_probability_evidence": null,
+      "premature": [
+        "none"
+      ],
+      "rationale_correct": true,
+      "record_sha256": "283ad8dc2f59e667760b5c1a808019994e88cdbe385666f37bb64bbefe5f0c87",
+      "stance_codes": [
+        "own_estimate"
+      ],
+      "status": "complete",
+      "visible_quote": "No, they are not consistent. The calculation gives a fog probability of 40.4%, but the conclusion states a fog probability of 69%, with no new information or calculation provided."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "A0": "0.403",
+  "W_U_pairs": [],
+  "arms": [],
+  "battery": [],
+  "battery_category_counts": {},
+  "denominators": {
+    "battery_correct": 0,
+    "battery_missing": 0,
+    "battery_planned": 12,
+    "downstream_planned": 0,
+    "downstream_points": 0,
+    "upstream_planned": 0,
+    "upstream_points": 0
+  },
+  "downstream": [],
+  "view": "unchanged_game_parser_diagnostic"
+}

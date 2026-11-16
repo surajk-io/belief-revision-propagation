@@ -1,0 +1,172 @@
+{
+  "A0": "0.403",
+  "W_U_pairs": [],
+  "arms": [],
+  "battery": [
+    {
+      "answer": "0.4035",
+      "arithmetic": "invalid",
+      "correct": false,
+      "error_pp": "-0.035009215646119",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "A1",
+      "judgment": null,
+      "numeric_correct": false
+    },
+    {
+      "answer": "0.1516",
+      "arithmetic": "invalid",
+      "correct": false,
+      "error_pp": "-0.009230769230769",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "A2",
+      "judgment": null,
+      "numeric_correct": false
+    },
+    {
+      "answer": "0.404",
+      "arithmetic": "invalid",
+      "correct": false,
+      "error_pp": "0.015156194322366",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "A3",
+      "judgment": null,
+      "numeric_correct": false
+    },
+    {
+      "answer": "0.403",
+      "arithmetic": "valid",
+      "correct": true,
+      "error_pp": "-0.085009215646119",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "B1",
+      "judgment": null,
+      "numeric_correct": true
+    },
+    {
+      "answer": "0.4286",
+      "arithmetic": "valid",
+      "correct": true,
+      "error_pp": "0.002857142857143",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "B2",
+      "judgment": null,
+      "numeric_correct": true
+    },
+    {
+      "answer": "0.4047",
+      "arithmetic": "invalid",
+      "correct": true,
+      "error_pp": "0.07896518836433",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "B3",
+      "judgment": null,
+      "numeric_correct": true
+    },
+    {
+      "answer": null,
+      "arithmetic": "mixed",
+      "correct": null,
+      "error_pp": null,
+      "formula": "valid",
+      "headline_conflict": true,
+      "item": "C1",
+      "judgment": null,
+      "numeric_correct": null
+    },
+    {
+      "answer": null,
+      "arithmetic": "mixed",
+      "correct": null,
+      "error_pp": null,
+      "formula": "valid",
+      "headline_conflict": true,
+      "item": "C2",
+      "judgment": null,
+      "numeric_correct": null
+    },
+    {
+      "answer": "0.74",
+      "arithmetic": "invalid",
+      "correct": false,
+      "error_pp": "14.4",
+      "formula": "mixed",
+      "headline_conflict": true,
+      "item": "C3",
+      "judgment": null,
+      "numeric_correct": false
+    },
+    {
+      "answer": "0.4034",
+      "arithmetic": "invalid",
+      "correct": false,
+      "error_pp": "-0.045009215646119",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "D1",
+      "judgment": "reject",
+      "numeric_correct": false
+    },
+    {
+      "answer": "0.4033",
+      "arithmetic": "invalid",
+      "correct": true,
+      "error_pp": "-0.06103481163567",
+      "formula": "valid",
+      "headline_conflict": false,
+      "item": "D2",
+      "judgment": "reject",
+      "numeric_correct": true
+    },
+    {
+      "answer": null,
+      "arithmetic": "not_applicable",
+      "correct": true,
+      "error_pp": null,
+      "formula": "not_applicable",
+      "headline_conflict": false,
+      "item": "D3",
+      "judgment": "reject",
+      "numeric_correct": null
+    }
+  ],
+  "battery_category_counts": {
+    "A": {
+      "correct": 0,
+      "denominator": 3,
+      "missing": 0
+    },
+    "B": {
+      "correct": 3,
+      "denominator": 3,
+      "missing": 0
+    },
+    "C": {
+      "correct": 0,
+      "denominator": 3,
+      "missing": 2
+    },
+    "D": {
+      "correct": 2,
+      "denominator": 3,
+      "missing": 0
+    }
+  },
+  "denominators": {
+    "battery_correct": 5,
+    "battery_missing": 2,
+    "battery_planned": 12,
+    "downstream_planned": 0,
+    "downstream_points": 0,
+    "upstream_planned": 0,
+    "upstream_points": 0
+  },
+  "downstream": [],
+  "view": "manual"
+}

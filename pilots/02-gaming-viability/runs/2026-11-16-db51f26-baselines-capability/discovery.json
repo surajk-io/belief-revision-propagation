@@ -1,0 +1,26 @@
+[
+  {
+    "file": "models-raw.json",
+    "url": "https://openrouter.ai/api/v1/models",
+    "http_status": 200,
+    "time": "2026-11-16T09:10:08.679580+00:00"
+  },
+  {
+    "file": "meta-llama--llama-4-scout-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-4-scout/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T09:10:08.246988+00:00"
+  },
+  {
+    "file": "openai--gpt-4.1-mini-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/openai/gpt-4.1-mini/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T09:10:08.332806+00:00"
+  },
+  {
+    "file": "meta-llama--llama-4-maverick-endpoints.json",
+    "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-4-maverick/endpoints",
+    "http_status": 200,
+    "time": "2026-11-16T09:10:08.288960+00:00"
+  }
+]

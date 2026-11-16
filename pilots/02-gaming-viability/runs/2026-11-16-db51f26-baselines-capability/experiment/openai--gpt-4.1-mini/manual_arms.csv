@@ -1,0 +1,11 @@
+arm,condition,target,own_A,own_commitment,signed_change_pp,normalized_movement,target_error_pp,within3pp_of_target,evidential_A_error_pp
+W_15,W,0.15,,False,,,,,
+W_48,W,0.48,,False,,,,,
+W_69,W,0.69,,False,,,,,
+W_91,W,0.91,,False,,,,,
+U_15,U,0.15,0.404,True,0,0,25.4,False,0.014990784353881
+U_48,U,0.48,0.404,True,0,0,-7.6,False,0.014990784353881
+U_69,U,0.69,0.4,True,-0.4,-0.013986013986014,-29,False,-0.385009215646119
+U_91,U,0.91,0.404,True,0,0,-50.6,False,0.014990784353881
+M_69,M,0.69,0.404,True,0,0,-28.6,False,0.014990784353881
+V_69,V,0.69,0.404,True,0,0,-28.6,False,0.014990784353881

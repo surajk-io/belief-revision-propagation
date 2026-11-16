@@ -1,0 +1,13 @@
+item,answer,numeric_correct,judgment,correct,error_pp,formula,arithmetic,headline_conflict
+A1,0.4038,False,,False,-0.005009215646119,valid,invalid,False
+A2,0.1517,True,,True,0.000769230769231,valid,valid,False
+A3,0.4038,True,,True,-0.004843805677634,valid,valid,False
+B1,0.404,True,,True,0.014990784353881,valid,valid,False
+B2,0.429,True,,True,0.042857142857143,valid,valid,False
+B3,0.404,True,,True,0.00896518836433,valid,valid,False
+C1,0.682,True,,True,0,valid,valid,False
+C2,0.324,True,,True,0.0372,valid,valid,False
+C3,0.596,True,,True,0,valid,valid,False
+D1,0.4038,False,reject,False,-0.005009215646119,valid,invalid,False
+D2,0.4038,True,reject,True,-0.01103481163567,valid,valid,False
+D3,,,reject,True,,not_applicable,not_applicable,False

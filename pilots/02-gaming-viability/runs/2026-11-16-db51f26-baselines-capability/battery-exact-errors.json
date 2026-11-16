@@ -1,0 +1,407 @@
+{
+  "models": {
+    "meta-llama/llama-4-maverick": [
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000050092156461",
+        "exact_absolute_numeric_error": "1223/24415000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-1223/24415000",
+        "item": "A1",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "22242f913b89eb6e1707bf0213b67934809bdc42617d35b897064b13c4ed9f47"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000007692307692",
+        "exact_absolute_numeric_error": "1/130000",
+        "exact_key": "493/3250",
+        "exact_signed_numeric_error": "1/130000",
+        "item": "A2",
+        "manual_answer_probability": "0.1517",
+        "record_sha256": "5ec4d193db18c932af2f4bbb505be3ace6c3ea195867fbc4daf7d6f8dd4a391b"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "-0.000048438056776",
+        "exact_absolute_numeric_error": "2039/42095000",
+        "exact_key": "3400/8419",
+        "exact_signed_numeric_error": "-2039/42095000",
+        "item": "A3",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "1c9e2b144895f9e873324611ff5fe3612f799e237a2b4fbc55d7ce6850d46718"
+      },
+      {
+        "ambiguous": true,
+        "correct": null,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": null,
+        "item": "B1",
+        "manual_answer_probability": null,
+        "record_sha256": "d9d349b2a0e884f2164fa71f08b0a139b2bbda16c846fa3200fd464d7f7b5c5d"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.053571428571429",
+        "exact_absolute_numeric_error": "3/56",
+        "exact_key": "3/7",
+        "exact_signed_numeric_error": "-3/56",
+        "item": "B2",
+        "manual_answer_probability": "0.375",
+        "record_sha256": "1e95ed4412d40d167369965376f4394097190ad7bb01112ad4847003680e44ad"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000089651883643",
+        "exact_absolute_numeric_error": "47/524250",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "47/524250",
+        "item": "B3",
+        "manual_answer_probability": "0.404",
+        "record_sha256": "1a120a81db07caac7f52923b8c353432ed20bd0a0f0b2eddabc02eb7ac9963f6"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0",
+        "exact_absolute_numeric_error": "0",
+        "exact_key": "341/500",
+        "exact_signed_numeric_error": "0",
+        "item": "C1",
+        "manual_answer_probability": "0.682",
+        "record_sha256": "5beb98187013a1e6721b58f0bb6e20b0f096b0e39285a171e92a5af59d5fc589"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000372",
+        "exact_absolute_numeric_error": "93/250000",
+        "exact_key": "80907/250000",
+        "exact_signed_numeric_error": "93/250000",
+        "item": "C2",
+        "manual_answer_probability": "0.324",
+        "record_sha256": "80a3a826261c44a4128b4ed5a476850b484666bd1def541c9579092bedfc5fb6"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.016",
+        "exact_absolute_numeric_error": "2/125",
+        "exact_key": "149/250",
+        "exact_signed_numeric_error": "-2/125",
+        "item": "C3",
+        "manual_answer_probability": "0.58",
+        "record_sha256": "bf9f9e7f69e2c34d8cdf196a19050ecacab60fd53ec97c015175a0ee6cb327e3"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000050092156461",
+        "exact_absolute_numeric_error": "1223/24415000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-1223/24415000",
+        "item": "D1",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "f6715aa3cf90f29e5486fd8fdaa3ba3a7863385bad7c8e528b40986a62b0aabe"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000089651883643",
+        "exact_absolute_numeric_error": "47/524250",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "47/524250",
+        "item": "D2",
+        "manual_answer_probability": "0.404",
+        "record_sha256": "5526e45bd5cfafdbc3ddcb5288f0b659419b8796074534fffa30b62cd572578c"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": null,
+        "exact_signed_numeric_error": null,
+        "item": "D3",
+        "manual_answer_probability": null,
+        "record_sha256": "099286693abc7e677f55cc4979c2f52e1be327a7ca58edc6e9b606dbd427da24"
+      }
+    ],
+    "meta-llama/llama-4-scout": [
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000350092156461",
+        "exact_absolute_numeric_error": "3419/9766000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-3419/9766000",
+        "item": "A1",
+        "manual_answer_probability": "0.4035",
+        "record_sha256": "8dab6ca815c81728616d0b6f091974b8e880365d51353b6f5a04ec2a49eb7916"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000092307692308",
+        "exact_absolute_numeric_error": "3/32500",
+        "exact_key": "493/3250",
+        "exact_signed_numeric_error": "-3/32500",
+        "item": "A2",
+        "manual_answer_probability": "0.1516",
+        "record_sha256": "0985f88deac91fde07b3ca5e789ae481505e00ba4e51b2799aab7a66582ab69f"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "0.000151561943224",
+        "exact_absolute_numeric_error": "319/2104750",
+        "exact_key": "3400/8419",
+        "exact_signed_numeric_error": "319/2104750",
+        "item": "A3",
+        "manual_answer_probability": "0.404",
+        "record_sha256": "77f539c6a58733218e0f1ce88b008823cbe9aac1beba4293e17c74610a389ffe"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "-0.000850092156461",
+        "exact_absolute_numeric_error": "4151/4883000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-4151/4883000",
+        "item": "B1",
+        "manual_answer_probability": "0.403",
+        "record_sha256": "cd00246bfb81c64aa2451e808d8499f4182ec570e7652c63c80f4c0b30b5c1c1"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000028571428571",
+        "exact_absolute_numeric_error": "1/35000",
+        "exact_key": "3/7",
+        "exact_signed_numeric_error": "1/35000",
+        "item": "B2",
+        "manual_answer_probability": "0.4286",
+        "record_sha256": "40f47c94bdeeb768fd18fbe4a47bc905957193a75d66b320659995ecde769d9c"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000789651883643",
+        "exact_absolute_numeric_error": "16559/20970000",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "16559/20970000",
+        "item": "B3",
+        "manual_answer_probability": "0.4047",
+        "record_sha256": "8be522e4dae333a756a101be10b5d04bffea722a7ed26ca23d06410378def1ba"
+      },
+      {
+        "ambiguous": true,
+        "correct": null,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": "341/500",
+        "exact_signed_numeric_error": null,
+        "item": "C1",
+        "manual_answer_probability": null,
+        "record_sha256": "1d4ace08e0fdef90a61253f4a69b91ce5b957dcccef34094d1d660511b608643"
+      },
+      {
+        "ambiguous": true,
+        "correct": null,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": "80907/250000",
+        "exact_signed_numeric_error": null,
+        "item": "C2",
+        "manual_answer_probability": null,
+        "record_sha256": "d4e3723123d4277ac2ad3c9047a78d549c015b85a299ff4c71715dd4c58cbeee"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "0.144",
+        "exact_absolute_numeric_error": "18/125",
+        "exact_key": "149/250",
+        "exact_signed_numeric_error": "18/125",
+        "item": "C3",
+        "manual_answer_probability": "0.74",
+        "record_sha256": "26441e7e51e2eaec34c698a36814fb4e7dba6827e0086de71cc5c3a283c6bf3f"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000450092156461",
+        "exact_absolute_numeric_error": "10989/24415000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-10989/24415000",
+        "item": "D1",
+        "manual_answer_probability": "0.4034",
+        "record_sha256": "04c5bdee58e89d00407b79406ba7a8b58a54e69beae3b8382221fd0e6905986a"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "-0.000610348116357",
+        "exact_absolute_numeric_error": "12799/20970000",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "-12799/20970000",
+        "item": "D2",
+        "manual_answer_probability": "0.4033",
+        "record_sha256": "2e8a1edefaf2c2c6f8fc79425949fd6ced57750350c0a3dc2f275f81d00336ba"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": null,
+        "exact_signed_numeric_error": null,
+        "item": "D3",
+        "manual_answer_probability": null,
+        "record_sha256": "283ad8dc2f59e667760b5c1a808019994e88cdbe385666f37bb64bbefe5f0c87"
+      }
+    ],
+    "openai/gpt-4.1-mini": [
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000050092156461",
+        "exact_absolute_numeric_error": "1223/24415000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-1223/24415000",
+        "item": "A1",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "5bfb4ae55cc3a4c6169caf9e8e6e7e0c5e1020aaa9ed0dc4f0b251a5a079da4e"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000007692307692",
+        "exact_absolute_numeric_error": "1/130000",
+        "exact_key": "493/3250",
+        "exact_signed_numeric_error": "1/130000",
+        "item": "A2",
+        "manual_answer_probability": "0.1517",
+        "record_sha256": "72cbbc40371725d7ca198fef829f1be4d08854bb22f6946d38028df56a0bb202"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "-0.000048438056776",
+        "exact_absolute_numeric_error": "2039/42095000",
+        "exact_key": "3400/8419",
+        "exact_signed_numeric_error": "-2039/42095000",
+        "item": "A3",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "2888d6003938265d2bd542aa929704873a399141fddc5e73ed48e04653541639"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000149907843539",
+        "exact_absolute_numeric_error": "183/1220750",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "183/1220750",
+        "item": "B1",
+        "manual_answer_probability": "0.404",
+        "record_sha256": "1d1aa6b3ed93e6926e2a1d37955d8fb4c460f59829354641ed8c1fa6dc599f29"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000428571428571",
+        "exact_absolute_numeric_error": "3/7000",
+        "exact_key": "3/7",
+        "exact_signed_numeric_error": "3/7000",
+        "item": "B2",
+        "manual_answer_probability": "0.429",
+        "record_sha256": "88a7089e9a0af2f13cd3c1cad1b88b0521258944c47a63d154f3d4f151c5de50"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000089651883643",
+        "exact_absolute_numeric_error": "47/524250",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "47/524250",
+        "item": "B3",
+        "manual_answer_probability": "0.404",
+        "record_sha256": "9f7be2048eb0592451485b18042951fa4d77eb6e50d7d2eb488f4fed539c02b5"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0",
+        "exact_absolute_numeric_error": "0",
+        "exact_key": "341/500",
+        "exact_signed_numeric_error": "0",
+        "item": "C1",
+        "manual_answer_probability": "0.682",
+        "record_sha256": "cda4b210e64a453edb676917a96655ac8b5bd5ed8cb2d5fb0c8ed367f41a1ae7"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0.000372",
+        "exact_absolute_numeric_error": "93/250000",
+        "exact_key": "80907/250000",
+        "exact_signed_numeric_error": "93/250000",
+        "item": "C2",
+        "manual_answer_probability": "0.324",
+        "record_sha256": "09b33fa868a811ce4c0cd122a03aa81e2c055ae48a8187090f23203c10726af3"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "0",
+        "exact_absolute_numeric_error": "0",
+        "exact_key": "149/250",
+        "exact_signed_numeric_error": "0",
+        "item": "C3",
+        "manual_answer_probability": "0.596",
+        "record_sha256": "bf86f217db7705e767579bf0eef50fb6a1ac890f15d1b4acca6383f138dc122a"
+      },
+      {
+        "ambiguous": false,
+        "correct": false,
+        "error_probability_decimal": "-0.000050092156461",
+        "exact_absolute_numeric_error": "1223/24415000",
+        "exact_key": "1972/4883",
+        "exact_signed_numeric_error": "-1223/24415000",
+        "item": "D1",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "1ab0901a6cfefad1ce782dc11bc51ff0e1a36ab770477048b7e61e6b2d787ff9"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": "-0.000110348116357",
+        "exact_absolute_numeric_error": "1157/10485000",
+        "exact_key": "847/2097",
+        "exact_signed_numeric_error": "-1157/10485000",
+        "item": "D2",
+        "manual_answer_probability": "0.4038",
+        "record_sha256": "aa0b417f822dc6f433b1456b4ca5638b5ef23d68b3fe10a9d1811f8ebfd44f8f"
+      },
+      {
+        "ambiguous": false,
+        "correct": true,
+        "error_probability_decimal": null,
+        "exact_absolute_numeric_error": null,
+        "exact_key": null,
+        "exact_signed_numeric_error": null,
+        "item": "D3",
+        "manual_answer_probability": null,
+        "record_sha256": "1f0bcbf13e8726d425b2e30b8dc1b8ad94760710ed75314b6a31f41ec034008e"
+      }
+    ]
+  },
+  "units": "Normalized quotient/probability, not percentage points; exact rational error, same frozen keys/rules. Missing ambiguous answers are not imputed."
+}

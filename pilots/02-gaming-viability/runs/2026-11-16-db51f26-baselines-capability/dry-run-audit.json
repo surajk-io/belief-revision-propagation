@@ -1,0 +1,24 @@
+{
+  "attempts": 116,
+  "checks": [
+    "exact plan prompts/calculator literal/independent rational+Decimal keys",
+    "model-own historical prefixes and fresh battery histories",
+    "all fixed jobs, independent branches and dependency order",
+    "priority stage barriers and global6 concurrency",
+    "atomic separate$1 ledger replay and all attempts",
+    "same pinned provider/settings and preserved sources/artifacts",
+    "unchanged game parser; separate authoritative battery coding",
+    "manual quote hash/category/metric replay when present",
+    "credential absence when configured"
+  ],
+  "configuration_violations": [],
+  "conservative_settled_upper_usd": "0.004977500",
+  "logical_calls": 116,
+  "maximum_concurrent_requests": 6,
+  "peak_spent_plus_outstanding_usd": "0.145818750",
+  "previous_artifacts_unchanged": true,
+  "reported_cost_usd": "0",
+  "status": "passed",
+  "suite": "supplement",
+  "time": "2026-11-16T09:16:22.710079+00:00"
+}

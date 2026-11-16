@@ -1,0 +1,735 @@
+{
+  "accounting": {
+    "attempts_with_reported_cost": 116,
+    "attempts_with_usage": 116,
+    "completion_tokens": 16845,
+    "list_price_estimate_subtotal_usd": "0.04178195",
+    "prompt_tokens": 57587,
+    "reported_cost_subtotal_usd": "0.03730643",
+    "unknown_cost_attempts": 0
+  },
+  "budget_halted": false,
+  "concurrency_limit": 6,
+  "conservative_settled_upper_usd": "0.0522274375",
+  "ended": "2026-11-16T09:17:55.852641+00:00",
+  "jobs": {
+    "meta-llama/llama-4-maverick": {
+      "M_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_B": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_C": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_D": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "U_15_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_B": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_C": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_D": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_B": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_C": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_D": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_B": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_C": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_D": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_B": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_C": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_D": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "V_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_B": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_C": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_D": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "W_15_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_B": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_C": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_D": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_B": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_C": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_D": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_B": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_C": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_D": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_B": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_C": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_D": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "battery_A1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "meta-llama/llama-4-scout": {
+      "battery_A1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    },
+    "openai/gpt-4.1-mini": {
+      "M_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_B": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_C": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "M_69_D": {
+        "failure": null,
+        "parent": "M_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "U_15_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_B": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_C": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_15_D": {
+        "failure": null,
+        "parent": "U_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_B": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_C": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_48_D": {
+        "failure": null,
+        "parent": "U_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_B": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_C": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_69_D": {
+        "failure": null,
+        "parent": "U_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_B": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_C": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "U_91_D": {
+        "failure": null,
+        "parent": "U_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "V_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_B": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_C": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "V_69_D": {
+        "failure": null,
+        "parent": "V_69_A",
+        "stage": 2,
+        "status": "complete"
+      },
+      "W_15_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_B": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_C": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_15_D": {
+        "failure": null,
+        "parent": "W_15_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_B": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_C": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_48_D": {
+        "failure": null,
+        "parent": "W_48_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_B": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_C": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_69_D": {
+        "failure": null,
+        "parent": "W_69_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_A": {
+        "failure": null,
+        "parent": "initial",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_B": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_C": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "W_91_D": {
+        "failure": null,
+        "parent": "W_91_A",
+        "stage": 1,
+        "status": "complete"
+      },
+      "battery_A1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_A3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_B3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_C3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D1": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D2": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      },
+      "battery_D3": {
+        "failure": null,
+        "parent": null,
+        "stage": 0,
+        "status": "complete"
+      }
+    }
+  },
+  "logical_calls_dispatched": 116,
+  "maximum_in_flight": 6,
+  "maximum_logical_calls": 116,
+  "mode": "live",
+  "peak_spent_plus_outstanding_usd": "0.1872583125",
+  "physical_attempts": 116,
+  "plan_sha256": "4a48ab008172c4540d9ba5f33d86819043fdbef96698954e341f726fd51f63c2",
+  "prerequisite": {
+    "scout_manifest_sha256": "3c769498e6535cb07d0ecc52035e0270b5a0346c2c50a2f322e717efd7d04e62",
+    "scout_plan_sha256": "08a8dff454ac38aee296c92c460f5bd14c990d272e49be04cba667dae6105c90"
+  },
+  "recorded_attempts": 116,
+  "reservations": 116,
+  "started": "2026-11-16T09:17:06.230628+00:00",
+  "status": "finished",
+  "suite": "supplement"
+}

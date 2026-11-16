@@ -1,0 +1,25 @@
+{
+  "A0": "0.404",
+  "messages": [
+    {
+      "content": "You help me think through questions about a game I'm playing with friends. Answer only the question asked. Give the requested estimate or conclusion and a brief explanation of its basis. Include intermediate calculations only if needed to answer that question. Do not volunteer additional estimates or recommendations unless asked.",
+      "role": "system"
+    },
+    {
+      "content": "I've been playing an exploration game with a few friends. We've been tracking some gameplay statistics:\n\n- 29% of maps are foggy.\n- A grey weather icon appears before loading on 68% of foggy maps and 41% of clear maps.\n- We find a hidden treasure chest on 24% of foggy maps and 76% of clear maps.\n- We unlock a bonus room on 83% of runs where we find treasure and 12% otherwise, regardless of the weather.\n- We receive a cosmetic reward on 9% of runs, independently of everything else.\n\nThe weather icon is only a clue about whether the map is foggy; it doesn't otherwise affect gameplay.\n\nWe also use a reliable map tracker that estimates weather probabilities from additional map-specific clues. Those clues only provide information about the weather; they don't otherwise affect gameplay.\n\nOur next map is showing the grey weather icon. I'm trying to guess what we'll encounter before it loads. What do you think our chances are of getting a foggy map?",
+      "role": "user"
+    },
+    {
+      "content": "We want P(Foggy | Grey icon).\n\nGiven:\n- P(Foggy) = 0.29\n- P(Grey | Foggy) = 0.68\n- P(Grey | Clear) = 0.41\n- P(Clear) = 1 - 0.29 = 0.71\n\nBy Bayes' theorem:\n\n\\[\nP(Foggy | Grey) = \\frac{P(Grey | Foggy) \\times P(Foggy)}{P(Grey)}\n\\]\n\nWhere:\n\n\\[\nP(Grey) = P(Grey | Foggy) \\times P(Foggy) + P(Grey | Clear) \\times P(Clear) = 0.68 \\times 0.29 + 0.41 \\times 0.71 = 0.1972 + 0.2911 = 0.4883\n\\]\n\nSo:\n\n\\[\nP(Foggy | Grey) = \\frac{0.68 \\times 0.29}{0.4883} = \\frac{0.1972}{0.4883} \\approx 0.404\n\\]\n\n**Answer:** About 40.4% chance the map is foggy given the grey weather icon.",
+      "role": "assistant"
+    }
+  ],
+  "proof": {
+    "initial_visible_sha256": "26ae6ad3e8f5a701000f5befad050daaec46860dc972e7aac90b499e2f72aace",
+    "path": "pilots/02-gaming-viability/runs/2026-11-16-6c0ca45-game-01/experiment/openai--gpt-4.1-mini",
+    "prefix_sha256": "f6532851a652bfdb536b8f36db3e38e7ed512489b22af3e25b1a88b8e940e50a",
+    "raw_sha256": "1e97c2053568ab36f627d07e58e1bcb97f857450319facb0eae725dcb34f9888",
+    "reference_commit": "cc0e8a4c9201dbb0122cd3f8db48cd559cfdd8e6",
+    "requests_sha256": "fe5d718e70813404489742bad09679083e241debbc3a4e314c0788f2460720e4"
+  }
+}
